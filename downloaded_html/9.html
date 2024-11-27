@@ -1,0 +1,1250 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'http://www.dachdecker-team.de/',
+        AccountUUID: 'ec67f6f7a96244188e27982dd3aee63d',
+        SystemID: '1AND1_EU_PROD',
+        SiteAlias: 'a4e15f06f18c434aa72b8c395d1e482f',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Feb 13 09:34:57 UTC 2024',
+        ExternalUid: 'ed04ed94-b550-4c75-b377-8cae1f0d62bf',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'home',
+        InitialPageUuid: '1144780aedba4a0db3e6975a39e5607d',
+        InitialPageId: '694078425',
+        InitialEncodedPageAlias: 'aG9tZQ==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: true,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '41630',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'dachdecker-team',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div> <p class=\"rteBlock\">Diese Webseite verwendet Cookies, um Ihnen ein optimales Online-Erlebnis bieten zu k&ouml;nnen. Durch die Nutzung dieser Webseite erkl&auml;ren Sie sich mit der Verwendung von Cookies einverstanden. <a value=\"datenschutz\" label=\"\" type=\"page\" href=\"\/datenschutz\" data-runtime-url=\"\/datenschutz\">Mehr Infos<\/a> \n<\/p> \n<\/div> \n',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'http://www.dachdecker-team.de/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '2002',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: true,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.dachdecker-team.de/">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="icon" type="image/x-icon" href="https://cdn.website-editor.net/a4e15f06f18c434aa72b8c395d1e482f/site_favicon_16_1707815470313.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-cdn.website-editor.net/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = '1AND1_EU_PROD';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+<style id="hideAnimFix">
+    .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+    }
+
+    .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";.display_None,.dmPopupMask{display:none}.clearfix:after,.slides:after{line-height:0;clear:both;visibility:hidden}.pswp,html{-webkit-text-size-adjust:100%}.pswp,.pswp__bg,.pswp__caption,.pswp__container,.pswp__share-modal,.pswp__share-tooltip,.pswp__top-bar{-webkit-backface-visibility:hidden}@font-face{font-family:FontAwesome;font-display:block;src:url(https://static-cdn.website-editor.net/fonts/fontawesome-webfont.eot?v=6);src:url(https://static-cdn.website-editor.net/fonts/fontawesome-webfont.eot?#iefix&v=6) format("embedded-opentype"),url(https://static-cdn.website-editor.net/fonts/fontawesome-webfont.woff?v=6) format("woff"),url(https://static-cdn.website-editor.net/fonts/fontawesome-webfont.ttf?v=6) format("truetype"),url(https://static-cdn.website-editor.net/fonts/fontawesome-webfont.svg#fontawesomeregular?v=6) format("svg");font-weight:400;font-style:normal}.dmInner{min-height:100vh!important;position:relative}.dmPopup,.dmPopupMask{position:fixed;left:0}.dmDisplay_None{display:none!important}.clearfix:after{height:0}.clearfix:after,.clearfix:before{content:' ';display:table}.clearfix{display:inline-block}.dmDesktopBody .shadowEffectToChildren li{box-shadow:none!important}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{margin:0;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup{display:block}.dmPopup{text-align:left;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%;display:block}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{display:block;font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}.dmRespRow.fullBleedMode>.dmRespColsWrapper{width:100%!important;max-width:100%!important}.dmRespRow.fullBleedMode{padding-left:0!important;padding-right:0!important}#dm .dmRespRow .dmRespColsWrapper{display:flex}.align-center{margin-left:auto;margin-right:auto}body.fix-mobile-scrolling{overflow:initial}#dmRoot{text-decoration-skip-ink:none}#dm .flexslider[sliderscriptparams*='isFade: true'] .slides li{width:100%!important;float:left!important;margin-right:-100%!important;position:relative!important}#dm .flexslider .slides li:first-child>img{width:100%;height:100%;object-fit:contain;position:absolute;display:block}#dm .flexslider[sliderscriptparams*='stretch: true'] .slides li:first-child img{object-fit:cover}body{-webkit-overflow-scrolling:touch}.pswp,.pswp__item,.pswp__scroll-wrap{overflow:hidden}@media (min-width:1025px){:root{--btn-text-font-size:18px}}@media (min-width:768px) and (max-width:1024px){:root{--btn-text-font-size:18px}}nav{display:block}html{font-family:Source Sans Pro;-ms-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button{font-family:inherit;font-size:100%;margin:0;line-height:normal;text-transform:none;-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow.dmRespRowNoPadding{padding:0}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmDesktopBody .dmRespRow .large-3{position:relative;width:25%}.dmDesktopBody .dmRespRow .large-6{position:relative;width:50%}.dmDesktopBody .dmRespRow .large-9{position:relative;width:75%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}[class*=' dm-common-icons-']{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-star:before{content:'\f005'}.icon-angle-down:before{content:'\f107'}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget.slide-button{margin-bottom:0}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}.pswp,.pswp__bg,.pswp__scroll-wrap{width:100%;height:100%}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}#dm .dmWidget.slide-button:after,.pswp,.pswp__button--fs,.pswp__button--zoom{display:none}p.rteBlock{margin:0}.dmImageSlider{height:350px;position:relative;clear:both}.pswp,.pswp__bg,.pswp__container,.pswp__item,.pswp__scroll-wrap{position:absolute;top:0;left:0}.flexslider{-webkit-transform:translate3d(0,0,0)}.pswp{z-index:9999999999!important;-ms-touch-action:none;touch-action:none;outline:0}.pswp *{-webkit-box-sizing:border-box;box-sizing:border-box}.pswp__bg{background:#000;opacity:0;will-change:opacity}.pswp__container{-webkit-touch-callout:none;-ms-touch-action:none;touch-action:none;right:0;bottom:0;will-change:transform}.pswp__item{right:0;bottom:0}.pswp__button{position:relative;overflow:visible;-webkit-appearance:none;display:block;border:0;padding:0;margin:0;float:right;opacity:.75;-webkit-box-shadow:none;box-shadow:none}.pswp__button::-moz-focus-inner{padding:0;border:0}.pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{background:url(/_dm/s/rt/scripts/vendor/photoswipe4/icons/default-skin.png) no-repeat;background-size:264px 88px;width:44px;height:44px}.pswp__button--close{background-position:0 -44px}.pswp__button--share{background-position:-44px -44px}.pswp__button--zoom{background-position:-88px 0}.pswp__button--arrow--left,.pswp__button--arrow--right{background:0 0;top:50%;margin-top:-50px;width:70px;height:100px;position:absolute}.pswp__button--arrow--left{left:0}.pswp__button--arrow--right{right:0}.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{content:'';top:35px;background-color:rgba(0,0,0,.3);height:30px;width:32px;position:absolute}.pswp__button--arrow--left:before{left:6px;background-position:-138px -44px}.pswp__button--arrow--right:before{right:6px;background-position:-94px -44px}.pswp__share-modal{display:block;background:rgba(0,0,0,.5);width:100%;height:100%;top:0;left:0;padding:10px;position:absolute;z-index:1600;opacity:0;will-change:opacity}.pswp__share-modal--hidden{display:none}.pswp__share-tooltip{z-index:1620;position:absolute;background:#FFF;top:56px;border-radius:2px;display:block;width:auto;right:44px;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.25);box-shadow:0 2px 5px rgba(0,0,0,.25);-webkit-transform:translateY(6px);-ms-transform:translateY(6px);transform:translateY(6px);will-change:transform}.pswp__counter{position:absolute;left:0;top:0;height:44px;font-size:13px;line-height:44px;color:#FFF;opacity:.75;padding:0 10px}.pswp__caption{position:absolute;left:0;bottom:0;width:100%;min-height:44px}.pswp__caption__center{max-width:95%;margin:0 auto;font-size:16px;padding:10px;line-height:20px;color:#CCC;width:960px;font-weight:700;text-align:center}.pswp__preloader{width:44px;height:44px;position:absolute;top:0;left:50%;margin-left:-22px;opacity:0;will-change:opacity}.pswp__preloader__icn{width:20px;height:20px;margin:12px}@media screen and (max-width:1024px){.pswp__preloader{position:relative;left:auto;top:auto;margin:0;float:right}}.pswp__ui{-webkit-font-smoothing:auto;visibility:visible;opacity:1;z-index:1550}.pswp__top-bar{position:absolute;left:0;top:0;height:44px;width:100%}.pswp__caption,.pswp__top-bar{will-change:opacity;background-color:rgba(0,0,0,.5)}.pswp__ui--hidden .pswp__button--arrow--left,.pswp__ui--hidden .pswp__button--arrow--right,.pswp__ui--hidden .pswp__caption,.pswp__ui--hidden .pswp__top-bar{opacity:.001}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs .image-container{height:100%}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{width:58px;height:58px;margin:2px;display:inline-block;vertical-align:middle;text-align:center;overflow:hidden}.dmPhotoGalleryResp.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{box-shadow:0 0 3px #888}.dmPhotoGalleryResp.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{margin:0;padding:10px}.dmPhotoGalleryHolder{text-align:center}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{display:inline!important;margin:0!important;vertical-align:middle;text-align:center;position:relative}.dmPhotoGallery .image-container{position:relative}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner h3{margin:0;line-height:normal;text-align:center;font-size:21px}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner div{text-align:center}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner .caption-text,.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner .caption-title{max-width:100%}#dm .dmPhotoGallery.newPhotoGallery li{list-style:none}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner div,#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner h3{text-align:center}#dm .dmPhotoGallery.newPhotoGallery .photoGalleryViewAll{box-shadow:0 0!important;font-size:inherit!important;margin:0!important}#dm .dmPhotoGallery.newPhotoGallery .dmPhotoGalleryHolder{width:100%;padding:0;display:none}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs{position:relative}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .image-container{overflow:hidden}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .image-container a{background-repeat:no-repeat;background-position:center}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner{align-items:center;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;z-index:1;background-color:rgba(255,255,255,.9);color:#333;padding:15px;height:100%;box-sizing:border-box}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner .caption-button{margin:10px auto;max-width:100%}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner .caption-button .text{padding:10px 20px!important}#dm .dmPhotoGallery.newPhotoGallery[data-link-gallery=true] .image-container a.has-link{z-index:1px}.slides{margin:0;padding:0;list-style:none}.flexslider,.flexslider .slides>li{height:100%;overflow:hidden;position:relative}.flexslider{padding:0;-webkit-transform:translateZ(0);direction:ltr;margin:0;zoom:1;opacity:1!important}.flexslider .slides{height:100%;zoom:1}.flexslider .slides>li{display:none;text-align:center}.flexslider .slides img{width:100%;display:block;margin:auto}.slides:after{content:'\0020';display:block;height:0}html[xmlns] .slides{display:block}.flexslider .color-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.25);display:block}.flexslider .slides>li .slide-inner{font-weight:700;color:#fff;position:absolute;z-index:1;visibility:hidden}.flexslider .slides>li .slide-inner *{line-height:normal}.flexslider .slides>li .slide-inner .slide-title{margin:0}.flexslider .slides>li .slide-inner .slide-text{margin:0;font-size:19px;font-weight:400;white-space:pre-line}#dm .dmInner .flexslider .slides>li .slide-inner .slide-button{margin-top:20px;margin-left:auto;margin-right:auto}.flexslider .slides>li[layout=center] .slide-inner{max-width:70%;max-height:80%}#dm .flexslider .slides .dmWidget .text{max-width:100%;width:100%;padding:10px 20px!important}#dm .dmInner .flexslider.ed-version .slide-button{-js-display:inline-flex;display:inline-flex;justify-content:center;align-items:center}.flexslider.ed-version .slides img{display:none}.flexslider.ed-version[layout=bottom] .slides>li{position:relative}.flexslider.ed-version[layout=bottom] .slides>li .slide-inner{width:100%;max-width:100%;background-color:rgba(0,0,0,.5);margin-left:0!important;margin-top:0!important;max-height:100%;padding:15px 30px;top:auto!important;bottom:0!important;left:0!important}#dm .dmRespRow.dmRespRowNoPadding,.dmContent,.dmInner ul:not(.defaultList),DIV.dmBody{padding:0}.flexslider.ed-version[layout=bottom] .slides>li .slide-inner .slide-button,.flexslider.ed-version[layout=bottom] .slides>li .slide-inner .slide-title{display:none!important}.flexslider.ed-version[layout=bottom][position=right] .slide-inner{text-align:right}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] h1,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}.imageWidget a{font-style:italic;text-align:center}.imageWidget img[width][height],img[width][height]{height:auto}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}A IMG{border:none}h1,h3,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}.clearfix,a,img,li,ul{vertical-align:top}#iscrollBody,#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmInner{min-width:768px!important;font-size:16px;background:#fff;color:#111}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#463939}.dmHeader{background:#fff;color:#111;text-align:center;position:relative;width:100%;max-width:100%}DIV.dmBody{clear:both}.dmContent{margin:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}#innerBar{position:relative;height:36px;width:100%;font-size:20px;margin:0;z-index:80}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmRespCol>[dmle_extension]:not(:first-child){margin-top:10px}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}.imageWidget:not(.displayNone) img{width:100%}h3{font-weight:400;font-size:23px}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#innerBar.lineInnerBar{display:table;width:100%;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;font-size:20px;margin-top:30px;margin-bottom:30px;background-color:transparent;color:#111}#innerBar .titleLine{display:table-cell;vertical-align:middle;width:50%}.dmPageTitleRow:not(#innerBar){display:none}.titleLine hr{min-height:1px;background-color:rgba(17,17,17,.2)}.dmLinksMenu{float:none!important;display:block}.dmStandardDesktop{display:block;margin:0 auto}.standardHeaderLayout .dmHeader{float:none}.dmInner a{outline:0;vertical-align:inherit}#dm .dmDivider{display:block;margin:10px 0}.dmSpacer{border:0;height:15px}.dmPhotoGalleryHolder{font-size:medium!important;margin:0;list-style:none}#dm .dmPhotoGallery .dmPhotoGalleryHolder,#dm .dmPhotoGallery .dmPhotoGalleryHolder>li{width:100%;padding:0}#dm .dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{background:url(//dd-cdn.multiscreensite.com/runtime-img/galleryLoader.gif) 50% 50% no-repeat #eee;float:left;clear:none;padding:0;margin:0;width:100%}#dm .dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{display:none!important}.dmDesktopBody .dmPhotoGallery .photoGalleryViewAll{background:0 0;border:none;padding:3px 0;font-size:16px;width:auto;height:auto;line-height:normal;box-shadow:0 -2px 0 0;display:block;margin:40px 0;text-align:left}body{background-color:#eee}#dm .dmDividerWrapper{display:block}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}#dm .fHeader .dmHeaderContent.freeHeaderRow1{padding:30px 0}.dm-bfs.dm-layout-home div.dmInner{background-color:#fff}.dmStandardDesktop .dmHeader{background-color:#fff;max-width:100%}.dmPhotoGallery:not(.dmFacebookGallery) .dmPhotoGalleryHolder:not(.ready) li.photoGalleryThumbs{display:inline!important;visibility:hidden}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.dmDivider{color:grey;border-color:currentColor;background:0 0}.main-navigation.unifiednav{-js-display:flex;display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{-js-display:flex;display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{flex-wrap:wrap}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{-js-display:flex;display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:'';align-self:center;font-weight:700}.main-navigation.unifiednav:not(.unifiednav_vertical)[data-divider=DOT] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after{content:'\00b7'}.main-navigation.unifiednav:not(.unifiednav_vertical)[data-divider=DOT] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:'';font-size:inherit}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{-js-display:flex;display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{opacity:1}.main-navigation.unifiednav.effect-text-color{padding:12px 15px}.main-navigation.unifiednav.effect-text-color .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected{color:#9a9a9a}.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav:not(.unifiednav_vertical)[data-divider=DOT] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,.main-navigation.unifiednav:not(.unifiednav_vertical)[data-divider=DOT] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:inherit}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container{flex-wrap:wrap;justify-content:inherit}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container .nav-item-text::before{text-align:left}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])[data-divider]:not([data-direction=RIGHT]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:''}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])[data-divider=DOT] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after{content:'\00b7';font-size:inherit}.standardHeaderLayout .dmHeader{display:block;height:auto}.dmRespRow{padding-top:40px;padding-bottom:40px}#dm div.dmContent h1{color:#111;color:rgba(230,0,40,1);direction:ltr;font-family:Arial,"Arial Fallback";font-weight:400;font-style:normal;text-decoration:#824162}#dm div.dmContent h3,.newPhotoGallery .photoGalleryViewAll.link{color:rgba(230,0,40,1)}#dm div.dmRespCol>*{line-height:150%}#dm div.dmInner,#dm div.dmInner .dmRespCol{font-weight:400}.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:transparent}#dm div.dmContent .dmNewParagraph[data-version] h1{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h1 *,#dm div.dmContent h3{text-decoration:#824162}#dm .dmContent .dmRespRow{background-color:rgba(255,255,0,1);margin:0;padding:5px 10px}#dm DIV.dmOuter DIV.dmInner{background-color:rgba(249,248,247,1);background-image:none;background-size:auto;background-repeat:repeat;background-attachment:fixed}#dm .dmRespCol div.dmNewParagraph,#dm div.dmInner,#dm div.dmInner .dmRespCol,.dmPhotoGallery .caption-text.caption-text{font-family:Arial,"Arial Fallback";font-size:18px}#dm div.dmContent h1{font-size:36px}#dm div.dmContent h3{direction:ltr;font-family:Arial,"Arial Fallback";font-weight:400;font-style:normal;font-size:24px}#dm .dmContent .dmRespRow .dmRespCol{margin:0;padding:0}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:1px;--btn-border-radius:0px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:rgba(255, 255, 0, 1);--btn-border-color:rgba(230, 0, 40, 1);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-bg-image:none;--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgba(230, 0, 40, 1);--btn-text-decoration:none;--btn-text-font-weight:400;--btn-icon-color:rgb(212, 198, 153);--btn-icon-fill:rgb(212, 198, 153);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:rgba(120, 119, 118, 0.21);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:rgba(0, 0, 0, 1);--btn-hover-text-color:rgba(0, 0, 0, 1);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}@media (min-width:0px) and (max-width:767px){:root{--btn-text-font-size:18px}}#dm .dmWidget:not([data-buttonstyle]):not(.button_2){overflow:initial;background-clip:border-box;border-radius:1px}#dm .dmWidget:not([data-buttonstyle]):not(.button_2) .text{padding:16px 0}#dm .dmWidget:not([data-buttonstyle]):not(.button_2) .iconBg{display:none}#dm div.dmInner #site_content .dmWidget{background-color:var(--btn-bg-color);background-image:var(--btn-bg-image);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm .p_hfcontainer div.u_1537060048,#dm .p_hfcontainer nav.u_1284501632{float:none!important;left:0!important;position:relative!important;max-width:100%!important;text-align:center!important;height:auto!important}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-size:var(--btn-text-font-size);font-weight:var(--btn-text-font-weight);text-decoration:var(--btn-text-decoration)}#dm div.dmInner #site_content .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(0,0,0,0)!important;background-image:none!important;background-repeat:repeat!important;background-size:auto!important}#dm .p_hfcontainer .u_1284501632.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .u_1284501632.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:20px!important}#dm .p_hfcontainer .u_1537060048{width:100%!important}#dm .p_hfcontainer nav.u_1284501632.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{color:rgba(0,0,0,1)!important;font-size:20px!important}#dm .p_hfcontainer nav.u_1284501632.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected{color:rgba(230,0,40,1)!important}#dm .p_hfcontainer div.u_1537060048{top:0!important;width:705.6px!important;min-width:0!important;display:block!important;padding:0!important;margin:0 auto 0 0!important}#dm .p_hfcontainer div.u_1571063569{background-color:rgba(255,255,0,1)!important;width:auto!important;margin:0!important;padding:25px 5px 5px!important}#dm .p_hfcontainer div.u_1649796429{float:none!important;top:0!important;left:0!important;width:calc(100% - 0px)!important;position:relative!important;height:auto!important;max-width:100%!important;min-width:25px!important;padding:2px 0!important;margin:0 0 8px!important}#dm .p_hfcontainer nav.u_1284501632{top:0!important;width:705.6px!important;justify-content:center!important;align-items:stretch!important;min-width:0!important;padding:12px 15px!important;margin:10px auto 0!important}#dm .dmBody div.u_1612689418 .color-overlay{background-color:rgba(0,0,0,0)!important}#dm .dmBody div.u_1612689418 .slides .slide-title{color:rgba(230,0,40,1)!important;font-size:60px!important}#dm .dmBody .u_1840790338{display:none!important}#dm .dmBody div.u_1429143740 hr{color:rgba(230,0,40,1)!important;border-top-style:solid!important;border-top-width:1px!important}#dm .dmBody div.u_1612689418 .slides .slide-text{direction:rtl!important}#dm .dmBody .u_1612689418 .slides>li .rteBlock{display:block!important;text-align:right!important}#dm .dmBody div.u_1612689418,#dm .dmBody div.u_1753078681{float:none!important;top:0!important;left:0!important;position:relative!important;min-width:0!important;text-align:center!important;padding:0!important}#dm .dmBody div.u_1191399728 hr{color:rgba(230,0,40,1)!important;border-top-style:solid!important;border-top-width:1px!important}#dm .dmBody .u_1497423704{width:100%!important}#dm .dmBody .u_1915722297{display:block!important}#dm .dmBody .u_1314349017,#dm .dmBody .u_1809569995{display:none!important}#dm .dmBody div.u_1661724475 .caption-inner{background-color:rgba(255,255,0,.7)!important}#dm .dmBody .u_1109661838{display:block!important}#dm .dmBody .u_1142757455,#dm .dmBody .u_1821742190{display:none!important}#dm .dmBody .u_1097735832{display:block!important}#dm .dmBody .u_1032185046,#dm .dmBody .u_1362301054{display:none!important}#dm .dmBody .u_1905640449{display:block!important}#dm .dmBody .u_1587072711,#dm .dmBody .u_1852927040{display:none!important}#dm .dmBody .u_1429136011{display:block!important}#dm .dmBody .u_1135455547,#dm .dmBody .u_1766453960{display:none!important}#dm .dmBody .u_1467939699{display:block!important}#dm .dmBody .u_1664361681,#dm .dmBody .u_1849979124{display:none!important}#dm .dmBody .u_1017594193{display:block!important}#dm .dmBody .u_1489105972,#dm .dmBody .u_1738131113{display:none!important}#dm .dmBody .u_1726318666{display:block!important}#dm .dmBody .u_1386047377,#dm .dmBody .u_1626312638{display:none!important}#dm .dmBody .u_1661724475 .caption-inner{-webkit-border-top-right-radius:0!important;-webkit-border-bottom-right-radius:0!important;-webkit-border-bottom-left-radius:0!important;-webkit-border-top-left-radius:0!important;border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important}#dm .dmBody div.u_1612689418 .slides .slide-button{border-color:rgba(212,198,153,1)!important;border-width:1px!important;border-style:solid!important;width:192px!important}#dm .dmBody div.u_1753078681{width:100%!important;height:auto!important;max-width:none!important;margin:0 auto!important}#dm .dmBody div.u_1429143740{important:true!important;width:100%!important}#dm .dmBody div.u_1612689418{width:100%!important;donedragging:true!important;height:500px!important;display:block!important;max-width:100%!important;margin:0 0 0 auto!important}#dm .dmBody div.u_1191399728{important:true!important;width:100%!important}#dm .dmBody .u_1661724475 .photoGalleryThumbs{padding:2px!important}#dm .dmBody .u_1661724475 .photoGalleryViewAll{padding:0 4px!important}#dm .dmBody div.u_1661724475 .caption-container .caption-title{font-size:24px!important}#dm .dmBody div.u_1453744686{margin:8px 0!important;padding:5px!important}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+        visibility: hidden;
+    }
+
+    
+</style>
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Lato Fallback";
+  src: local('Arial');
+  ascent-override: 101.3181%;
+  descent-override: 21.865%;
+  size-adjust: 97.4159%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Cabin Fallback";
+  src: local('Arial');
+  ascent-override: 101.7818%;
+  descent-override: 26.3684%;
+  size-adjust: 94.8106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Helvetica Fallback";
+  src: local('Arial');
+  ascent-override: 77.002%;
+  descent-override: 22.998%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Arial Fallback";
+  src: local('Arial');
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Crimson Text Fallback";
+  src: local('Arial');
+  ascent-override: 107.5305%;
+  descent-override: 39.7155%;
+  size-adjust: 88.2743%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+
+  <link type="application/rss+xml" rel="alternate" href="https://www.dachdecker-team.de//feed/rss2"/>
+  <link type="application/atom+xml" rel="alternate" href="https://www.dachdecker-team.de//feed/atom"/>
+  <meta property="og:type" content="website"/>
+  <title>
+    
+    Dachdecker-Team GmbH ...besser gleich zum Fachmann
+  
+  </title>
+  <meta name="description" content="Die Dachdecker-Team GmbH aus dem Havelland, bietet mit seinen hochmotivierten und qualifizierten Mitarbeitern, qualitativ hochwertige Arbeiten bei allen anfallenden Dachdeckerarbeiten"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Dachdecker-Team GmbH ...besser gleich zum Fachmann"/>
+  <meta name="twitter:description" content="Die Dachdecker-Team GmbH aus dem Havelland, bietet mit seinen hochmotivierten und qualifizierten Mitarbeitern, qualitativ hochwertige Arbeiten bei allen anfallenden Dachdeckerarbeiten"/>
+  <meta property="og:description" content="Die Dachdecker-Team GmbH aus dem Havelland, bietet mit seinen hochmotivierten und qualifizierten Mitarbeitern, qualitativ hochwertige Arbeiten bei allen anfallenden Dachdeckerarbeiten"/>
+  <meta property="og:title" content="Dachdecker-Team GmbH ...besser gleich zum Fachmann"/>
+
+
+
+
+<!-- SYS- MUFORDFfRVVfUFJPRA== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="home"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-home hasAnimations dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="dmHeader p_hfcontainer u_hcontainer" freeheader="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1571063569 dmRespRow dmHeaderContent freeHeaderRow1" id="1571063569"> <div class="dmRespColsWrapper clearfix" id="1618005341"> <div class="u_1780181932 dmRespCol small-12 large-9 medium-9" id="1780181932"> <span id="1520082955"></span> 
+ <div class="u_1537060048 imageWidget align-center" data-widget-type="image" id="1537060048" data-element-type="image"> <a href="/" id="1120969391"><img data-inject="home-At2logo" src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/header_dd_team-846w.jpg?Expires=1734484378&Signature=ni5~JXROsKHm2d0KuYa8Es851QvNnCWpciu46VTtYaxRm-o4z61Z2XfynD3Of8aHwyAETXNHOZqpE5lqA03MQvBWRYu09J56nAnGcW6gNQwlSAFwzxa2O2xprPljZ8sKi4zTFP9yNJPos0VoL8v~jDbqpfrYfyVFcucSUR3gBc7QFZ9lOP~nrTighW4zPXHaSfUIw2cG41sxmcHcLA6xeW7dkZffnQsfrOptIhxB4Neg05vyc87jUPX8tyY6S~AUuXAcybnL3isl7nnjKVz8fb0xokRwv~~EJEZevdPKwSdplwqP40gBf9BTK3gWKONlY9ZQ5M8oi43OcnFIaicK1Q__&Key-Pair-Id=K2NXBXLF010TJW" id="1266195280" class="" alt="Anna & Daniel" data-dm-image-path="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/header_dd_team.jpg" width="1000" height="150" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmSpacer" id="1812418128" data-element-type="spacer"></div> 
+ <nav class="u_1284501632 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" data-divider="DOT" id="1284501632" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" navigation_id="" data-nav-structure="HORIZONTAL" wr="false" icon="true" surround="false" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_00  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/leistungen" class="unifiednav__item  dmUDNavigationItem_010101285674  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Referenzen
+        " data-auto="page-text-style">Referenzen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item  dmUDNavigationItem_010101657884  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1341497697 dmRespCol small-12 large-3 medium-3" id="1341497697"> <div class="u_1649796429 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1649796429" style="transition: opacity 1s ease-in-out 0s;"><p><span style="font-weight: bold; display: unset;">Dachdecker-Team GmbH</span></p><p><span style="display: unset;">Gewerbering 14e</span></p><p><span style="display: unset;">14656 Brieselang</span></p><p><span style="display: unset;">Tel.: 033234 - 91 28 14</span></p><p><span style="display: unset;">Fax: 033234 - 91 28 16</span></p><p><span style="display: unset;">info@dachdecker-team.de</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"></div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_1753078681 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1753078681" data-anim-desktop="none"> <div class="dmRespColsWrapper" id="1197123301"> <div class="dmRespCol small-12 medium-12 large-12 u_1627130201" id="1627130201"> <span id="1304580454"></span> 
+ <div class="u_1612689418 flex-container dmImageSlider dmNoMargin dmNoMark hasFullWidthMobile hasFullWidth" data-widget-type="imageSlider" dmle_volatile_widget="true" id="1612689418" data-element-type="dSliderId"> <div class="flexslider ed-version nav-layout-2" sliderscriptparams="{ stretch: true, animation: true, randomize: false, directionNav: true, isAutoPlay: true, isFade: true, controlNav: false, slideshowSpeed: 7000, animationDuration: 600, pausePlay: true}" id="1018021081" layout="bottom" position="right"> <ul class="slides" id="1396969736"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1059262742" class="" show-caption="true"><img dm="true" src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/DSC_0199-2304w.JPG?Expires=1734484378&Signature=RhhjJoYi~eg1CdaBfXylpUbIfYU~OE~vrTOH1TQvZ9rX-aerfbh2i8GxwwpbbEarySOhPwWteH0JbZEavhe3D1esY8Zhx3EU3dFf9KRUHoKujUIubEf9VNzEP6ARiPtpJ7y0k5HAkVVULjRj43fmS7H3Lpi5MqWw6SJRwVKku~buALGAxibVsnUlcKVxQPSvl9JAitVOVXkSqEnccydLrxTTqxzzs4dNMkfe9qa8Jyf4EIhTgvLqnK8lX8lahvQp4kVxsEQc-NCgze0fHousu3wN5DIO~0EGWqVSR5sYiIXxh5PlZ-biyKlLSBerMAGYQ0-UqDR9TpcYff8kFahwMw__&Key-Pair-Id=K2NXBXLF010TJW" id="1543402239" onerror="handleImageLoadError(this)" height="500.0" width="1920.0"/> <div class="color-overlay" id="1252443362"></div> 
+ <div class="slide-inner" id="1814391903"> <div class="text-wrapper" id="1994486428"> <h3 class="slide-title u_1840790338" id="1840790338">Willkommen bei der Dachdecker - Team GmbH</h3> 
+ <div class="slide-text richText u_1362841813" id="1362841813"><p class="rteBlock">Dachdecker-Team GmbH</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-invisible" id="1757143565"> <span class="iconBg" id="1819340335"> <span class="icon hasFontIcon icon-star" id="1760057765"></span> 
+</span> 
+ <span class="text" id="1224794998">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1896651418"> <div class="dmRespColsWrapper" id="1655807127"> <div class="dmRespCol large-12 medium-12 small-12" id="1993641437"> <div class="dmDividerWrapper clearfix u_1191399728 hasFullWidth" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1191399728"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1814728625"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1278396908"> <div class="dmRespColsWrapper" id="1728507178"> <div class="dmRespCol large-12 medium-12 small-12" id="1413391045"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1095898602" style="transition: opacity 1s ease-in-out 0s;"> <h1 style="line-height: initial;"><span style="display: unset;">Home</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1036701075"> <div class="dmRespColsWrapper" id="1796063423"> <div class="dmRespCol large-12 medium-12 small-12" id="1576210070"> <div class="dmDividerWrapper clearfix u_1429143740 hasFullWidth" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1429143740"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1390850152"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1873249919"> <div class="dmRespColsWrapper" id="1191694278"> <div class="dmRespCol small-12 large-6 medium-6" id="1549426754"> <div class="dmNewParagraph u_1453744686" data-element-type="paragraph" data-version="5" id="1453744686" style="transition: opacity 1s ease-in-out 0s;"><p><span style="display: unset;">Willkommen bei der Dachdecker - Team GmbH</span></p><p><span style="display: initial;"><br/></span></p><p><span style="display: initial;">Die Dachdecker-Team GmbH aus dem Havelland, bietet seit 2003 mit seinen hochmotivierten und qualifizierten Mitarbeitern, qualitativ hochwertige Arbeiten bei allen anfallenden Dachdeckerarbeiten sowie diversen Nebenarbeiten an.</span></p><p><span style="display: initial;">&nbsp;</span></p><p><span style="display: initial;">Zu unseren zufriedenen Kunden geh&ouml;ren private Auftraggeber, Hausverwaltungen, Architektur- und Ingenieurb&uuml;ros.<br/>&nbsp;<br/>Bei uns haben Sie von der Angebotserstellung &uuml;ber die Ausf&uuml;hrung des Auftrages bis hin zur Rechnungsstellung einen Ansprechpartner. Hierdurch wird gew&auml;hrleistet, das ein z&uuml;giger und termingerechter Bauablauf sichergestellt ist.<br/>&nbsp;<br/>Unser Einsatzgebiet ist das Havelland und Berlin mitunter auch der Raum s&uuml;dlich von Berlin.</span></p></div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12" id="1268250678"> <div class="imageWidget align-center u_1497423704" data-element-type="image" data-widget-type="image" id="1497423704"> <a href="/förderprogramm-renplus-2014-2020" id="1298281072" file="false"><img src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/lg-hp-576w.jpg?Expires=1734484378&Signature=Mr4IcUhzZ3ivGR2fv8o~Wm9VwKaykLFvGBTtvNvSpflZEWC04otf2uZqLw0BLLy~Brg41mdvrz0ALA287kSCNyhsLaRBwAj8MDmIo9hZ8CDErjrO5cCMHvygIIxttaCn4tRyK3EOggx8VhbejzoNEWHslpCzok3HLHtzWaPGJCBVGazKOPoXnf0TOKgNKVDUEdXo2j5Gk-8mY0M2f9yyoqFU4PpsMCebBHqzumlt6ILcmUEadRWWoQLir9vswI2Ie-vboLizpyVN1QuBaMyZvacMfsdSiEecK0mi-8-ruLPE6k0zWYmeVqpyfy4b56kCqEi-S-1CMPwC-LsFhL0DiQ__&Key-Pair-Id=K2NXBXLF010TJW" alt="" id="1537712465" class="" data-dm-image-path="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/lg-hp.jpg" width="800" height="206" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div data-element-type="spacer" class="dmSpacer u_1738800000" id="1738800000"></div> 
+ <div class="imageWidget align-center u_1052567177" data-element-type="image" data-widget-type="image" id="1052567177"><img src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/zeestow_fass_g-576w.jpg?Expires=1734484378&Signature=VpcBqCE~EGzTCZBz6NMeIAX4kiU2tcVE2F81UOE7Ki0SpKaxsqfahCoqVMpnJPZiTXju18tCCx8OfrC20fD-lZVIsliWswyW0yUa33uCYYvYJZPGhSpNsVY11N6~8yDxxo~vaE6gZvyk-atujgQGp270DfulJod-gg1kkQSWJ2Q--rlS9WMoBmnz9RLqYV5jhcKgwYKy5e5GdHk3PpW~bPMXLALuy6kYm6GQ2MeZseG67rDABA9LdU05XjZ1zx0OVhj2UGU5GW~vIU-IQYKEIGms93md-O3ioUkycJJIBTY3oGQ8VZnu1UvQpfLyrfBV1QoLkDT1FEGN2NO2G958jg__&Key-Pair-Id=K2NXBXLF010TJW" alt="" id="1066319690" class="" data-dm-image-path="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/zeestow_fass_g.jpg" width="850" height="604" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1524494645"> <div class="dmRespColsWrapper" id="1416498812"> <div class="dmRespCol large-12 medium-12 small-12" id="1073492713"> <div class="dmDividerWrapper clearfix u_1975982473" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1975982473"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1381369174"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="Leistungenanker" data-anchor="Leistungenanker"> <div class="dmRespColsWrapper" id="1692176008"> <div class="dmRespCol large-12 medium-12 small-12" id="1953610493"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1637187219" style="transition: opacity 1s ease-in-out 0s;"> <h1><span style="display: unset;">Leistungen</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1379394121"> <div class="dmRespColsWrapper" id="1158739192"> <div class="dmRespCol large-12 medium-12 small-12" id="1349084438"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1058831066" style="transition: opacity 1s ease-in-out 0s;"><p><span style="display: unset;">Dachdeckerarbeiten | Maurerarbeiten | Zimmererarbeiten | Schornsteinsanierung | Innenausbau | Dachreinigung ...</span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1909300717"> <div class="dmRespColsWrapper" id="1377428971"> <div class="u_1000158914 dmRespCol small-12 medium-12 large-12" id="1000158914"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1661724475" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="4" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1661724475" data-placeholder="false" data-rows-to-show="100" data-link-gallery="true" data-desktop-caption-alignment="center_center" data-mobile-columns="1"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1465773001"> <li class="photoGalleryThumbs" id="1513176661"> <div class="image-container" id="1778273740"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/100_1188.jpg" id="1355374024" class="has-link" href="/dachdeckerei" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/dachdeckerei?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/100_1188-1920w.jpg?Expires=1734484378&Signature=Lsi4xu0Jxc8A1ukUWDRxebbIFxlV6-g5IsANl~2rZGsxkaahjo-rh0LQ06gBcL7FptiufMR~CHd627SG4us-gisTf8rlSYqgBqk-hR37IwW4I2-a95WgAaC67Pb7MXU6Pnj1qDo4lgQyDXzp2-RGl3ZQM6qh4z8arAkZYR56TSiyh8~k3ZUGPvC4Bov7WTC3rgR8toJ4948QALiEF6nqrVYahjIjWtH5nnin1X0VvFHCOVx6G1gRJRJsnLHcSOnn0534bzB1jBEX-6axYQ95GOeTxhSdRXrsE1TUJehj0aOV7-Y1SkzZDZrhCBahaJ9nCMhV80eHaKNYjJWGlkFUNg__&Key-Pair-Id=K2NXBXLF010TJW" id="1894937356" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1915722297" style="display:none" id="1915722297"> <span class="caption-inner" id="1639321992"> <h3 class="caption-title u_1662832974" id="1662832974">Dachdeckerei</h3> 
+ <a class="caption-button dmWidget clearfix u_1809569995" id="1809569995" href="/dachdeckerei" file="false"> <span class="iconBg" id="1272106029"> <span class="icon hasFontIcon icon-star" id="1721300056"></span> 
+</span> 
+ <span class="text" id="1576687268">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1817725133"> <div class="image-container" id="1060958155"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/dachdecken6_g.jpg" id="1335214160" class="has-link" href="/dachstühle" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/dachstühle?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/dachdecken6_g-1920w.jpg?Expires=1734484378&Signature=p2xwcYp-cZ8nJuDukIimnBTK2ToWbT-j0hSNtI47MiLAhL1c1qTkNSgPNXV0768qIh4X~tgLrQNrsXBSDQs5XRSDkca53uWvTV4mhZa9yUIlOKpvriyEbUs5L~u21fntZbT4J~9d5KMorqgxqn15kjAYITW4dfJ5KDDyh9TG2xhiiJOY6Tnp4VGigNGlJJE5aMwEGQIhEaxrRrH3U~TdwMKoaG9Q-4VLaXiCwv04D~CxBFfNq9sdct53-OBFeKdYMVJXwpnUqXsy4qzjrr-NW4J3MPpSWgEXISTy2RPvUapJnIQeTs0STlZFD1ug0ekkls3qGw7F5wUjvIwp8K8p5A__&Key-Pair-Id=K2NXBXLF010TJW" id="1652232355" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1109661838" style="display:none" id="1109661838"> <span class="caption-inner" id="1741880788"> <h3 class="caption-title u_1182140155" id="1182140155">Dachst&uuml;hle</h3> 
+ <a class="caption-button dmWidget clearfix u_1142757455" id="1142757455" href="/dachstühle" file="false"> <span class="iconBg" id="1784383796"> <span class="icon hasFontIcon icon-star" id="1304751781"></span> 
+</span> 
+ <span class="text" id="1482373635">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1896898491"> <div class="image-container" id="1234865421"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/100_0820.jpg" id="1953773213" class="has-link" href="/dachsanierungen" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/dachsanierungen?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/100_0820-1920w.jpg?Expires=1734484378&Signature=MchKO-dPB7d5Kah50hjhihM9gImjbct5z7i4Kwrwth3VoOGrXkqvMVVSKZ2~2I6nKzxDiKH9CtBULYZVVHibZFPyMpN~p3ZgkB0de4Y20TkO-57tIw~9o8N7LH06GEh1P7EQMGfl1DaGNhxn8MiCnNEtVI7QIcCq8nJ6TBViIzf9AFRcLQbTnXOtj7NzByg7qaPRqGEy8iJUEDgMCesFO1DnfibOcizhhdl0uB~PQvMqTYFfCRMxDO4Ntwy7Ar8rfOuuk-R-tQ6YaCEdWBB5sn8Iwic9mlfSckQt7TNAzAdjUXkRXe88CNlLXpcZeuJ5bV2PTmU2cqTqN5VmtPcaAg__&Key-Pair-Id=K2NXBXLF010TJW" id="1684277336" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1097735832" style="display:none" id="1097735832"> <span class="caption-inner" id="1335163493"> <h3 class="caption-title u_1455554727" id="1455554727">Dachsanierung</h3> 
+ <a class="caption-button dmWidget clearfix u_1032185046" id="1032185046" href="/dachsanierungen" file="false"> <span class="iconBg" id="1912195036"> <span class="icon hasFontIcon icon-star" id="1546938654"></span> 
+</span> 
+ <span class="text" id="1011869447">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1914737918"> <div class="image-container" id="1230219012"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/100_1435.jpg" id="1544000050" class="has-link" href="/carports" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/carports?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/100_1435-1920w.jpg?Expires=1734484378&Signature=iMT4uJMMp2Pnr8UBKM1KtlKbGde-~Z77A~sHyLi2ki4mtA0WiAF3lEljBY1juiPiKRdOOvA-LXybMYzGOeKhFAsgocF0XgkS~eqFSBFFwT8jQvKQffAV363iTwO2nZeAT-a8ioCkImDGC8beNhxHzrETWEFbl-nOC365I4cfwonGpSxzgbgXCX8NgAs5eFxiTEZjsZaMdIDWViQ6z9fLnLFas~U2uA6upJfNixltnkQCVXMUqQc--RXCMQpLfAzsm9Rhoa-JrXlRsEQychMKqVLrqs4HAheJXvMPxEC25uFTtH-dvPxTmYyaTdCewqUOnS9TJLsrp0xED6q7POZkeQ__&Key-Pair-Id=K2NXBXLF010TJW" id="1044653999" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1905640449" style="display:none" id="1905640449"> <span class="caption-inner" id="1552592334"> <h3 class="caption-title u_1224861913" id="1224861913">Carports</h3> 
+ <a class="caption-button dmWidget clearfix u_1852927040" id="1852927040" href="/carports" file="false"> <span class="iconBg" id="1540208847"> <span class="icon hasFontIcon icon-star" id="1807591409"></span> 
+</span> 
+ <span class="text" id="1651557417">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1707167310"> <div class="image-container" id="1997270763"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/schornstein1_g.jpg" id="1219186360" class="has-link" href="/schornsteine" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/schornsteine?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/schornstein1_g-1920w.jpg?Expires=1734484378&Signature=aMbpAoa3b2Pm9~XNu4rUdHEW9nWyHmc4aem3zgGBXME-EW~aexV1y36sI7hGC0Rg0fP7QOhAquzeNatp1caW7iUWGU1uNTTKcTksl0-1for7p8UzTtWAt7Imfl1pKK2I8SH2H4iiiz3caRBocFUrwQLQv66HthurVJGJ8Qm5nzm7F-h1dh~LIqUPlLfu2fr~uJZtcY2oO0eR8E8MsJVMEHIVH5jWMvNdqXBj~uIN7h2d3fsbc~shp2mZahN1C8D73lmeInxMpiwt3h9-Agmdbh~XnYGErvCxzbYaIWb-iiaMjFtT57XD3AQyaGM-ehZn1cVmHiZ-VPlqoaoqKHF83Q__&Key-Pair-Id=K2NXBXLF010TJW" id="1079053539" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1429136011" style="display:none" id="1429136011"> <span class="caption-inner" id="1789828610"> <h3 class="caption-title u_1089511921" id="1089511921">Schornsteine</h3> 
+ <a class="caption-button dmWidget clearfix u_1766453960" id="1766453960" href="/schornsteine" file="false"> <span class="iconBg" id="1944678514"> <span class="icon hasFontIcon icon-star" id="1151888411"></span> 
+</span> 
+ <span class="text" id="1194063295">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1882576300"> <div class="image-container" id="1298411021"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/terrasse2_g.jpg" id="1419311738" class="has-link" href="/konstruktionen" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/konstruktionen?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/terrasse2_g-1920w.jpg?Expires=1734484378&Signature=P9ppMpYwhczeShzvU4v3t8LXuIyjryLyb9q~d~DBOPssEzF8B5i8ZZgzMIOQa9puKcO7~P5u3gFP1EUxYjr~KBtbGyL3MlrP25I9LpqPbc3VgWIF60qdyJeN4Ha54UR~UyIVidLq7BIJnv5pt-w~MOZvX9V8u7MNCbBMc9CGF2S7Cs7o4jgh~0XmEpeVxhUkjPPK8RBnMvjjE40s6UtDOfszxbheF6gEI8FntHFdAKN-liDWN7CzxYhV~8rndy1yr26MS26JO8~o67mbZXuyzVkaAMnWxb08P3lZamZrmxpj3zog~heARd-9jKr8yBI9X-aJhpcTd7KjITf1BHhzfw__&Key-Pair-Id=K2NXBXLF010TJW" id="1837715469" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1467939699" style="display:none" id="1467939699"> <span class="caption-inner" id="1664888637"> <h3 class="caption-title u_1651565508" id="1651565508">Konstruktionen</h3> 
+ <a class="caption-button dmWidget clearfix u_1849979124" id="1849979124" href="/konstruktionen" file="false"> <span class="iconBg" id="1532939289"> <span class="icon hasFontIcon icon-star" id="1798987185"></span> 
+</span> 
+ <span class="text" id="1462490146">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1731329846"> <div class="image-container" id="1395439397"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/konstruk3_g.jpg" id="1033095211" class="has-link" href="/vordächer" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/vordächer?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/konstruk3_g-1920w.jpg?Expires=1734484378&Signature=ORFrSX6eBsWra9IVajmxHN4geLFFrq6R5vtMJGzPFWvwNQ030RR6Ju9Uhs2E13XJHF~jDWef9DUCSxb~vSo7Iedzp8gDEsiAs9h2NoFbSmOZoVTo7UeFriRcCEq9FhKDZAU8WyxO-UywRwkgTKDB7vXVNVmxxWZcVMYbnVT3hN3yS1Fp2piEfeSUnk2cPXUR5t60L7xZwRr3HhqgsUQcQ0g0DIcO9Ld71NbyElg9V4RQLLcT9kU6Em04tOkK0NjT2hZtsUzonMhSKkfE5t1NdjWJzuCy2voFS8kJTlXy4YGaPZhEdvEjPZoeg0i3U9UnRgDtnO3upjyQb~7j1-pjaw__&Key-Pair-Id=K2NXBXLF010TJW" id="1245845675" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1017594193" style="display:none" id="1017594193"> <span class="caption-inner" id="1758531349"> <h3 class="caption-title u_1260226264" id="1260226264">Vord&auml;cher</h3> 
+ <a class="caption-button dmWidget clearfix u_1738131113" id="1738131113" href="/vordächer" file="false"> <span class="iconBg" id="1137585108"> <span class="icon hasFontIcon icon-star" id="1541966670"></span> 
+</span> 
+ <span class="text" id="1635699480">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1563972272"> <div class="image-container" id="1822755993"> <a data-dm-multisize-attr="href" data-image-url="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/100_1337.jpg" id="1059135298" class="has-link" href="/restaurierung" file="false" data-link-url="/site/a4e15f06f18c434aa72b8c395d1e482f/restaurierung?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="" data-src="https://le-cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/dms3rep/multi/opt/100_1337-1920w.jpg?Expires=1734484378&Signature=nanMyvASilOb073gkb7vYSGW2iFDm3~b~kcPT7CGeg0soH3bOUZakxGeATtkuo69oI9cLUV6W~RX~i1sCOn3rA2bl53PnGlWeXWuHtD67RewOE5QnOJFs06QE3mnfhMhj-JygADKgwQaOv~v1bdaZ2RcQ405LY2prKca0ruvIERWNcpAkHT06NFeRPTI6NhRVuA3782rCe4KzoLXeOPXwXPEPr-J4omDT1kEUQJ0Od~XChEiw1y6v87ymcECLkyyj3rx5KkpqjKbX9X9sk-EUP~GTI7oe1AzG7qQI~1rv2A09XFz5ssaP9-QfrYm4v-0xTSLIJXqY0lWnef2npQIdw__&Key-Pair-Id=K2NXBXLF010TJW" id="1965584637" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1726318666" style="display:none" id="1726318666"> <span class="caption-inner" id="1546882601"> <h3 class="caption-title u_1250148490" id="1250148490">Restaurierung</h3> 
+ <a class="caption-button dmWidget clearfix u_1626312638" id="1626312638" href="/restaurierung" file="false"> <span class="iconBg" id="1196334959"> <span class="icon hasFontIcon icon-star" id="1548983429"></span> 
+</span> 
+ <span class="text" id="1875983588">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1179764900">Mehr anzeigen</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1637891670"> <div class="dmRespColsWrapper" id="1993793084"> <div class="dmRespCol large-12 medium-12 small-12" id="1180613678"> <div class="dmDividerWrapper clearfix u_1389090632" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1389090632"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1197399312"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1465871800 dmRespRow dmFooterContent" id="1465871800"> <div class="dmRespColsWrapper" id="1995794985"> <div class="u_1251437857 dmRespCol dmFooterCol small-12 large-4 medium-4" id="1251437857"> <span id="1890834242"></span> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1671213681" style="transition: opacity 1s ease-in-out 0s;"><p><span style="font-weight: bold; display: unset;">Dachdecker-Team GmbH</span></p><p><span style="display: unset;">Gewerbering 14e</span></p><p><span style="display: unset;">14656 Brieselang</span></p><p><span style="display: unset;">Tel.: 033234 - 91 28 14</span></p><p><span style="display: unset;">Fax: 033234 - 91 28 16</span></p><p><span style="display: unset;">info@dachdecker-team.de</span></p></div> 
+</div> 
+ <div class="u_1465334483 dmRespCol small-12 large-4 medium-4" id="1465334483"> <span id="1756107694"></span> 
+ <a data-display-type="block" class="u_1746521219 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/impressum" data-element-type="dButtonLinkId" id="1746521219"> <span class="iconBg" aria-hidden="true" id="1106147167"> <span class="icon hasFontIcon icon-star" id="1937657344"></span> 
+</span> 
+ <span class="text" id="1632113682">Impressum</span> 
+</a> 
+ <a data-display-type="block" class="u_1824969339 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/datenschutz" data-element-type="dButtonLinkId" id="1824969339"> <span class="iconBg" aria-hidden="true" id="1138738572"> <span class="icon hasFontIcon icon-star" id="1856356418"></span> 
+</span> 
+ <span class="text" id="1313105742">Datenschutz</span> 
+</a> 
+</div> 
+ <div class="dmRespCol small-12 medium-4 large-4" id="1572825853"> <span id="1064380661"></span> 
+ <div class="u_1196324835 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1196324835" style="transition: none 0s ease 0s; text-align: left; display: block;"><p class="text-align-center"><span style="display: unset; color: rgb(230, 0, 40);">Wir vermieten Monteurunterk&uuml;nfte</span></p></div> 
+ <a data-display-type="block" class="u_1251107101 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="https://www.monteurzimmer-havelland.de/" data-element-type="dButtonLinkId" id="1251107101" target="_blank" rel="nofollow"> <span class="iconBg" aria-hidden="true" id="1032139205"> <span class="icon hasFontIcon icon-star" id="1280112075"></span> 
+</span> 
+ <span class="text" id="1297579410">Monteurzimmer</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/fonts/css2?family=Lato:wght@100;300;400;700;900&family=Cabin:wght@400..700&family=Crimson+Text:wght@400;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static-cdn.website-editor.net/mnlt/production/4934/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/WIDGET_CSS/b59b88856bba6418a51c90850d53c80d.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+    height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="home"] #dm [data-show-on-page-only="home"] {
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/files/a4e15f06f18c434aa72b8c395d1e482f_withFlex_1.min.css?v=8&Expires=1734484378&Signature=E1jWNehsFDpgF-CwY8t-caVFnkqiN~2DirzVYL7NqWlFKKdaPd3NQV1vkS80l3idHkNjk06ybqTuEWnZtTUnILnbVDlEfFdtG2XrMhm6KLa20HrdUfE5przx02k0S3llV2X4fAxKdjCxmrKJ4iGphlaGfAUfNEC8QunnBHrxx60VaGy-Qs1flg5TJ8~J3iWohTKkYKN-MD5xwYculF-4AQbaAdESM8a3cIx-6xfPgxREzdhvpXM07uquYkh9vIRoGT8UsU8NDLSIFiYbxxq56ECRMO9rJPlXCwNKFp8G6Zk08YAkjangzLM0HXwHgMneZ8xhKDkHTvJGD8FZwEzd~w__&Key-Pair-Id=K2NXBXLF010TJW" id="siteGlobalCss" />
+
+
+<!-- additional css file per platform -->
+<link
+        type="text/css" rel="stylesheet"
+        href="/_dm/s/rt/css/oneUndOne/1and1-runtime.css?version=2024-11-17T13_49_44"
+/>
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<!-- Page CSS -->
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/s/a4e15f06f18c434aa72b8c395d1e482f/files/a4e15f06f18c434aa72b8c395d1e482f_home_withFlex_1.min.css?v=8&Expires=1734484378&Signature=FAWpUY2W1cIYF9Q-Yu~MPlJXB9Ifab8pmqBID4frg~Cz96ttgJqwSHFSru08Yau9LBKTNm3DYVQQVG9RIrjMo-WsA6Itpm7fy2UWNDAoabZWxLC2RMFTkuxGNSlIm5yadhFEeOhasZzCgP2A0yC9UnlP7kn5KohPdfRAkwJ0LPcD~WuzVMxLjtZHUk5T3af-HqGndAVAYSPzNgvrwIwC-Sf5f68e2PY-Lot2Lkd9flvG0sILNxFnUMYg5HfQJ2vqVTWXIH5uvXWcNE6W-cK-Na~D1ksXjyyI3xiXEGVo2tb0bcV1a9ccoYOWVSQuBWBJjf0~ehKI41-6KZdGsKCSaQ__&Key-Pair-Id=K2NXBXLF010TJW" id="homeCssLink" />
+
+<style id="pagestyle" type="text/css">
+    
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4934";
+    var build = "2024-11-17T13_49_44";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-11-17T13_49_44";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static-cdn.website-editor.net/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div> <p class=\"rteBlock\">Diese Webseite verwendet Cookies, um Ihnen ein optimales Online-Erlebnis bieten zu k&ouml;nnen. Durch die Nutzung dieser Webseite erkl&auml;ren Sie sich mit der Verwendung von Cookies einverstanden. <a value=\"datenschutz\" label=\"\" type=\"page\" href=\"\/datenschutz\" data-runtime-url=\"\/datenschutz\">Mehr Infos<\/a> \n<\/p> \n<\/div> \n';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.website-editor.net';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4934';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static-cdn.website-editor.net';
+    rtCommonProps["common.resources.folder"] = 'https://static-cdn.website-editor.net/mnlt/production/4934';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-cdn.website-editor.net/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =false;
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwid.delegateNavigationToEcwid.enabled"] = false;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.detect.enable"] =true;
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+</script>
+<script src="https://static-cdn.website-editor.net/mnlt/production/4934/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+	const queryParams = new URLSearchParams(window.location.search);
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((value, key) => {
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: a4e15f06f18c434aa72b8c395d1e482f -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = '......';
+    
+    Parameters.NavigationAreaParams.LessButtonText = '......';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script>
+function call1and1Tracking() {
+	var externalId = dmAPI.getSiteExternalId();
+	var siteName = dmAPI.getSiteName();
+	var src = 'https://integration.mywebsite-editor.com/dakota-snippet-service/snippet/integration/snippet.js?sitename='+siteName+'&external_uid='+externalId+'&mode=visit'
+	var tracking = document.createElement('script');
+     tracking.setAttribute('src',src);
+   	document.head.appendChild(tracking);
+}
+call1and1Tracking();
+</script><!--  End Product Custom HTML Markup -->
+</body>
+</html>

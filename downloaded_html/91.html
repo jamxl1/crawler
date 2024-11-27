@@ -1,0 +1,2526 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.bedachungen-odinius.de/',
+        AccountUUID: 'f37cf93d51a34bbda273b30b8a1db24d',
+        SystemID: 'EU_PRODUCTION',
+        SiteAlias: '720401812a544ff893ded28e3459cb89',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Wed Nov 27 10:31:04 UTC 2024',
+        ExternalUid: '53147',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'ueber-uns',
+        InitialPageUuid: '1e405e47182c497aa855bc94db308734',
+        InitialPageId: '31852637',
+        InitialEncodedPageAlias: 'dWViZXItdW5z',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '49680',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'bedachungen-odinius',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'Fehler beim Herstellen der Verbindung zur Webseite.<br/> Stellen Sie sicher, dass Sie online sind.',
+            password: 'Benutzername oder Passwort falsch',
+            tryAgain: 'Erneut versuchen'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'https://www.bedachungen-odinius.de/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.bedachungen-odinius.de/ueber-uns">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="icon" type="image/x-icon" href="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/site_favicon_16_1721778160821.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-de.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'EU_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(0, 0, 0, 1);
+  --color_2: rgba(255, 255, 255, 1);
+  --color_3: rgba(0, 129, 198, 1);
+  --color_4: rgba(206, 231, 245, 1);
+  --color_5: rgba(0, 0, 0, 0);
+  --color_6: rgba(0, 105, 160, 1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/fonts/css2?family=Roboto:wght@100;300;400;500;700;900&family=Montserrat:wght@100..900&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200..700&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/4970/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/WIDGET_CSS/141d3f1dceced532dd54418bb1d8c3e4.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+    height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="ueber-uns"] #dm [data-show-on-page-only="ueber-uns"] {
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/files/720401812a544ff893ded28e3459cb89_1.min.css?v=41" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly
+{
+	color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-style:normal !important;
+}
+*#dm *.dmBody div.dmforminput textarea
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.dmforminput *.fileUploadLink
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.checkboxwrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.radiowrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody nav.u_1144820115
+{
+	color:black !important;
+}
+*#dm *.dmBody div.u_1207361766 .caption-inner
+{
+	background-color:rgba(0,105,160,0.8) !important;
+}
+*#dm *.dmBody *.u_1207361766 .photoGalleryThumbs .image-container a
+{
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1459305100 .caption-button
+{
+	background-color:var(--color_1) !important;
+	border-style:solid !important;
+	border-width:0px !important;
+	border-radius:0px 0px 0px 0px !important;
+}
+*#dm *.dmBody div.u_1459305100 .caption-button:hover span.text
+{
+	color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1459305100 .caption-button.hover span.text
+{
+	color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1569794805
+{
+	border-top-width:1px !important;
+	border-top-color:var(--color_1) !important;
+	border-top-style:solid !important;
+	border-bottom-color:var(--color_1) !important;
+	border-bottom-width:1px !important;
+	border-bottom-style:solid !important;
+}
+#dm .dmPhotoGallery.newPhotoGallery .layout-container .photogallery-column.column-4
+{
+	width:25% !important;
+	padding-right:15px !important;
+	padding-left:15px !important;
+}
+*#dm *.dmBody div.u_1903416430 *.photoGalleryThumbs *.image-container
+{
+	border:1px solid #ccc !important;
+	padding:4px !important;
+	margin-bottom:22px !important;
+}
+*#dm *.dmBody div.u_1903416430 *.photoGalleryThumbs *.image-container:hover
+{
+	border:1px solid #016cba !important;
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1903416430 .photoGalleryThumbs .image-container a
+{
+	background-size:contain !important;
+}
+*#dm *.dmBody div.u_1901661856
+{
+	border-top-color:var(--color_1) !important;
+	border-top-style:solid !important;
+	border-bottom-color:var(--color_1) !important;
+	border-bottom-style:solid !important;
+	border-top-width:0px !important;
+	border-bottom-width:0px !important;
+}
+#dm div.dmInner #site_content .dmWidget:hover
+{
+	box-shadow:3px 3px 0 #016cba !important;
+}
+*#dm *.dmBody a.u_1389033925:hover span.text
+{
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1389033925.hover span.text
+{
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1389033925
+{
+	background-color:var(--color_2) !important;
+}
+*#dm *.dmBody a.u_1389033925 span.icon
+{
+	color:var(--color_1) !important;
+	fill:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1389033925:hover .icon
+{
+	color:var(--color_1) !important;
+	fill:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1389033925.hover .icon
+{
+	color:var(--color_1) !important;
+	fill:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1389033925:hover
+{
+	border-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody a.u_1389033925.hover
+{
+	border-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody a.u_1206682682
+{
+	letter-spacing:0.2em !important;
+}
+*#dm *.dmBody div.u_1664620698 li
+{
+	color:rgba(1,108,186,1) !important;
+}
+*#dm *.dmBody div.u_1664620698
+{
+	color:rgba(1,108,186,1) !important;
+	background-image:url(https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/2771e36a-ce0f-4086-801b-1416df01aaae-118712dd-ca9504a6-2880w.png) !important;
+}
+*#dm *.dmBody div.u_1350702224
+{
+	border-top-color:var(--color_1) !important;
+	border-top-style:solid !important;
+	border-bottom-color:var(--color_1) !important;
+	border-bottom-style:solid !important;
+	border-top-width:0px !important;
+	border-bottom-width:0px !important;
+}
+*#dm *.dmBody *.u_1519313194
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1674321092
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1514032382
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1149350163
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1737483478
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1246412331
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1403729698
+{
+	width:100% !important;
+}*#dm *.dmBody *.u_1655634672 { width:100% !important; }
+
+*#dm *.dmBody div.u_1719822445 *.photoGalleryThumbs *.image-container
+{
+	margin-bottom:85px !important;
+}
+*#dm *.dmBody *.u_1719822445 .photoGalleryThumbs .image-container a
+{
+	background-size:contain !important;
+}
+*#dm *.dmBody div.u_1719822445 .caption-inner
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody nav.u_1298259472
+{
+	color:black !important;
+}
+*#dm *.dmBody div.u_1175235810
+{
+	border-top-style:solid !important;
+	border-bottom-style:solid !important;
+	border-style:solid !important;
+	border-color:var(--color_1) !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1541428277 p
+{
+	font-weight:700 !important;
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1541428277 li
+{
+	font-weight:700 !important;
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1541428277
+{
+	font-weight:700 !important;
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1040224142 p
+{
+	font-weight:400 !important;
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1040224142 li
+{
+	font-weight:400 !important;
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1040224142
+{
+	font-weight:400 !important;
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1848737882 p
+{
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1848737882 li
+{
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1848737882
+{
+	color:var(--color_1) !important;
+	background-image:url(https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/6e050f0a-fb2c-41f9-a5bc-a8e251b6b565-473c1cb5-2880w.png) !important;
+}
+*#dm *.dmBody div.u_1669232156 p
+{
+	color:rgba(1,108,186,1) !important;
+}
+*#dm *.dmBody div.u_1669232156 li
+{
+	color:rgba(1,108,186,1) !important;
+}
+*#dm *.dmBody div.u_1669232156
+{
+	color:rgba(1,108,186,1) !important;
+	background-image:url(https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/2771e36a-ce0f-4086-801b-1416df01aaae-118712dd-ca9504a6-2880w.png) !important;
+}
+*#dm *.dmBody *.u_1117433500
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1374642433
+{
+	width:100% !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody *.u_1207361766 .photoGalleryThumbs .image-container a
+{
+	padding-top:411px !important;
+}
+*#dm *.dmBody *.u_1459305100 .photoGalleryThumbs .image-container a
+{
+	padding-top:411px !important;
+}
+*#dm *.dmBody div.u_1459305100 .caption-button
+{
+	width:200px !important;
+}
+*#dm *.dmBody *.u_1160462736 .layout-container
+{
+	padding:8px !important;
+}
+*#dm *.dmBody *.u_1160462736 .photoGalleryViewAll
+{
+	padding:0 16px !important;
+}
+*#dm *.dmBody div.u_1160462736
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:30px !important;
+	margin-bottom:10px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1459260045
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1569794805
+{
+	margin-left:0px !important;
+	padding-top:8px !important;
+	padding-left:1px !important;
+	padding-bottom:8px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:1px !important;
+}
+*#dm *.dmBody div.u_1070686198
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1417399062
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1036273149
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+	padding-left:15px !important;
+	margin-left:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1459116728
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+	padding-left:15px !important;
+	margin-left:0px !important;
+	margin-top:60px !important;
+	margin-bottom:44px !important;
+	margin-right:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1903416430
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody *.u_1903416430 .photoGalleryThumbs
+{
+	padding:0px !important;
+}
+*#dm *.dmBody *.u_1903416430 .layout-container
+{
+	padding:0px !important;
+}
+*#dm *.dmBody *.u_1903416430 .photoGalleryViewAll
+{
+	padding:0 0px !important;
+}
+*#dm *.dmBody div.u_1780003183
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:30px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1834170520
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+	padding-left:15px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1188831338
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1901661856
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1903676380
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+	padding-left:15px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:60px !important;
+	margin-bottom:50px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody a.u_1206682682
+{
+	margin-left:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:auto !important;
+	padding-right:0px !important;
+	width:270px !important;
+	height:auto !important;
+	min-height:42px !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	position:relative !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1350702224
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1769249002
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:11px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1040000867
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+	padding-left:15px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1519313194
+{
+	width:120px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	min-height:auto !important;
+	margin-right:150px !important;
+	margin-left:-15px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:start !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1570009845
+{
+	margin-left:0px !important;
+	padding-top:30px !important;
+	padding-left:30px !important;
+	padding-bottom:30px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:30px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1452137104
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:10px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1232672354
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+}
+*#dm *.dmBody div.u_1693834703
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1753929083
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1278675787
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:74px !important;
+	margin-right:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1241800173
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1492697086
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1500887041
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1176560328
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1946370652
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1421992519
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1726705557
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1538138187
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1502368595
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1902676802
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1047033933
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1633017384
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1950527911
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1428621284
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1440598461
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1153242065
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:63px !important;
+	margin-bottom:85px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1013958255
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1430685815
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1712824419
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+	padding-left:15px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1680247181
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1425310286
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:44px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1719822445
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody *.u_1719822445 .photoGalleryThumbs .image-container a
+{
+	padding-top:131px !important;
+}
+*#dm *.dmBody *.u_1719822445 .photoGalleryThumbs
+{
+	padding:0px !important;
+}
+*#dm *.dmBody *.u_1719822445 .layout-container
+{
+	padding:0px !important;
+}
+*#dm *.dmBody *.u_1719822445 .photoGalleryViewAll
+{
+	padding:0 0px !important;
+}
+*#dm *.dmBody div.u_1175235810
+{
+	padding-top:15px !important;
+	padding-left:15px !important;
+	padding-bottom:15px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1541428277
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1040224142
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	margin-left:0px !important;
+	margin-top:11px !important;
+	margin-bottom:11px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1848737882
+{
+	background-repeat:no-repeat !important;
+	background-size:auto !important;
+	background-position:0% 50% !important;
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:20px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1669232156
+{
+	background-repeat:no-repeat !important;
+	background-size:auto !important;
+	background-position:0% 0% !important;
+	padding-top:0px !important;
+	padding-left:20px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	margin-left:0px !important;
+	margin-top:11px !important;
+	margin-bottom:0px !important;
+	margin-right:48.4px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	min-height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1175235810
+{
+	padding-top:15px !important;
+	padding-left:15px !important;
+	padding-bottom:15px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1541428277
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1040224142
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	margin-left:0px !important;
+	margin-top:11px !important;
+	margin-bottom:11px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1848737882
+{
+	background-repeat:no-repeat !important;
+	background-size:auto !important;
+	background-position:0% 50% !important;
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:20px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1669232156
+{
+	background-repeat:no-repeat !important;
+	background-size:auto !important;
+	background-position:0% 0% !important;
+	padding-top:0px !important;
+	padding-left:20px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	margin-left:0px !important;
+	margin-top:11px !important;
+	margin-bottom:0px !important;
+	margin-right:48.4px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	min-height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1573602928
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1674720527
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1739861831
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1106031178
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1680041836
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1755025893
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1573602928
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1674720527
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1739861831
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1106031178
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:22px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1680041836
+{
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1755025893
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	width:auto !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+    .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+    }
+
+    .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Lato Fallback";
+  src: local('Arial');
+  ascent-override: 101.3181%;
+  descent-override: 21.865%;
+  size-adjust: 97.4159%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Verdana Fallback";
+  src: local('Arial');
+  ascent-override: 87.306%;
+  descent-override: 18.2329%;
+  size-adjust: 115.1549%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Gothic A1 Fallback";
+  src: local('Arial');
+  ascent-override: 78.5684%;
+  descent-override: 19.9066%;
+  line-gap-override: 24.6187%;
+  size-adjust: 101.5487%;
+}@font-face {
+  font-family: "Oswald Fallback";
+  src: local('Arial');
+  ascent-override: 145.0682%;
+  descent-override: 35.1423%;
+  size-adjust: 82.2372%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <title>
+    Unser Meister Team für Bedachungen – Bedachungen Odinius
+  </title>
+  <meta name="description" content="Erfahren Sie mehr über unsere Dachdecker-Dienstleistungen. Kontaktieren Sie uns für eine Beratung und fachgerechte Ausführung!"/>
+
+  <!-- Copyright (c) 2000-2024 etracker GmbH. All rights reserved. -->  <!-- This material may not be reproduced, displayed, modified or distributed -->  <!-- without the express prior written permission of the copyright holder. -->  <!-- etracker tracklet 5.0 -->  <script type="text/javascript">
+
+
+
+
+
+
+// var et_pagename = "";
+// var et_areas = "";
+// var et_tval = 0;
+// var et_tsale = 0;
+// var et_tonr = "";
+// var et_basket = "";
+
+
+  
+
+  
+
+  </script>
+  <script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-secure-code="d09mns" src="//code.etracker.com/code/e.js" async="">
+
+
+
+
+  
+
+  
+
+  </script>
+  <!-- etracker tracklet 5.0 end -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Unser Meister Team für Bedachungen – Bedachungen Odinius"/>
+  <meta name="twitter:description" content="Erfahren Sie mehr über unsere Dachdecker-Dienstleistungen. Kontaktieren Sie uns für eine Beratung und fachgerechte Ausführung!"/>
+  <meta name="twitter:image" content="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/26_dachsanierung-eines-alten-landhauses-inkl-neuen-dachgauben3-b857e0c8-1920w.jpg"/>
+  <meta property="og:description" content="Erfahren Sie mehr über unsere Dachdecker-Dienstleistungen. Kontaktieren Sie uns für eine Beratung und fachgerechte Ausführung!"/>
+  <meta property="og:title" content="Unser Meister Team für Bedachungen – Bedachungen Odinius"/>
+  <meta property="og:image" content="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/26_dachsanierung-eines-alten-landhauses-inkl-neuen-dachgauben3-b857e0c8-1920w.jpg"/>
+
+
+
+
+<!-- SYS- RVVfUFJPRFVDVElPTg== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="ueber-uns"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 hide-back-to-top layout-drawer_fixed-header hamburger-reverse dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="7b46758f3df94f769912f4ce3b224f0c===header" data-origin="top" data-auto-height="true"> <div class="u_1297554276 dmRespRow" style="text-align: center;" id="1297554276"> <div class="dmRespColsWrapper" id="1842169983"> <div class="u_1649049621 dmRespCol small-12 medium-12 large-12 empty-column" id="1649049621"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1045414467 fullBleedChanged fullBleedMode" style="text-align: center;" id="1045414467"> <div class="dmRespColsWrapper" id="1969651548"> <div class="u_1870015590 dmRespCol small-12 medium-12 large-12" id="1870015590"> <nav class="u_1298259472 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_1" layout-sub="" data-show-vertical-sub-items="HIDE" id="1298259472" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="STARTSEITE" data-auto="page-text-style">STARTSEITE<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/leistungen" class="unifiednav__item  dmUDNavigationItem_010101142975  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="LEISTUNGEN" data-auto="page-text-style">LEISTUNGEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/dacharten" class="unifiednav__item  dmUDNavigationItem_010101847658  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="DACHARTEN" data-auto="page-text-style">DACHARTEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/bauklempnereien" class="unifiednav__item  dmUDNavigationItem_010101898466  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="BAUKLEMPNEREIEN" data-auto="page-text-style">BAUKLEMPNEREIEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/fassadenbekleidungen" class="unifiednav__item  dmUDNavigationItem_010101164283  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="FASSADENBEKLEIDUNGEN" data-auto="page-text-style">FASSADENBEKLEIDUNGEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/dachflaechenfenster-lichtkuppel" class="unifiednav__item  dmUDNavigationItem_010101155757  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="DACHFLÄCHENFENSTER/LICHTKUPPEL" data-auto="page-text-style">DACHFL&Auml;CHENFENSTER/LICHTKUPPEL<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/wartungsarbeiten" class="unifiednav__item  dmUDNavigationItem_010101999955  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="WARTUNGSARBEITEN" data-auto="page-text-style">WARTUNGSARBEITEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/weitere-leistungen" class="unifiednav__item  dmUDNavigationItem_01010198896  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="WEITERE LEISTUNGEN" data-auto="page-text-style">WEITERE LEISTUNGEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/ueber-uns" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101487421  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="ÜBER UNS" data-auto="page-text-style">&Uuml;BER UNS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/referenzen" class="unifiednav__item  dmUDNavigationItem_010101318919  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="REFERENZEN" data-auto="page-text-style">REFERENZEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item  dmUDNavigationItem_010101837279  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="KONTAKT" data-auto="page-text-style">KONTAKT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1737693104 dmRespRow middleDrawerRow" style="text-align: center;" id="1737693104"> <div class="dmRespColsWrapper" id="1738405355"> <div class="dmRespCol small-12 u_1799123445 medium-12 large-12 empty-column" id="1799123445"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="u_1759534332 dmRespRow" id="1759534332"> <div class="dmRespColsWrapper" id="1039397918"> <div class="dmRespCol small-12 medium-6 large-6" id="1797842793"> <div class="u_1877119981 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1877119981" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1505947649" file="false"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo_odinius_new-1920w.jpg" alt="Bedachungen Odinius" id="1515442524" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo_odinius_new.jpg" width="215" height="71" title="Bedachungen Odinius" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1123322662 dmRespCol small-12 medium-6 large-6" id="1123322662"> <div data-element-type="spacer" class="dmSpacer" id="1808383878"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="dmRespRow u_1140917713" id="1140917713"> <div class="dmRespColsWrapper" id="1215059091"> <div class="dmRespCol large-12 medium-12 small-12 u_1943837271" id="1943837271"> <div class="u_1708256151 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1708256151" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1233171107" file="false"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo_odinius_new-1920w.jpg" alt="Bedachungen Odinius" id="1978635494" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo_odinius_new.jpg" width="215" height="71" title="Bedachungen Odinius" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1612322156" id="1612322156"> <div class="dmRespColsWrapper" id="1954825340"> <div class="dmRespCol large-12 medium-12 small-12 u_1001787949" id="1001787949"> <nav class="u_1993411821 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_7" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" id="1993411821" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="STARTSEITE" data-auto="page-text-style">STARTSEITE<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/leistungen" class="unifiednav__item  dmUDNavigationItem_010101142975  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="LEISTUNGEN" data-auto="page-text-style">LEISTUNGEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/dacharten" class="unifiednav__item  dmUDNavigationItem_010101847658  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="DACHARTEN" data-auto="page-text-style">DACHARTEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/bauklempnereien" class="unifiednav__item  dmUDNavigationItem_010101898466  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="BAUKLEMPNEREIEN" data-auto="page-text-style">BAUKLEMPNEREIEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/fassadenbekleidungen" class="unifiednav__item  dmUDNavigationItem_010101164283  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="FASSADENBEKLEIDUNGEN" data-auto="page-text-style">FASSADENBEKLEIDUNGEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/dachflaechenfenster-lichtkuppel" class="unifiednav__item  dmUDNavigationItem_010101155757  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="DACHFLÄCHENFENSTER/LICHTKUPPEL" data-auto="page-text-style">DACHFL&Auml;CHENFENSTER/LICHTKUPPEL<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/wartungsarbeiten" class="unifiednav__item  dmUDNavigationItem_010101999955  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="WARTUNGSARBEITEN" data-auto="page-text-style">WARTUNGSARBEITEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/weitere-leistungen" class="unifiednav__item  dmUDNavigationItem_01010198896  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="WEITERE LEISTUNGEN" data-auto="page-text-style">WEITERE LEISTUNGEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/ueber-uns" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101487421  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="ÜBER UNS" data-auto="page-text-style">&Uuml;BER UNS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/referenzen" class="unifiednav__item  dmUDNavigationItem_010101318919  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="REFERENZEN" data-auto="page-text-style">REFERENZEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item  dmUDNavigationItem_010101837279  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="KONTAKT" data-auto="page-text-style">KONTAKT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_ueber-uns dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="dmRespRow u_1232672354 fullBleedChanged fullBleedMode" id="1232672354"> <div class="dmRespColsWrapper" id="1865993340"> <div class="dmRespCol large-12 medium-12 small-12 u_1693834703" id="1693834703"> <div class="imageWidget align-center u_1674321092" data-element-type="image" data-widget-type="image" id="1674321092"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/loggiaausbau-1920w.jpg" alt="Eine Gruppe Männer arbeitet auf dem Dach eines Gebäudes." id="1790151464" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/loggiaausbau.jpg" width="1200" height="300" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1570009845" id="1570009845"> <div class="dmRespColsWrapper" id="1654823887"> <div class="u_1780003183 dmRespCol small-12 large-9 medium-9" id="1780003183"> <div class="dmRespRow u_1036273149" id="1036273149"> <div class="dmRespColsWrapper" id="1470480054"> <div class="dmRespCol small-12 medium-12 large-12 u_1569794805" id="1569794805"> <div class="dmNewParagraph u_1459260045" data-element-type="paragraph" data-version="5" id="1459260045"><p class="size-14 m-size-14" style="letter-spacing: 0.2em;"><a href="/" runtime_url="/" type="page" class="font-size-14 m-font-size-14" style="display:unset;font-family:Oswald, 'Oswald Fallback';" m-font-size-set="true">STARTSEITE</a><span class="font-size-14 m-font-size-14" style="display:unset;font-family:Oswald, 'Oswald Fallback';" m-font-size-set="true">&nbsp;</span><span class="font-size-14 m-font-size-14" style="color:rgb(204, 204, 204);display:unset;font-family:Oswald, 'Oswald Fallback';" m-font-size-set="true">/</span><span single-space="true" class="font-size-14 m-font-size-14" style="display:unset;font-family:Oswald, 'Oswald Fallback';"> <span class="font-size-14 m-font-size-14" style="display:unset;font-family:Oswald, 'Oswald Fallback';" m-font-size-set="true"></span> 
+</span><span class="font-size-14 m-font-size-14" style="color:var(--color_1);display:unset;font-family:Oswald, 'Oswald Fallback';" m-font-size-set="true">&Uuml;BER UNS</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1459116728" id="1459116728"> <div class="dmRespColsWrapper" id="1014066458"> <div class="dmRespCol large-12 medium-12 small-12 u_1417399062" id="1417399062"> <div class="dmNewParagraph u_1070686198" data-element-type="paragraph" data-version="5" id="1070686198"> <h1 class="m-size-41" style="letter-spacing: 0.2em; line-height: 1.1;"><span class="m-font-size-41" m-font-size-set="true" style="display: unset;">&Uuml;BER UNS</span></h1> 
+</div> 
+ <div class="dmNewParagraph u_1452137104" data-element-type="paragraph" data-version="5" id="1452137104"><p><span style="display: unset;">Als Dachdeckerinnungsbetrieb steht die Firma Odinius f&uuml;r kompetente Betreuung rund um alle Bau- und Rennovierungsarbeiten am Dach: von der genauen Analyse &uuml;ber die Beratung bis hin zur fachgerechten Durchf&uuml;hrung der einzelnen Ma&szlig;nahmen. Dabei verbinden wir traditionelles Handwerk mit modernster Technik und werden h&ouml;chsten Anspr&uuml;chen an Qualit&auml;t gerecht.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1278675787" id="1278675787"> <div class="dmRespColsWrapper" id="1400759942"> <div class="dmRespCol small-12 u_1753929083 medium-4 large-4" id="1753929083"> <div class="imageWidget align-center u_1514032382" data-element-type="image" data-widget-type="image" id="1514032382"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/rene-odinius-angestellter-dachdeckermeister-meister-im-dachdeckerhandwerk-seit-2014-1920w.jpg" alt="Ein Mann steht vor einer Wand, an der Werkzeuge hängen" id="1446041660" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/rene-odinius-angestellter-dachdeckermeister-meister-im-dachdeckerhandwerk-seit-2014.jpg" width="600" height="800" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1241800173" data-element-type="paragraph" data-version="5" id="1241800173"><p><span style="font-weight: bold; display: initial;">Rene Odinius</span><span style="display: initial;"><br/>Inhaber der Firma Odinius GbR,&nbsp;<br/>Meister im Dachdeckerhandwerk seit 2014</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1492697086 medium-4 large-4" id="1492697086"> <div class="imageWidget align-center u_1149350163" data-element-type="image" data-widget-type="image" id="1149350163"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/heike-odinius-bueroverwaltung-terminvereinbarungen-telefon-7674931b-1920w.jpg" alt="Eine Frau in einer schwarzen Jacke steht vor einer Wand mit Werkzeugen daran" id="1248278354" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/heike-odinius-bueroverwaltung-terminvereinbarungen-telefon-7674931b.jpg" width="600" height="800" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1500887041" data-element-type="paragraph" data-version="5" id="1500887041"><p><span style="display: initial; font-weight: bold;">Heike Odinius<br/></span><span style="display: initial; font-weight: normal;">B&uuml;ro / Verwaltung<br/>Terminvereinbarungen</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1176560328 medium-4 large-4" id="1176560328"> <div class="imageWidget align-center u_1737483478" data-element-type="image" data-widget-type="image" id="1737483478"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/heinz-odinius-inhaber-der-firma-odinius-dachdeckermeister-seit-1991-1920w.jpg" alt="Ein Mann steht vor einer Wand mit Werkzeugen daran" id="1608550052" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/heinz-odinius-inhaber-der-firma-odinius-dachdeckermeister-seit-1991.jpg" width="600" height="800" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1946370652" data-element-type="paragraph" data-version="5" id="1946370652"><p><span style="display: initial; font-weight: bold;">Heinz Odinius</span></p><p><span style="display: initial;">Inhaber der Firma Odinius GbR,<br/>Meister im Dachdeckerhandwerk seit 1991</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1726705557" id="1726705557"> <div class="dmRespColsWrapper" id="1292920402"> <div class="dmRespCol small-12 u_1421992519 medium-4 large-4" id="1421992519"> <div class="imageWidget align-center u_1246412331" data-element-type="image" data-widget-type="image" id="1246412331"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/platzhalter_mitarbeiter_odinius_bedachungen-1920w.jpg" alt="Die Silhouette eines Mannes ohne Gesicht auf weißem Hintergrund." id="1493245937" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/platzhalter_mitarbeiter_odinius_bedachungen.jpg" width="292" height="389" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1538138187" data-element-type="paragraph" data-version="5" id="1538138187"><p><span style="display: initial; font-weight: bold;">Peter Wopen<br/></span><span style="display: initial; font-weight: normal;">Dachdecker Facharbeiter</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1502368595 medium-4 large-4" id="1502368595"> <div class="imageWidget align-center u_1403729698" data-element-type="image" data-widget-type="image" id="1403729698"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/platzhalter_mitarbeiter_odinius_bedachungen-1920w.jpg" alt="Die Silhouette eines Mannes ohne Gesicht auf weißem Hintergrund." id="1197845920" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/platzhalter_mitarbeiter_odinius_bedachungen.jpg" width="292" height="389" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1902676802" data-element-type="paragraph" data-version="5" id="1902676802"><p><span style="font-weight: bold; display: initial;">Sven G&uuml;lpen<br/></span><span style="font-weight: normal; display: initial;">Dachdecker Facharbeiter</span></p></div> 
+</div> 
+ <div class="u_1047033933 dmRespCol small-12 medium-4 large-4 hide-for-small" id="1047033933"> <div data-element-type="spacer" class="dmSpacer" id="1486131592"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1755025893" id="1755025893"> <div class="dmRespColsWrapper" id="1966179599"> <div class="dmRespCol small-12 u_1573602928 medium-4 large-4" id="1573602928"> <div class="imageWidget align-center u_1117433500" data-element-type="image" data-widget-type="image" id="1117433500"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/platzhalter_mitarbeiter_odinius_bedachungen-1920w.jpg" alt="Die Silhouette eines Mannes ohne Gesicht auf weißem Hintergrund." id="1846722042" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/platzhalter_mitarbeiter_odinius_bedachungen.jpg" width="292" height="389" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1674720527" data-element-type="paragraph" data-version="5" id="1674720527"><p><span style="font-weight: bold; display: initial;">Michael Vanwersch<br/></span><span style="font-weight: normal; display: initial;">Dachdecker Facharbeiter</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1739861831 medium-4 large-4" id="1739861831"> <div class="imageWidget align-center u_1374642433" data-element-type="image" data-widget-type="image" id="1374642433"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/platzhalter_mitarbeiter_odinius_bedachungen-1920w.jpg" alt="Die Silhouette eines Mannes ohne Gesicht auf weißem Hintergrund." id="1465093408" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/platzhalter_mitarbeiter_odinius_bedachungen.jpg" width="292" height="389" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1106031178" data-element-type="paragraph" data-version="5" id="1106031178"><p><span style="display: initial; font-weight: bold;">Kevin Dohms<br/></span><span style="display: initial; font-weight: normal;">Dachdecker Facharbeiter</span></p></div> 
+</div> 
+ <div class="u_1680041836 dmRespCol small-12 medium-4 large-4 hide-for-small" id="1680041836"> <div data-element-type="spacer" class="dmSpacer" id="1446157741"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1153242065" id="1153242065"> <div class="dmRespColsWrapper" id="1992644070"> <div class="dmRespCol small-12 u_1633017384 medium-4 large-4" id="1633017384"> <div class="imageWidget align-center u_1655634672" data-element-type="image" data-widget-type="image" id="1655634672"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/platzhalter_mitarbeiter_odinius_bedachungen-1920w.jpg" alt="Die Silhouette eines Mannes ohne Gesicht auf weißem Hintergrund." id="1764839205" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/platzhalter_mitarbeiter_odinius_bedachungen.jpg" width="292" height="389" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1950527911" data-element-type="paragraph" data-version="5" id="1950527911"><p><span style="display: initial; font-weight: bold;">Jens Thom<br/></span><span style="display: initial; font-weight: normal;">Dachdeckerhelfer</span></p></div> 
+</div> 
+ <div class="dmRespCol empty-column small-12 u_1428621284 medium-4 large-4" id="1428621284"></div> 
+ <div class="u_1440598461 dmRespCol small-12 medium-4 large-4 hide-for-small" id="1440598461"> <div data-element-type="spacer" class="dmSpacer" id="1490063071"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1712824419" id="1712824419"> <div class="dmRespColsWrapper" id="1575090118"> <div class="dmRespCol large-12 medium-12 small-12 u_1430685815" id="1430685815"> <div class="dmNewParagraph u_1013958255" data-element-type="paragraph" data-version="5" id="1013958255"> <h2 class="m-size-34" style="line-height: 1.1; letter-spacing: 0.2em;"><span class="m-font-size-34" m-font-size-set="true" style="display: unset;">UNSERE PARTNER</span></h2> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1425310286" id="1425310286"> <div class="dmRespColsWrapper" id="1461217011"> <div class="dmRespCol large-12 medium-12 small-12 u_1680247181" id="1680247181"> <div class="u_1719822445 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1719822445" data-placeholder="false" data-link-gallery="true" data-rows-to-show="100"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1548433561"> <li class="photoGalleryThumbs" id="1814344180"> <div class="image-container" id="1289438531"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo-von-der-hoff.jpg" id="1340091083"><img irh="" irw="" alt="Das Von den Hoff-Logo steht auf rotem Grund." data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo-von-der-hoff-1920w.jpg" id="1989316200" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1646792604"> <span class="caption-inner" id="1241057674"> <a class="caption-button dmWidget clearfix" id="1127182294"> <span class="iconBg" id="1937248998"> <span class="icon hasFontIcon icon-star" id="1606673909"></span> 
+</span> 
+ <span class="text" id="1633151463">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1965443706"> <div class="image-container" id="1062778550"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo-velux.jpg" id="1387959103"><img irh="" irw="" alt="Das Velux-Logo ist weiß auf rotem Hintergrund." data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo-velux-1920w.jpg" id="1096054199" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1433140981"> <span class="caption-inner" id="1183322013"> <a class="caption-button dmWidget clearfix" id="1255847591"> <span class="iconBg" id="1231633779"> <span class="icon hasFontIcon icon-star" id="1404437837"></span> 
+</span> 
+ <span class="text" id="1870189890">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1538192175"> <div class="image-container" id="1888411260"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo-laumans.jpg" id="1242206960"><img irh="" irw="" alt="Ein Logo für eine Firma namens Laumans auf weißem Hintergrund." data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo-laumans-1920w.jpg" id="1669422900" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1088603441"> <span class="caption-inner" id="1009553638"> <a class="caption-button dmWidget clearfix" id="1022583772"> <span class="iconBg" id="1115384393"> <span class="icon hasFontIcon icon-star" id="1385404864"></span> 
+</span> 
+ <span class="text" id="1030110174">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1462254694"> <div class="image-container" id="1488647052"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo-braas.jpg" id="1364991428"><img irh="" irw="" alt="Das Braas-Logo ist rot und weiß und sagt „Alles gut bedacht“" data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo-braas-1920w.jpg" id="1478173627" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1373128927"> <span class="caption-inner" id="1003234704"> <a class="caption-button dmWidget clearfix" id="1193033122"> <span class="iconBg" id="1618563816"> <span class="icon hasFontIcon icon-star" id="1635037397"></span> 
+</span> 
+ <span class="text" id="1524703984">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1181220187"> <div class="image-container" id="1399044932"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo-rathscheck.jpg" id="1270352145"><img irh="" irw="" alt="Das Logo von Rathscheck Schiefer steht auf weißem Grund." data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo-rathscheck-1920w.jpg" id="1326762861" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1802965856"> <span class="caption-inner" id="1473717155"> <a class="caption-button dmWidget clearfix" id="1515146154"> <span class="iconBg" id="1533062252"> <span class="icon hasFontIcon icon-star" id="1146358631"></span> 
+</span> 
+ <span class="text" id="1595861911">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1837392348"> <div class="image-container" id="1891605537"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo_alwitra.jpg" id="1474104024" class="has-link" target="_blank" href="https://alwitra.de/" file="false" data-link-url="https://alwitra.de/"><img irh="" irw="" alt="Ein rot-weißes Logo für alwitra die Dachmarke" data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo_alwitra-1920w.jpg" id="1289828525" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1655083478"> <span class="caption-inner" id="1503537964"> <a class="caption-button dmWidget clearfix" id="1687204935" href="https://alwitra.de/" file="false"> <span class="iconBg" id="1484754066"> <span class="icon hasFontIcon icon-star" id="1358354747"></span> 
+</span> 
+ <span class="text" id="1405327508">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1942534683"> <div class="image-container" id="1722604403"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo_bauder.jpg" id="1192470814" class="has-link" target="_blank" file="false" href="https://www.bauder.de/de/bauder-deutschland.html" data-link-url="https://www.bauder.de/de/bauder-deutschland.html"><img irh="" irw="" alt="A logo for a company called bauder macht dacher sicher." data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo_bauder-1920w.jpg" id="1320734858" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1677002966"> <span class="caption-inner" id="1376962943"> <a class="caption-button dmWidget clearfix" id="1394112757" href="https://www.bauder.de/de/bauder-deutschland.html" file="false"> <span class="iconBg" id="1177970378"> <span class="icon hasFontIcon icon-star" id="1484386472"></span> 
+</span> 
+ <span class="text" id="1102919741">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1167814638"> <div class="image-container" id="1250539337"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo_boendgen_baustoffe.jpg" id="1453763925" class="has-link" target="_blank" href="https://www.boendgen.com/" file="false" data-link-url="https://www.boendgen.com/"><img irh="" irw="" alt="Das Logo von Boendgen Baustoffe ist blau und orange." data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo_boendgen_baustoffe-1920w.jpg" id="1555151212" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1850344369"> <span class="caption-inner" id="1459558799"> <a class="caption-button dmWidget clearfix" id="1726943294" href="https://www.boendgen.com/" file="false"> <span class="iconBg" id="1787196548"> <span class="icon hasFontIcon icon-star" id="1339157333"></span> 
+</span> 
+ <span class="text" id="1054899628">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1024425413"> <div class="image-container" id="1493028521"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo_delta.jpg" id="1046298877" class="has-link" target="_blank" href="https://www.doerken.de/de/" file="false" data-link-url="https://www.doerken.de/de/"><img irh="" irw="" alt="Ein blaues Delta-Logo auf weißem Hintergrund" data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo_delta-1920w.jpg" id="1309329298" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1935228149"> <span class="caption-inner" id="1171902757"> <a class="caption-button dmWidget clearfix" id="1631486082" href="https://www.doerken.de/de/" file="false"> <span class="iconBg" id="1554115797"> <span class="icon hasFontIcon icon-star" id="1067005831"></span> 
+</span> 
+ <span class="text" id="1327923969">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1053706776"> <div class="image-container" id="1082264200"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo_wienerberger.jpg" id="1754366059" class="has-link" target="_blank" href="https://wienerberger.de/" file="false" data-link-url="https://wienerberger.de/"><img irh="" irw="" alt="Ein Wienerberger-Logo auf weißem Hintergrund" data-src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo_wienerberger-1920w.jpg" id="1893339965" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1896211409"> <span class="caption-inner" id="1266589440"> <a class="caption-button dmWidget clearfix" id="1045376825" href="https://wienerberger.de/" file="false"> <span class="iconBg" id="1600971141"> <span class="icon hasFontIcon icon-star" id="1342220363"></span> 
+</span> 
+ <span class="text" id="1096446349">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1519495147">Mehr anzeigen</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1188831338 dmRespCol small-12 large-3 medium-3" id="1188831338"> <div class="dmRespRow u_1834170520" id="1834170520"> <div class="dmRespColsWrapper" id="1504874806"> <div class="dmRespCol small-12 medium-12 large-12 u_1901661856" id="1901661856"> <a data-display-type="block" class="u_1206682682 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient flexButton" file="false" href="/kontakt" data-element-type="dButtonLinkId" id="1206682682"> <span class="iconBg" aria-hidden="true" id="1688403372"> <span class="icon hasFontIcon icon-star" id="1278595979"></span> 
+</span> 
+ <span class="text" id="1771686984">BERATUNG ANFORDERN</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1903676380" id="1903676380"> <div class="dmRespColsWrapper" id="1786877666"> <div class="dmRespCol small-12 u_1175235810 medium-12 large-12" id="1175235810"> <div class="dmNewParagraph u_1541428277" data-element-type="paragraph" data-version="5" id="1541428277" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLmNvbXBhbnlfbmFtZSJ9XQ==" data-diy-text="">Bedachungen Odinius</div> 
+ <div class="u_1040224142 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1040224142" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsIn1d" data-diy-text="">Nordstern-Park, Merkstein, 52134 Herzogenrath</div> 
+ <div class="dmNewParagraph u_1848737882" data-element-type="paragraph" data-version="5" id="1848737882" new-inline-bind-applied="true" data-diy-text=""><p><span class="inline-data-binding" data-encoded-value="MDI0MDcgMTgyMjI=" data-inline-binding="content_library.global.phone.phone"><a class="inlineBindingLink" target="_blank" href="tel:02407 18222">02407 18222</a></span><span style="display: initial;"><span class="ql-cursor"></span></span></p></div> 
+ <div class="u_1669232156 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1669232156" new-inline-bind-applied="true" data-diy-text=""><p><span class="inline-data-binding" data-encoded-value="aW5mb0BiZWRhY2h1bmdlbi1vZGluaXVzLmRl" data-inline-binding="content_library.global.email.email"><a class="inlineBindingLink" target="_blank" href="mailto:info@bedachungen-odinius.de">info@bedachungen-odinius.de</a></span><span style="display: initial;"><span class="ql-cursor"></span></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1040000867" id="1040000867"> <div class="dmRespColsWrapper" id="1656741232"> <div class="dmRespCol small-12 medium-12 large-12 u_1350702224" id="1350702224"> <div class="u_1519313194 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1519313194"><img src="https://le-de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/opt/logo-innung-aachen-2+%281%29-1920w.jpg" alt="Ein rot-weißes Logo mit einem Globus und Hämmern darauf." id="1165352418" class="" data-dm-image-path="https://de.cdn-website.com/720401812a544ff893ded28e3459cb89/dms3rep/multi/logo-innung-aachen-2+%281%29.jpg" width="120" height="80" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmNewParagraph u_1769249002" data-element-type="paragraph" data-version="5" id="1769249002"><p><span style="display: initial;">Wir sind Mitglied bei der<br/>Dachdeckerinnung Aachen.<br/>Das garantiert Ihnen gepr&uuml;fte<br/>Qualit&auml;t vom Fachmann.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1143529614"> <div class="graphicWidget u_1249247411 sticky-desktop-position-bottom-right sticky-mobile-position-bottom-right scrolltotop" data-element-type="graphic" data-widget-type="graphic" id="1249247411" data-layout="graphic-style-3"> <a href="#dm" id="1499212783"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1226911379" class="svg u_1226911379" data-hover-effect="float" data-icon-name="ar-arrow_drop_up"> <polygon points="17.4,45.7 15.1,43.3 35,24.3 54.9,43.3 52.6,45.7 35,28.8 "></polygon> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1504263937" id="1504263937"> <div class="dmRespColsWrapper" id="1871355020"> <div class="dmRespCol small-12 large-6 medium-6" id="1436473750"> <div class="u_1848401094 widget-1f5975 dmCustomWidget" data-lazy-load="" data-title="" id="1848401094" dmle_extension="custom_extension" data-element-type="custom_extension" data-binding="W3siYmluZGluZ05hbWUiOiJjb3B5cmlnaHRUZXh0IiwidmFsdWUiOiJzaXRlX3RleHQudGV4dC0yMCJ9XQ==" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="22" data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPkJFREFDSFVOR0VOIE9ESU5JVVM8L3A+In0="> <div class="copyright"> <div>&copy; 2024&nbsp;</div> 
+ <div><p class="rteBlock">BEDACHUNGEN ODINIUS</p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12" id="1069621283"> <div class="u_1382179091 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1382179091" style="transition: none 0s ease 0s; text-align: left; display: block;"><p class="m-text-align-center m-size-14 text-align-right size-14"><a href="/impressum" runtime_url="/impressum" type="page" style="text-transform:uppercase;display:unset;font-family:Oswald, 'Oswald Fallback';" class="m-font-size-14 font-size-14" m-font-size-set="true">IMPRESSUM/</a><a href="/datenschutz" runtime_url="/datenschutz" type="page" style="text-transform:uppercase;display:unset;font-family:Oswald, 'Oswald Fallback';" class="m-font-size-14 font-size-14" m-font-size-set="true">DATENSCHUTZ</a></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~22"] = function (element, data, api) {
+        null
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4970";
+    var build = "2024-11-27T11_48_14";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-11-27T11_48_14";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.eu-multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4970';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/4970';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-de.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'friendly_captcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =false;
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwid.delegateNavigationToEcwid.enabled"] = false;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.detect.enable"] =true;
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/4970/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/4970/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+	const queryParams = new URLSearchParams(window.location.search);
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((value, key) => {
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d3uzsv7k2lpopp.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd3uzsv7k2lpopp.cloudfront.net', { // Initialise a tracker
+  appId: '720401812a544ff893ded28e3459cb89'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: 720401812a544ff893ded28e3459cb89 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Begin Body End Markup -->
+<script>
+    jQuery(window).on('scroll',function(){ let scroll = jQuery(window).scrollTop(); if (scroll>600) { jQuery(".scrolltotop").fadeIn(); } else { jQuery(".scrolltotop").fadeOut(); } });
+</script>
+<!--  End Body End Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

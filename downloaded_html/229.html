@@ -1,0 +1,1765 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.elektrotechnik-dortmund.de/',
+        AccountUUID: '0d7f08e0b9d441edae3b31704d01cfdc',
+        SystemID: 'EU_PRODUCTION',
+        SiteAlias: 'c83b2031a4584406af7c4c226a0c6b34',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Aug 29 15:07:47 UTC 2023',
+        ExternalUid: '569532',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'über-uns',
+        InitialPageUuid: '8b990da72234419fa1acd0bd75c0bb3c',
+        InitialPageId: '28888991',
+        InitialEncodedPageAlias: 'w7xiZXItdW5z',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '10930',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'elektrotechnik-dortmunde9eeab3d',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'Fehler beim Herstellen der Verbindung zur Webseite.<br/> Stellen Sie sicher, dass Sie online sind.',
+            password: 'Benutzername oder Passwort falsch',
+            tryAgain: 'Erneut versuchen'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.elektrotechnik-dortmund.de/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '3309',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<link rel="manifest" href="/manifest.json">
+<!-- Tell the browser it's a PWA -->
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Tell iOS it's a PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.elektrotechnik-dortmund.de/über-uns">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/fav-icon-57_57+%281%29-eb101220.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/site_favicon_16_1687439941898.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-de.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'EU_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(27, 86, 161, 1);
+  --color_2: rgba(238, 128, 5, 1);
+  --color_3: rgba(255, 255, 255, 1);
+  --color_4: rgba(51, 51, 51, 1);
+  --color_5: rgba(243, 243, 243, 1);
+  --color_6: rgba(0, 0, 0, 1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/fonts/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/4968/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/WIDGET_CSS/f723e2a442c6b8620551d20132d25770.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+    height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="über-uns"] #dm [data-show-on-page-only="über-uns"] {
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/files/c83b2031a4584406af7c4c226a0c6b34_1.min.css?v=16" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly{
+color:rgb(255,255,255) !important}
+*#dm *.dmBody div.dmform-error{
+font-style:normal !important}
+*#dm *.dmBody div.dmforminput textarea{
+font-style:italic !important}
+*#dm *.dmBody div.dmforminput *.fileUploadLink{
+font-style:italic !important}
+*#dm *.dmBody div.checkboxwrapper span{
+font-style:italic !important}
+*#dm *.dmBody div.radiowrapper span{
+font-style:italic !important}
+*#dm *.dmBody div.u_1973952654:before{
+background-color:rgba(0,0,0,1) !important}
+*#dm *.dmBody div.u_1973952654.before{
+background-color:rgba(0,0,0,1) !important}
+*#dm *.dmBody div.u_1973952654>.bgExtraLayerOverlay{
+background-color:rgba(0,0,0,1) !important}
+*#dm *.dmBody nav.u_1112353738{
+color:white !important}
+*#dm *.dmBody *.u_1973952654:before{
+opacity:0.5 !important;
+background-color:rgb(0,0,0) !important}
+*#dm *.dmBody *.u_1973952654.before{
+opacity:0.5 !important;
+background-color:rgb(0,0,0) !important}
+*#dm *.dmBody *.u_1973952654>.bgExtraLayerOverlay{
+opacity:0.5 !important;
+background-color:rgb(0,0,0) !important}
+*#dm *.dmBody div.u_1383412607{
+border-left-color:var(--color_1) !important;
+border-left-style:solid !important;
+border-left-width:0 !important}
+*#dm *.dmBody div.u_1793293990{
+border-left-color:var(--color_1) !important;
+border-left-style:solid !important;
+border-left-width:0 !important}
+*#dm *.dmBody div.u_1740742965{
+border-left-color:var(--color_3) !important;
+border-left-style:solid !important;
+border-left-width:5px !important}
+*#dm *.dmBody nav.u_1193625432{
+color:black !important}
+*#dm *.dmBody div.u_1775990812{
+background-color:var(--color_3) !important}
+*#dm *.dmBody div.u_1566002859{
+background-color:var(--color_5) !important}
+*#dm *.dmBody div.u_1973952654{
+background-repeat:no-repeat !important;
+background-image:url(https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/shutterstock_20829571-1920w.jpg) !important;
+background-size:cover !important}
+*#dm *.dmBody *.u_1304682128{
+width:100% !important}
+*#dm *.dmBody div.u_1924496747{
+background-repeat:no-repeat !important;
+background-image:url(https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/shutterstock_1934496251_opt_orng-2880w.jpg) !important}
+*#dm *.dmBody *.u_1924496747:before{
+opacity:0.5 !important;
+background-color:rgb(0,0,0) !important}
+*#dm *.dmBody *.u_1924496747.before{
+opacity:0.5 !important;
+background-color:rgb(0,0,0) !important}
+*#dm *.dmBody *.u_1924496747>.bgExtraLayerOverlay{
+opacity:0.5 !important;
+background-color:rgb(0,0,0) !important}
+*#dm *.dmBody div.u_1924496747:before{
+background-color:var(--color_6) !important;
+opacity:0.1 !important}
+*#dm *.dmBody div.u_1924496747.before{
+background-color:var(--color_6) !important;
+opacity:0.1 !important}
+*#dm *.dmBody div.u_1924496747>.bgExtraLayerOverlay{
+background-color:var(--color_6) !important;
+opacity:0.1 !important}
+*#dm *.dmBody div.u_1858255410{
+background-repeat:no-repeat !important;
+background-image:url(https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/VST_0322_asura-2880w.jpg) !important;
+background-size:cover !important}
+*#dm *.dmBody div.u_1845588864{
+background-repeat:no-repeat !important;
+background-image:url(https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/4P1010543_asura-2880w.jpg) !important;
+background-size:cover !important}
+*#dm *.dmBody *.u_1907872757 .photoGalleryThumbs .image-container a{
+background-size:contain !important}
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1483595765
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1099430987
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+}
+*#dm *.dmBody div.u_1383412607
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1763386421
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:-8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1793293990
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1886279731
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:-8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1143972680
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:40px !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1740742965
+{
+	margin-left:0 !important;
+	padding-top:10px !important;
+	padding-left:20px !important;
+	padding-bottom:10px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:20px !important;
+}
+*#dm *.dmBody div.u_1666992268
+{
+	margin-left:0 !important;
+	padding-top:80px !important;
+	padding-left:40px !important;
+	padding-bottom:80px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1925868945
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1304682128
+{
+	width:80px !important;
+	height:auto !important;
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody a.u_1994701918
+{
+	width:calc(100% - 499px) !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:46px !important;
+	padding-top:0 !important;
+	padding-left:40px !important;
+	padding-bottom:0 !important;
+	max-width:202px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:19px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1924496747
+{
+	padding-top:120px !important;
+	padding-left:40px !important;
+	padding-bottom:120px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	background-repeat:no-repeat !important;
+}
+*#dm *.dmBody div.u_1973952654
+{
+	background-position:50% 50% !important;
+	margin-left:0 !important;
+	padding-top:350px !important;
+	padding-left:40px !important;
+	padding-bottom:300px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+}
+*#dm *.dmBody div.u_1858255410
+{
+	background-position:50% 0 !important;
+}
+*#dm *.dmBody div.u_1845588864
+{
+	background-position:50% 0 !important;
+}
+*#dm *.dmBody div.u_1907872757
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 308px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:584px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1592302864
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:872px !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+    .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+    }
+
+    .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Raleway Fallback";
+  src: local('Arial');
+  ascent-override: 89.616%;
+  descent-override: 22.3087%;
+  size-adjust: 104.892%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Lora Fallback";
+  src: local('Arial');
+  ascent-override: 95.2907%;
+  descent-override: 25.9539%;
+  size-adjust: 105.5717%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Open Sans Fallback";
+  src: local('Arial');
+  ascent-override: 101.1768%;
+  descent-override: 27.7323%;
+  size-adjust: 105.6416%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <title>
+    Über uns | SMW Elektrotechnik | Dortmund
+  </title>
+  <meta name="keywords" content="smw elektrotechnik, smw elektrotechnik dortmund, elektrotechnik, elektroinstallation, elektrotechnik dortmund, straßenbeleuchtungsanlagen, flutlichtanlagen, beleuchtungsanlagen, elektroheizung, schaltanlagen"/>
+  <meta name="description" content="SMW Elektrotechnik in Dortmund ist ein Unternehmen mit Fokus auf Beleuchtungsanlagen, Straßenbeleuchtung Anstrahlungen &amp;amp; Kundenzufriedenheit."/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Über uns | SMW Elektrotechnik | Dortmund"/>
+  <meta name="twitter:description" content="SMW Elektrotechnik in Dortmund ist ein Unternehmen mit Fokus auf Beleuchtungsanlagen, Straßenbeleuchtung Anstrahlungen &amp;amp; Kundenzufriedenheit."/>
+  <meta property="og:description" content="SMW Elektrotechnik in Dortmund ist ein Unternehmen mit Fokus auf Beleuchtungsanlagen, Straßenbeleuchtung Anstrahlungen &amp;amp; Kundenzufriedenheit."/>
+  <meta property="og:title" content="Über uns | SMW Elektrotechnik | Dortmund"/>
+
+
+
+
+<!-- SYS- RVVfUFJPRFVDVElPTg== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="über-uns"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 inMiniHeaderMode hasStickyHeader hasStickyHeader hamburger-reverse header-over-content dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side-reverse"> <div class="u_1951745182 dmRespRow" style="text-align: center;" id="1951745182"> <div class="dmRespColsWrapper" id="1130476030"> <div class="u_1191834329 dmRespCol small-12 medium-12 large-12 empty-column" id="1191834329"></div> 
+</div> 
+</div> 
+ <div class="u_1780741635 dmRespRow middleDrawerRow" style="text-align: center;" id="1780741635"> <div class="dmRespColsWrapper" id="1495063718"> <div class="dmRespCol small-12 u_1136771489 medium-12 large-12" id="1136771489"> <nav class="u_1984957667 effect-bottom main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1984957667" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Willkommen
+        " data-auto="page-text-style">Willkommen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/über-uns" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101706844  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Über uns
+        " data-auto="page-text-style">&Uuml;ber uns<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/referenzen" class="unifiednav__item  dmUDNavigationItem_010101287811  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Referenzen
+        " data-auto="page-text-style">Referenzen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/leistungen" class="unifiednav__item  dmUDNavigationItem_010101171098  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Leistungen
+        " data-auto="page-text-style">Leistungen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101556613  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Prüfung nach DGVU 3a
+        " data-auto="page-text-style">Pr&uuml;fung nach DGVU 3a<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/privat" class="unifiednav__item  dmUDNavigationItem_010101582995  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Privat
+          " data-auto="page-text-style">Privat<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/gewerbe" class="unifiednav__item  dmUDNavigationItem_01010192933  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Gewerbe
+          " data-auto="page-text-style">Gewerbe<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/produkte" class="unifiednav__item  dmUDNavigationItem_010101508495  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Produkte
+        " data-auto="page-text-style">Produkte<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/information" class="unifiednav__item  dmUDNavigationItem_010101306691  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Information
+        " data-auto="page-text-style">Information<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item  dmUDNavigationItem_010101727167  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1910964170" style="text-align: center;" id="1910964170"> <div class="dmRespColsWrapper" id="1027729227"> <div class="u_1696647064 dmRespCol small-12 medium-12 large-12" id="1696647064"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1822299973" new-inline-bind-applied="true" data-diy-text=""> <h5><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="U01XIEVsZWt0cm90ZWNobmlrIFN0YW1iZXJnLU1hc2NobWFubi1XaWNrIEdiUg==" data-inline-binding="content_library.global.company_name">SMW Elektrotechnik Stamberg-Maschmann-Wick GbR</span><span class="ql-cursor"></span></span></h5> 
+</div> 
+ <div class="u_1344933841 dmNewParagraph" id="1344933841" data-element-type="paragraph" style="text-align: left; display: block;" data-version="5" data-diy-text="" new-inline-bind-applied="true"><p><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="VW50ZXJzdGUtV2lsbXMtU3RyYcOfZSA0OCwgNDQxNDMgRG9ydG11bmQsIERldXRzY2hsYW5k" data-inline-binding="content_library.global">Unterste-Wilms-Stra&szlig;e 48, 44143 Dortmund, Deutschland</span><span class="ql-cursor"></span></span></p></div> <div class="dmNewParagraph u_1614659913" data-element-type="paragraph" data-version="5" id="1614659913" new-inline-bind-applied="true" data-diy-text=""><p><span style="color: var(--color_2); display: initial;"><span class="inline-data-binding" data-encoded-value="MDIzMSAxMzg5NzU2MA==" data-inline-binding="content_library.global.phone.telefon"><a class="inlineBindingLink" target="_blank" href="tel:0231 13897560">0231 13897560</a></span></span></p></div> 
+ <div class="dmNewParagraph u_1488948984" data-element-type="paragraph" data-version="5" id="1488948984" new-inline-bind-applied="true" data-diy-text=""><p><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="MDIzMSAxMzg5NzU2Mg==" data-inline-binding="content_library.global.phone.fax"><a class="inlineBindingLink" target="_blank" href="tel:0231 13897562">0231 13897562</a></span><span class="ql-cursor"></span></span></p></div> 
+ <div class="u_1018662944 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1018662944" new-inline-bind-applied="true" data-diy-text="" style="transition: none 0s ease 0s; text-align: left; display: block;"><p class="m-size-13 size-16"><span class="m-font-size-13 font-size-16" style="color: var(--color_2); display: initial;"><span class="inline-data-binding" data-encoded-value="c3RhbWJlcmctc213LWVsZWt0cm90ZWNobmlrQHQtb25saW5lLmRl" data-inline-binding="content_library.global.email.e-mail"><a class="inlineBindingLink" target="_blank" href="mailto:stamberg-smw-elektrotechnik@t-online.de">stamberg-smw-elektrotechnik@t-online.de</a></span></span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="u_1899890492 dmRespRow" style="text-align: center;" id="1899890492"> <div class="dmRespColsWrapper" id="1791593205"> <div class="dmRespCol small-12 medium-4 large-4" id="1094936315"> <div class="u_1538445494 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1538445494" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1874527230" file="false"><img src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/SMW_logo-1920w.jpg" id="1677356885" class="" data-dm-image-path="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/SMW_logo.jpg" alt="SMW Elektrotechnik Stamberg-Maschmann-Wick GbR" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 u_1288037043 medium-4 large-4 empty-column content-removed" id="1288037043"></div> 
+ <div class="dmRespCol small-12 medium-4 large-4" id="1961226179"> <a data-display-type="block" class="u_1598049326 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1598049326 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel:0231 13897560" data-element-type="dButtonLinkId" id="1598049326" data-binding="W3siYmluZGluZ05hbWUiOiJsaW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLnRlbGVmb24ifSx7ImJpbmRpbmdOYW1lIjoiYnV0dG9uX3RleHQiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwucGhvbmUudGVsZWZvbiJ9XQ==" icon-name="icon-phone" data-diy-link=""> <span class="iconBg" aria-hidden="true" id="1428680990"> <span class="icon hasFontIconstar hasFontIcon icon-phone" id="1217493583"></span> 
+</span> 
+ <span class="text" id="1004686695" data-diy-text="">0231 13897560</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="78f5c343822e4eb3aac27f4ad5d13812===header" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" preserve-sticky-header="true" logo-size-target="90%"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1861705244 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1861705244"> <div class="dmRespColsWrapper" id="1914255413"> <div class="u_1677919435 small-12 dmRespCol large-3 medium-3" id="1677919435"> <div class="u_1011018909 imageWidget align-center" data-widget-type="image" id="1011018909" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1191352096"><img src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/SMW_logo-1920w.jpg" id="1456770677" class="" data-dm-image-path="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/SMW_logo.jpg" width="176" height="43" alt="SMW Elektrotechnik Stamberg-Maschmann-Wick GbR" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1246161842 dmRespCol small-12 large-5 medium-5" id="1246161842"> <span id="1630001966"></span> 
+</div> 
+ <div class="u_1982608545 dmRespCol small-12 large-3 medium-3" id="1982608545"> <a data-display-type="block" class="u_1468118704 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1468118704 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel:0231 13897560" data-element-type="dButtonLinkId" id="1468118704" data-binding="W3siYmluZGluZ05hbWUiOiJsaW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLnRlbGVmb24ifSx7ImJpbmRpbmdOYW1lIjoiYnV0dG9uX3RleHQiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwucGhvbmUudGVsZWZvbiJ9XQ==" icon-name="icon-phone" data-diy-link=""> <span class="iconBg" aria-hidden="true" id="1892772480"> <span class="icon hasFontIconstar hasFontIcon icon-phone" id="1108830387"></span> 
+</span> 
+ <span class="text" id="1561013273" data-diy-text="">0231 13897560</span> 
+</a> 
+</div> 
+ <div class="u_1337817402 dmRespCol small-12 large-1 medium-1" id="1337817402"> <div class="u_1361326563 align-center text-align-center dmSocialHub gapSpacing" id="1361326563" dmle_extension="social_hub" data-element-type="social_hub" data-binding="W3siYmluZGluZ05hbWUiOiJzb2NpYWwiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwuc29jaWFsIn1d" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/SMW-Elektrotechnik-170309153024343/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1077682360 fullBleedChanged fullBleedMode" id="1077682360"> <div class="dmRespColsWrapper" id="1208706643"> <div class="dmRespCol large-12 medium-12 small-12" id="1324556763"> <nav class="u_1112353738 effect-none main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" id="1112353738" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Willkommen
+        " data-auto="page-text-style">Willkommen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/über-uns" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101706844  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Über uns
+        " data-auto="page-text-style">&Uuml;ber uns<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/referenzen" class="unifiednav__item  dmUDNavigationItem_010101287811  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Referenzen
+        " data-auto="page-text-style">Referenzen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/leistungen" class="unifiednav__item  dmUDNavigationItem_010101171098  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Leistungen
+        " data-auto="page-text-style">Leistungen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101556613  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Prüfung nach DGVU 3a
+        " data-auto="page-text-style">Pr&uuml;fung nach DGVU 3a<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/privat" class="unifiednav__item  dmUDNavigationItem_010101582995  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Privat
+          " data-auto="page-text-style">Privat<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/gewerbe" class="unifiednav__item  dmUDNavigationItem_01010192933  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Gewerbe
+          " data-auto="page-text-style">Gewerbe<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/produkte" class="unifiednav__item  dmUDNavigationItem_010101508495  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Produkte
+        " data-auto="page-text-style">Produkte<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/information" class="unifiednav__item  dmUDNavigationItem_010101306691  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Information
+        " data-auto="page-text-style">Information<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item  dmUDNavigationItem_010101727167  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_über-uns dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="dmRespRow u_1973952654 dmSectionNoParallax hasBackgroundOverlay" id="1973952654" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9sZS1kZS5jZG4td2Vic2l0ZS5jb20vYzgzYjIwMzFhNDU4NDQwNmFmN2M0YzIyNmEwYzZiMzQvZG1zM3JlcC9tdWx0aS9vcHQvc2h1dHRlcnN0b2NrXzIwODI5NTcxLTE5MjB3LmpwZyJdfQ=="> <div class="dmRespColsWrapper" id="1102599657"> <div class="dmRespCol small-12 large-6 medium-6 u_1740742965" id="1740742965"> <div class="dmNewParagraph u_1483595765" data-element-type="paragraph" data-version="5" id="1483595765" style="transition: opacity 1s ease-in-out 0s;" data-diy-text="" new-inline-bind-applied="true"> <h1 class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">&Uuml;ber die</span> 
+</span> 
+<span class="inline-data-binding" data-encoded-value="U01XIEVsZWt0cm90ZWNobmlrIFN0YW1iZXJnLU1hc2NobWFubi1XaWNrIEdiUg==" data-inline-binding="content_library.global.company_name">SMW Elektrotechnik Stamberg-Maschmann-Wick GbR</span><span style="display: initial;"><span class="ql-cursor"></span></span></h1> 
+</div> 
+</div> 
+ <div class="u_1967178484 dmRespCol empty-column large-6 medium-6 small-12 hide-for-small" id="1967178484"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1775990812 mobile-columns-reversed" id="1775990812"> <div class="dmRespColsWrapper" id="1296416740"> <div class="dmRespCol small-12 large-6 medium-6 u_1099430987" id="1099430987"> <div class="dmNewParagraph u_1383412607" data-element-type="paragraph" data-version="5" id="1383412607"> <h2><span style="display: unset;">&Uuml;ber unser Unternehmen</span></h2> 
+</div> 
+ <div class="u_1763386421 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1763386421"><p><span style="display: unset;">Die Firma SMW Elektrotechnik Stamberg-Maschmann-Wick GbR ist ein renommiertes Unternehmen in der Elektrotechnikbranche mit Sitz in Dortmund. Seit unserer Gr&uuml;ndung im Jahr 1932 durch den Elektroinstallateur-Meister Erich Stein haben wir uns kontinuierlich weiterentwickelt und etabliert.&nbsp;</span></p><p><span style="display: unset;">Heute sind wir auf Beleuchtungsanlagen, Stra&szlig;enbeleuchtungen und Anstrahlungen spezialisiert. Unser Leistungsspektrum umfasst auch Arbeiten f&uuml;r Industrieunternehmen sowie normale Installationen f&uuml;r den privaten Kundenbereich.</span></p><p><span style="display: unset;">Bei SMW Elektrotechnik stehen Kundenpflege und Kundenzufriedenheit an erster Stelle. Unser engagiertes Team legt gro&szlig;en Wert auf eine professionelle und zuverl&auml;ssige Ausf&uuml;hrung aller Arbeiten. Mit unserer langj&auml;hrigen Erfahrung und Expertise sind wir der ideale Partner f&uuml;r Ihre Projekte.</span></p></div> 
+</div> 
+ <div class="dmRespCol empty-column large-6 medium-6 small-12 u_1845588864" id="1845588864"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1566002859" id="1566002859"> <div class="dmRespColsWrapper" id="1462772146"> <div class="dmRespCol empty-column large-6 medium-6 small-12 u_1858255410" id="1858255410"></div> 
+ <div class="dmRespCol small-12 large-6 medium-6 u_1143972680" id="1143972680"> <div class="dmNewParagraph u_1793293990" data-element-type="paragraph" data-version="5" id="1793293990"> <h2><span style="display: unset;">Firmenhistorie&nbsp;</span></h2> 
+</div> 
+ <div class="u_1886279731 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1886279731"><p><span style="display: unset;">Die Geschichte der SMW Elektrotechnik reicht bis ins Jahr 1932 zur&uuml;ck, als der Elektroinstallateur-Meister Erich Stein das Unternehmen gr&uuml;ndete. In einer Zeit, die von wirtschaftlichen Schwierigkeiten gepr&auml;gt war, startete er mit dem Verkauf von Klein&shy;ger&auml;ten von Haus zu Haus. Schritt f&uuml;r Schritt erweiterte er sein T&auml;tigkeitsfeld um Elektroinstallationsarbeiten und gewann dabei Kunden aus verschiedenen Bereichen, darunter private Haushalte, Bauernh&ouml;fe und Zechen. Sp&auml;ter kamen auch Kunden aus der Industrie hinzu, darunter das bekannte Unternehmen August Kl&ouml;nne und die VEW, das Dortmunder Versorgungsunternehmen f&uuml;r Elektrizit&auml;t.</span></p><p><span style="display: unset;">Im Laufe der Jahre wuchs das Unternehmen, bis es im Krieg vollst&auml;ndig zerst&ouml;rt wurde. Der Wiederaufbau erfolgte im Jahr 1946, und ab diesem Zeitpunkt setzte das Unternehmen seinen Erfolgskurs fort. Im Jahr 1960 besch&auml;ftigte die Firma bereits 15 Mitarbeiter. 1971 erfolgte der Umzug in das heutige Gewerbegebiet Dortmund-West. In diesem Jahr trat auch der Sohn des Firmengr&uuml;nders, Norbert Stein, als Elektromeister und Gesch&auml;ftsf&uuml;hrer in das Unternehmen ein.</span></p><p><span style="display: unset;">Aufgrund gesundheitlicher Gr&uuml;nde erfolgte im Jahr 1996 die &Uuml;bergabe des Unternehmens an die beiden Elektromeister Volker Stamberg und Josef Wick. Mit ihrer gro&szlig;en Erfahrung und Kompetenz f&uuml;hrten sie das Unternehmen erfolgreich weiter.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1666992268" id="1666992268"> <div class="dmRespColsWrapper" id="1547393964"> <div class="dmRespCol large-12 medium-12 small-12" id="1159767991"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1655602246"> <h2 class="m-text-align-left text-align-center"><span style="display: unset;">Unser Fuhrpark</span></h2> 
+</div> 
+ <div class="dmNewParagraph u_1925868945" data-element-type="paragraph" data-version="5" id="1925868945"><p class="text-align-center m-text-align-left"><span class="" style="display: unset;"><span style="display: unset;">Bei SMW Elektrotechnik verf&uuml;gen wir &uuml;ber einen modernen Fuhrpark. Unsere Fahrzeuge sind nicht nur zuverl&auml;ssig und funktional, sondern auch umweltfreundlich. Hier sind einige Impressionen aus unserem Fuhrpark:&nbsp;</span> 
+</span></p></div> 
+ <div class="u_1907872757 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1907872757" data-placeholder="false"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1181762341"> <li class="photoGalleryThumbs" id="1901867781"> <div class="image-container" id="1354706042"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/auto5.jpg" id="1187217275"><img irh="" irw="" alt="Auto" data-src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/auto5-1920w.jpg" id="1049946837" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1458885958"> <span class="caption-inner" id="1364503847"> <a class="caption-button dmWidget clearfix" id="1608606064"> <span class="iconBg" id="1511631380"> <span class="icon hasFontIcon icon-star" id="1280511402"></span> 
+</span> 
+ <span class="text" id="1608664437">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1097550526"> <div class="image-container" id="1947057429"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/auto1.jpg" id="1640235529"><img irh="" irw="" alt="Auto mit Kran" data-src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/auto1-1920w.jpg" id="1742796878" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1455172262"> <span class="caption-inner" id="1555487441"> <a class="caption-button dmWidget clearfix" id="1474603676"> <span class="iconBg" id="1445884013"> <span class="icon hasFontIcon icon-star" id="1099181967"></span> 
+</span> 
+ <span class="text" id="1331408382">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1048288494"> <div class="image-container" id="1198631218"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/auto4.jpg" id="1063539771"><img irh="" irw="" alt="Autos" data-src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/auto4-1920w.jpg" id="1430450686" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1089610361"> <span class="caption-inner" id="1317181156"> <a class="caption-button dmWidget clearfix" id="1626489633"> <span class="iconBg" id="1375485881"> <span class="icon hasFontIcon icon-star" id="1131715058"></span> 
+</span> 
+ <span class="text" id="1421912052">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1891976409"> <div class="image-container" id="1785655128"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/auto3.jpg" id="1988944997"><img irh="" irw="" alt="Auto mit Kran" data-src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/auto3-1920w.jpg" id="1373060288" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1407289441"> <span class="caption-inner" id="1757921916"> <a class="caption-button dmWidget clearfix" id="1625566455"> <span class="iconBg" id="1008978929"> <span class="icon hasFontIcon icon-star" id="1563173964"></span> 
+</span> 
+ <span class="text" id="1162437219">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1081944125"> <div class="image-container" id="1773677216"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/auto2.jpg" id="1961962801"><img irh="" irw="" alt="Auto mit Kran" data-src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/auto2-1920w.jpg" id="1778218022" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1780099056"> <span class="caption-inner" id="1875206371"> <a class="caption-button dmWidget clearfix" id="1186081040"> <span class="iconBg" id="1207964714"> <span class="icon hasFontIcon icon-star" id="1147475343"></span> 
+</span> 
+ <span class="text" id="1771094669">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1178250383">Mehr anzeigen</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1924496747 dmRespRow hide-for-small hasBackgroundOverlay dmSectionNoParallax" id="1924496747" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9sZS1kZS5jZG4td2Vic2l0ZS5jb20vYzgzYjIwMzFhNDU4NDQwNmFmN2M0YzIyNmEwYzZiMzQvZG1zM3JlcC9tdWx0aS9vcHQvc2h1dHRlcnN0b2NrXzE5MzQ0OTYyNTFfb3B0X29ybmctMTkyMHcuanBnIiwiaHR0cHM6Ly9sZS1kZS5jZG4td2Vic2l0ZS5jb20vYzgzYjIwMzFhNDU4NDQwNmFmN2M0YzIyNmEwYzZiMzQvZG1zM3JlcC9tdWx0aS9vcHQvc2h1dHRlcnN0b2NrXzE5MzQ0OTYyNTFfb3B0LTE5MjB3LmpwZyJdLCJzcGVlZCI6IjMiLCJ0cmFuc2l0aW9uIjoiZmFkZSJ9"> <div class="dmRespColsWrapper" id="1259069278"> <div class="dmRespCol large-12 medium-12 small-12" id="1931089403"> <div class="u_1304682128 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1304682128" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZV9saW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLnRlbGVmb24ifV0="> <a href="tel:0231 13897560"><img src="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/flaticon-white-phone.svg.svg" alt="telefon" id="1966541209" class="" data-dm-image-path="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/flaticon-white-phone.svg.svg" width="513" height="512" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1592302864 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1592302864" style="transition: none 0s ease 0s; text-align: left; display: block;"><p class="m-size-18 size-22 text-align-center"><span class="m-font-size-18 font-size-22" style="display: initial; color: var(--color_3);">Haben wir Ihr Interesse geweckt?</span><span style="display: initial;"><br/></span><span class="m-font-size-18 font-size-22" style="display: initial; color: var(--color_3);">Gerne beraten wir Sie ganz unverbindlich und freuen uns auf Ihre Nachricht.</span></p></div> 
+ <a data-display-type="block" class="u_1994701918 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1994701918 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel:0231 13897560" data-element-type="dButtonLinkId" id="1994701918" data-binding="W3siYmluZGluZ05hbWUiOiJsaW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLnRlbGVmb24ifSx7ImJpbmRpbmdOYW1lIjoiYnV0dG9uX3RleHQiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwucGhvbmUudGVsZWZvbiJ9XQ==" icon-name="icon-phone" data-diy-link=""> <span class="iconBg" aria-hidden="true" id="1955542918"> <span class="icon hasFontIconstar hasFontIcon icon-phone" id="1427720416"></span> 
+</span> 
+ <span class="text" id="1226243215" data-diy-text="">0231 13897560</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1947187147 dmRespRow hide-for-medium hide-for-large" id="1947187147"> <div class="dmRespColsWrapper" id="1348788450"> <div class="dmRespCol large-12 medium-12 small-12" id="1945332568"> <a data-display-type="block" class="u_1387353644 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1387353644 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel:0231 13897560" data-element-type="dButtonLinkId" id="1387353644" data-binding="W3siYmluZGluZ05hbWUiOiJsaW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLnRlbGVmb24ifSx7ImJpbmRpbmdOYW1lIjoiYnV0dG9uX3RleHQiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwucGhvbmUudGVsZWZvbiJ9XQ==" data-buttonstyle="FLAT_ROUND_ICON" icon-name="icon-phone" data-diy-link=""> <span class="iconBg" aria-hidden="true" id="1039778370"> <span class="icon hasFontIconstar hasFontIcon icon-phone" id="1738774899"></span> 
+</span> 
+ <span class="text" id="1133430297" data-diy-text="">0231 13897560</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1984744927 dmRespRow" style="text-align: center;" id="1984744927" lock-element-for-editing="true"> <div class="dmRespColsWrapper" id="1372611242"> <div class="u_1643182580 dmRespCol small-12 large-3 medium-3" id="1643182580"> <div class="u_1868898378 imageWidget align-center" data-widget-type="image" id="1868898378" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1339669435"><img src="https://le-de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/opt/SMW_logo-1920w.jpg" id="1919844363" class="" data-dm-image-path="https://de.cdn-website.com/c83b2031a4584406af7c4c226a0c6b34/dms3rep/multi/SMW_logo.jpg" width="1920" height="1920" alt="SMW Elektrotechnik Stamberg-Maschmann-Wick GbR" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1266920499 dmRespCol small-12 large-5 medium-5" id="1266920499"> <div class="u_1986945657 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1986945657" new-inline-bind-applied="true" data-diy-text=""> <h5><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="U01XIEVsZWt0cm90ZWNobmlrIFN0YW1iZXJnLU1hc2NobWFubi1XaWNrIEdiUg==" data-inline-binding="content_library.global.company_name">SMW Elektrotechnik Stamberg-Maschmann-Wick GbR</span></span></h5> 
+</div> 
+ <div class="u_1631091207 dmNewParagraph" id="1631091207" data-element-type="paragraph" style="text-align: left; display: block;" data-version="5" data-diy-text="" new-inline-bind-applied="true"><p><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="VW50ZXJzdGUtV2lsbXMtU3RyYcOfZSA0OCwgNDQxNDMgRG9ydG11bmQsIERldXRzY2hsYW5k" data-inline-binding="content_library.global">Unterste-Wilms-Stra&szlig;e 48, 44143 Dortmund, Deutschland</span></span></p></div> <div class="dmNewParagraph u_1553396821" data-element-type="paragraph" data-version="5" id="1553396821" new-inline-bind-applied="true" data-diy-text=""><p><span style="color: var(--color_2); display: initial;"><span class="inline-data-binding" data-encoded-value="MDIzMSAxMzg5NzU2MA==" data-inline-binding="content_library.global.phone.telefon"><a class="inlineBindingLink" target="_blank" href="tel:0231 13897560">0231 13897560</a></span></span></p></div> 
+ <div class="u_1592633724 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1592633724" new-inline-bind-applied="true" data-diy-text=""><p><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="MDIzMSAxMzg5NzU2Mg==" data-inline-binding="content_library.global.phone.fax"><a class="inlineBindingLink" target="_blank" href="tel:0231 13897562">0231 13897562</a></span><span class="ql-cursor"></span></span></p></div> 
+ <div class="u_1173287731 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1173287731" new-inline-bind-applied="true" data-diy-text=""><p><span style="color: var(--color_2); display: initial;"><span class="inline-data-binding" data-encoded-value="c3RhbWJlcmctc213LWVsZWt0cm90ZWNobmlrQHQtb25saW5lLmRl" data-inline-binding="content_library.global.email.e-mail"><a class="inlineBindingLink" target="_blank" href="mailto:stamberg-smw-elektrotechnik@t-online.de">stamberg-smw-elektrotechnik@t-online.de</a></span></span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1366813314 medium-4 large-4" id="1366813314"> <div class="u_1133054024 default dmHoursOfOperation" id="1133054024" dmle_extension="open_hours" data-element-type="open_hours" data-binding="W3siYmluZGluZ05hbWUiOiJidXNpbmVzc19ob3VycyIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5idXNpbmVzc19ob3VycyJ9XQ==" time_format="24" wr="true" lang="" displaytitle="true" forcedisplay="false" icon="true" surround="true" adwords=""> <h3 class="dmwidget-title ">B&uuml;rozeiten</h3> 
+ <dl class="open-hours-data"> <div class="open-hours-item"> <dt day="0">Mo - Do</dt> 
+ <dd> <time>07:00</time> 
+- <time>15:30</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="4">Freitag</dt> 
+ <dd> <time>07:00</time> 
+- <time>13:30</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="5">Sa - So</dt> 
+ <dd>Geschlossen</dd> 
+</div> 
+</dl> 
+</div> 
+ <div class="u_1396916688 dmNewParagraph" id="1396916688" data-element-type="paragraph" data-version="5" style="text-align: left;"> <h5><span style="display: initial;">Rechtliches</span><span class="m-font-size-20 font-size-20" m-font-size-set="true" style="color: var(--color_6); display: initial; font-weight: bold;"><br/></span></h5> 
+<p><a href="/impressum" runtime_url="/impressum" type="page" style="display: initial;">Impressum</a><span style="display: initial;"><br/></span><a href="/datenschutz" runtime_url="/datenschutz" type="page" style="display: initial;">Datenschutz</a><span style="display: initial;"><span class="ql-cursor">﻿</span></span></p></div> <div class="widget-c83016 u_1907430776 dmCustomWidget" data-lazy-load="true" data-title="" id="1907430776" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="c830161402a0478abcc600c38b81e521" data-widget-version="11" data-widget-config="eyJwYXJ0bmVyIjoic2xtIn0="> <p class="powered">powered by <a href="https://www.websmart.de/">Websmart.de</a> 
+</p> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["c830161402a0478abcc600c38b81e521~11"] = function (element, data, api) {
+        null
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4968";
+    var build = "2024-11-27T07_48_13";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-11-27T07_48_13";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<script id="CookiebotConfiguration" type="application/json" data-cookieconsent="ignore" data-swh-uuid="b05c4a6d3d7c452ab88447079c2f95dc">
+
+{"TagConfiguration":[{"id":"d-js-core","ignore":true},{"id":"d-js-params","ignore":true},{"id":"d-js-jquery","ignore":true},{"id":"d-js-load-css","ignore":true}]}
+
+</script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a8114d8e-570a-4121-a83f-2eda5cb27570" data-blockingmode="auto" type="text/javascript" data-swh-uuid="b05c4a6d3d7c452ab88447079c2f95dc">
+</script>
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.eu-multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4968';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/4968';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-de.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =false;
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwid.delegateNavigationToEcwid.enabled"] = false;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.detect.enable"] =true;
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/4968/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/4968/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+	const queryParams = new URLSearchParams(window.location.search);
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((value, key) => {
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d3uzsv7k2lpopp.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd3uzsv7k2lpopp.cloudfront.net', { // Initialise a tracker
+  appId: 'c83b2031a4584406af7c4c226a0c6b34'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: c83b2031a4584406af7c4c226a0c6b34 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script>
+ let __fixedCssLoad = false;
+
+function __loadCSSLinks() {
+    setTimeout(() => {
+        if(!__fixedCssLoad && window.loadCSS) {
+            // fix css links
+            __fixCssLinks()
+            
+        } else {
+          console.log("re-running self waiting for fix css to exist")
+            __loadCSSLinks()
+        }
+    },1)
+}
+function __fixCssLinks(cb) {
+    var links = document.getElementsByTagName("link");
+    for (var i = 0; i < links.length; i++) {
+      if(links[i].onload) {
+        
+        
+        
+        loadCSS(links[i]);
+        
+      }
+    }
+    __fixedCssLoad = true;
+}
+
+window.addEventListener('CookiebotOnDialogDisplay', function (e) {
+    __fixCssLinks()
+}, false);
+if(dmAPI.getCurrentEnvironment() === 'live') { __loadCSSLinks(); }
+ </script><!--  End Product Custom HTML Markup -->
+</body>
+</html>

@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <link rel="profile" href="http://gmpg.org/xfn/11"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> @font-face{font-family:'Josefin Sans';font-weight:300;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/300-italic/300-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/300-italic/300-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/300-italic/300-italic.ttf') format('truetype')}@font-face{font-family:'Josefin Sans';font-weight:400;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-italic/400-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-italic/400-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-italic/400-italic.ttf') format('truetype')}@font-face{font-family:'Josefin Sans';font-weight:300;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/300-normal/300-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/300-normal/300-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/300-normal/300-normal.ttf') format('truetype')}@font-face{font-family:'Josefin Sans';font-weight:400;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-normal/400-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-normal/400-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-normal/400-normal.ttf') format('truetype'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-normal/400-normal.svg#JosefinSans') format('svg'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/400-normal/400-normal.eot?#iefix') format('embedded-opentype')}@font-face{font-family:'Josefin Sans';font-weight:600;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/600-normal/600-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/600-normal/600-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/600-normal/600-normal.ttf') format('truetype')}@font-face{font-family:'Josefin Sans';font-weight:700;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/700-normal/700-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/700-normal/700-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Josefin-Sans/700-normal/700-normal.ttf') format('truetype')}@font-face{font-family:'Open Sans';font-weight:400;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-italic/400-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-italic/400-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-italic/400-italic.ttf') format('truetype')}@font-face{font-family:'Open Sans';font-weight:600;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/600-italic/600-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/600-italic/600-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/600-italic/600-italic.ttf') format('truetype')}@font-face{font-family:'Open Sans';font-weight:300;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/300-normal/300-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/300-normal/300-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/300-normal/300-normal.ttf') format('truetype')}@font-face{font-family:'Open Sans';font-weight:400;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-normal/400-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-normal/400-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-normal/400-normal.ttf') format('truetype'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-normal/400-normal.svg#OpenSans') format('svg'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/400-normal/400-normal.eot?#iefix') format('embedded-opentype')}@font-face{font-family:'Open Sans';font-weight:600;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/600-normal/600-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/600-normal/600-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/600-normal/600-normal.ttf') format('truetype')}@font-face{font-family:'Open Sans';font-weight:700;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/700-normal/700-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/700-normal/700-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/700-normal/700-normal.ttf') format('truetype')}@font-face{font-family:'Open Sans';font-weight:800;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/800-normal/800-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/800-normal/800-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Open-Sans/800-normal/800-normal.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:300;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/300-italic/300-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/300-italic/300-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/300-italic/300-italic.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:400;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-italic/400-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-italic/400-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-italic/400-italic.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:500;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/500-italic/500-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/500-italic/500-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/500-italic/500-italic.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:700;font-style:italic;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/700-italic/700-italic.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/700-italic/700-italic.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/700-italic/700-italic.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:300;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/300-normal/300-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/300-normal/300-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/300-normal/300-normal.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:400;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-normal/400-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-normal/400-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-normal/400-normal.ttf') format('truetype'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-normal/400-normal.svg#Roboto') format('svg'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/400-normal/400-normal.eot?#iefix') format('embedded-opentype')}@font-face{font-family:'Roboto';font-weight:500;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/500-normal/500-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/500-normal/500-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/500-normal/500-normal.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:700;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/700-normal/700-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/700-normal/700-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/700-normal/700-normal.ttf') format('truetype')}@font-face{font-family:'Roboto';font-weight:900;font-style:normal;font-display:swap;src:url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/900-normal/900-normal.woff2') format('woff2'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/900-normal/900-normal.woff') format('woff'),url('https://elektro-gensmann.de/wp-content/uploads/fonts_cache/Roboto/900-normal/900-normal.ttf') format('truetype')}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script>window.libaseApp={"ajaxurl":"https:\/\/elektro-gensmann.de\/wp-admin\/admin-ajax.php","is":{"single":false,"page":true,"paged":false,"home":false,"front_page":false,"category":false,"tag":false,"tax":false,"search":false,"archive":false,"404":false,"attachment":false},"postType":"page","currentUser":null};</script>
+
+	<!-- This site is optimized with the Yoast SEO plugin v23.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Über uns - Elektrotechnik Jörg Gensmann GmbH</title>
+	<meta name="description" content="Über uns Seit unserer Gründung am 15. Oktober 2003 sind wir Ihr kompetenter Ansprechpartner in allen Fragen der Elektro- und Beleuchtungstechnik." />
+	<link rel="canonical" href="https://elektro-gensmann.de/ueber-uns/" />
+	<meta property="og:locale" content="de_DE" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Über uns - Elektrotechnik Jörg Gensmann GmbH" />
+	<meta property="og:description" content="Über uns Seit unserer Gründung am 15. Oktober 2003 sind wir Ihr kompetenter Ansprechpartner in allen Fragen der Elektro- und Beleuchtungstechnik." />
+	<meta property="og:url" content="https://elektro-gensmann.de/ueber-uns/" />
+	<meta property="og:site_name" content="Elektrotechnik Jörg Gensmann GmbH" />
+	<meta property="article:modified_time" content="2021-06-18T06:15:22+00:00" />
+	<meta property="og:image" content="https://elektro-gensmann.de/wp-content/uploads/2019/12/miniblitz.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Geschätzte Lesezeit" />
+	<meta name="twitter:data1" content="2 Minuten" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://elektro-gensmann.de/ueber-uns/","url":"https://elektro-gensmann.de/ueber-uns/","name":"Über uns - Elektrotechnik Jörg Gensmann GmbH","isPartOf":{"@id":"https://elektro-gensmann.de/#website"},"primaryImageOfPage":{"@id":"https://elektro-gensmann.de/ueber-uns/#primaryimage"},"image":{"@id":"https://elektro-gensmann.de/ueber-uns/#primaryimage"},"thumbnailUrl":"https://elektro-gensmann.de/wp-content/uploads/2019/12/miniblitz.png","datePublished":"2019-11-19T08:37:07+00:00","dateModified":"2021-06-18T06:15:22+00:00","description":"Über uns Seit unserer Gründung am 15. Oktober 2003 sind wir Ihr kompetenter Ansprechpartner in allen Fragen der Elektro- und Beleuchtungstechnik.","breadcrumb":{"@id":"https://elektro-gensmann.de/ueber-uns/#breadcrumb"},"inLanguage":"de-DE","potentialAction":[{"@type":"ReadAction","target":["https://elektro-gensmann.de/ueber-uns/"]}]},{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://elektro-gensmann.de/ueber-uns/#primaryimage","url":"https://elektro-gensmann.de/wp-content/uploads/2019/12/miniblitz.png","contentUrl":"https://elektro-gensmann.de/wp-content/uploads/2019/12/miniblitz.png","width":58,"height":75},{"@type":"BreadcrumbList","@id":"https://elektro-gensmann.de/ueber-uns/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://elektro-gensmann.de/"},{"@type":"ListItem","position":2,"name":"Über uns"}]},{"@type":"WebSite","@id":"https://elektro-gensmann.de/#website","url":"https://elektro-gensmann.de/","name":"Elektrotechnik Jörg Gensmann GmbH","description":"Licht bringt Leben Wir bringen Licht","publisher":{"@id":"https://elektro-gensmann.de/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://elektro-gensmann.de/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"de-DE"},{"@type":"Organization","@id":"https://elektro-gensmann.de/#organization","name":"Elektrotechnik Jörg Gensmann GmbH","url":"https://elektro-gensmann.de/","logo":{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://elektro-gensmann.de/#/schema/logo/image/","url":"https://elektro-gensmann.de/wp-content/uploads/2020/02/logo.png","contentUrl":"https://elektro-gensmann.de/wp-content/uploads/2020/02/logo.png","width":176,"height":86,"caption":"Elektrotechnik Jörg Gensmann GmbH"},"image":{"@id":"https://elektro-gensmann.de/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='libase-style-css' href='https://elektro-gensmann.de/wp-content/themes/libase-wp-theme-gensmann/assets/css/style.css?ver=1597074954' type='text/css' media='all' />
+<link rel='stylesheet' id='libase-bootstrap-css' href='https://elektro-gensmann.de/wp-content/themes/libase-wp-theme-gensmann/assets/vendor/bootstrap.min.css?ver=1574156164' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-blocks-css' href='https://elektro-gensmann.de/wp-content/uploads/elementor/css/custom-jet-blocks.css?ver=1.3.15' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.31.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.1' type='text/css' media='all' />
+<style id='elementor-frontend-inline-css' type='text/css'>
+body { overflow-x: hidden; }
+.elementor-section.elementor-columns-alignment-fix-enabled > .elementor-column-gap-default > .elementor-row { width: calc(100% + 20px); margin-left: -10px; margin-right: -10px; }
+.elementor-section.elementor-columns-alignment-fix-enabled > .elementor-column-gap-narrow > .elementor-row { width: calc(100% + 10px); margin-left: -5px; margin-right: -5px; }
+.elementor-section.elementor-columns-alignment-fix-enabled > .elementor-column-gap-extended > .elementor-row { width: calc(100% + 30px); margin-left: -15px; margin-right: -15px; }
+.elementor-section.elementor-columns-alignment-fix-enabled > .elementor-column-gap-wide > .elementor-row { width: calc(100% + 40px); margin-left: -20px; margin-right: -20px; }
+.elementor-section.elementor-columns-alignment-fix-enabled > .elementor-column-gap-wider > .elementor-row { width: calc(100% + 60px); margin-left: -30px; margin-right: -30px; }
+</style>
+<link rel='stylesheet' id='swiper-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-860-css' href='https://elektro-gensmann.de/wp-content/uploads/elementor/css/post-860.css?ver=1730277648' type='text/css' media='all' />
+<link rel='stylesheet' id='li-widgets--step-list-css' href='https://elektro-gensmann.de/wp-content/themes/libase-wp-theme-gensmann/src/Elementor/Widgets/StepList/assets/styles/li-widgets--step-list.css?ver=1574156164' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-tricks-frontend-css' href='https://elektro-gensmann.de/wp-content/plugins/jet-tricks/assets/css/jet-tricks-frontend.css?ver=1.4.10' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInLeft-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-elements-css' href='https://elektro-gensmann.de/wp-content/plugins/jet-elements/assets/css/jet-elements.css?ver=2.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-elements-skin-css' href='https://elektro-gensmann.de/wp-content/plugins/jet-elements/assets/css/jet-elements-skin.css?ver=2.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInDown-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInRight-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.25.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-15-css' href='https://elektro-gensmann.de/wp-content/uploads/elementor/css/post-15.css?ver=1730328384' type='text/css' media='all' />
+<link rel='stylesheet' id='libase-typography-css' href='https://elektro-gensmann.de/wp-content/uploads/libase-typography.css?ver=1576777242' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="https://api.w.org/" href="https://elektro-gensmann.de/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://elektro-gensmann.de/wp-json/wp/v2/pages/15" /><link rel='shortlink' href='https://elektro-gensmann.de/?p=15' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://elektro-gensmann.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felektro-gensmann.de%2Fueber-uns%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://elektro-gensmann.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felektro-gensmann.de%2Fueber-uns%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.25.1; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<meta name="generator" content="Powered by Slider Revolution 6.7.20 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/cropped-favicon6-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/cropped-favicon6-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/cropped-favicon6-180x180.png" />
+<meta name="msapplication-TileImage" content="https://elektro-gensmann.de/wp-content/uploads/2019/12/cropped-favicon6-270x270.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+</head>
+<body class="page-template-default page page-id-15 elementor-default elementor-kit-860 elementor-page elementor-page-15">
+    <header id="header">
+    <div class="headbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-inner">
+                        <div class="logo">
+                            <a href="https://elektro-gensmann.de/" title="Licht bringt Leben Wir bringen Licht">Elektrotechnik Jörg Gensmann GmbH</a>
+                        </div>
+                        <div class="header-right">
+                            <div class="phone-button">
+                                <a href="tel:+4926029477812">02602 9477 812</a>                            </div>
+							<div class="mail-button">
+                                <a href="mailto:info@elektro-gensmann.de">info@elektro-gensmann.de</a>                            </div>
+                            <div class="menu-button">
+                                <a href="#">
+                                    <span class="toggle-line1"></span>
+                                    <span class="toggle-line2"></span>
+                                    <span class="toggle-line3"></span>
+                                </a>
+                            </div>
+                            <div class="hidden-menu">
+                                <div class="hidden-menu-inner">
+                                    <div class="headernav"><ul id="menu-headernavi" class="menu"><li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-55"><a href="https://elektro-gensmann.de/">Home</a></li>
+<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="https://elektro-gensmann.de/elektrotechnik/">Elektrotechnik</a></li>
+<li id="menu-item-266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-266"><a href="https://elektro-gensmann.de/#Strassenbeleuchtung">Straßenbeleuchtung</a></li>
+<li id="menu-item-936" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-936"><a href="https://elektro-gensmann.de/#flutlichtanlagen">Flutlichtanlagen</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-267"><a href="https://elektro-gensmann.de/#Objektbeleuchtung">Objektbeleuchtung</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="https://elektro-gensmann.de/referenzen/">Referenzen</a></li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-60"><a href="https://elektro-gensmann.de/ueber-uns/" aria-current="page">Über uns</a></li>
+</ul></div>                                    <div class="servicenav"><ul id="menu-servicenavi" class="menu"><li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://elektro-gensmann.de/kontakt/">Kontakt</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://elektro-gensmann.de/stellenangebote/">Stellenangebote</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-52"><a rel="privacy-policy" href="https://elektro-gensmann.de/datenschutzerklaerung/">Datenschutzerklärung</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="https://elektro-gensmann.de/impressum/">Impressum</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="https://elektro-gensmann.de/agb/">AGB</a></li>
+<li id="menu-item-911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-911"><a target="_blank" rel="noopener" href="https://www.facebook.com/elektrotechnikgensmann/">Facebook</a></li>
+</ul></div>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="site-content">    <main id="main" class="site-main">
+        <article id="post-15" class="post-15 page type-page status-publish hentry">
+            <div class="entry-content elementor" data-elementor-id="-1">
+            		<div data-elementor-type="wp-page" data-elementor-id="15" class="elementor elementor-15" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-ed84f29 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="ed84f29" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;61a8210&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}],&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dcbe11d" data-id="dcbe11d" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-079788c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="079788c" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;f23dc75&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7b78c53" data-id="7b78c53" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9e6609c animated-slow elementor-widget elementor-widget-image" data-id="9e6609c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="58" height="75" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/miniblitz.png" class="attachment-large size-large wp-image-122" alt="" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-02128e4 elementor-widget elementor-widget-heading" data-id="02128e4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Über uns</h1>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-42fdfcb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="42fdfcb" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f86bd00" data-id="f86bd00" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e1b85f1 elementor-widget elementor-widget-text-editor" data-id="e1b85f1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Seit unserer Gründung am 15. Oktober 2003 sind wir Ihr kompetenter Ansprechpartner in allen Fragen der Elektro- und Beleuchtungstechnik. Anfänglich als kleiner Handwerksbetrieb machte sich Elektrotechnik Jörg Gensmann GmbH durch hohe Verlässlichkeit und professionelle Arbeit schnell einen Namen. Heute sind wir deutschlandweit für Unternehmen, Kommunen und Privatkunden aller Art tätig.
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-27f8ba4 elementor-section-content-middle animated-slow elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="27f8ba4" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;d28f1af&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}],&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-230a3b1 animated-slow elementor-invisible" data-id="230a3b1" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-01214c0 elementor-widget elementor-widget-heading" data-id="01214c0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Jörg Gensmann</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0bfcaa5 elementor-widget elementor-widget-heading" data-id="0bfcaa5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Inhaber, Gründer und Meister im Elektroinstallationshandwerk</h4>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7c869ff" data-id="7c869ff" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0a1f747 elementor-hidden-phone elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="0a1f747" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;speed&quot;:1000,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2017.02.08 Gensmann Jörg Würth Zertifizierter Befestigungstechniker Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDg2LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTcuMDIuMDgtR2Vuc21hbm4tSm9cdTAzMDhyZy1XdVx1MDMwOHJ0aC1aZXJ0aWZpemllcnRlci1CZWZlc3RpZ3VuZ3N0ZWNobmlrZXItS29waWUuanBnIiwic2xpZGVzaG93IjoiMGExZjc0NyJ9" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2017.02.08-Gensmann-Jörg-Würth-Zertifizierter-Befestigungstechniker-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2017.02.08-Gensmann-Jörg-Würth-Zertifizierter-Befestigungstechniker-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2015.10.28 Gensmann Jörg ABB KNX Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDg1LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTUuMTAuMjgtR2Vuc21hbm4tSm9cdTAzMDhyZy1BQkItS05YLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.10.28-Gensmann-Jörg-ABB-KNX-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.10.28-Gensmann-Jörg-ABB-KNX-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2015.01.23 Gensmann Jörg BG Elektro Textil BGV A2 - Aufbauseminar Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDg0LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTUuMDEuMjMtR2Vuc21hbm4tSm9cdTAzMDhyZy1CRy1FbGVrdHJvLVRleHRpbC1CR1YtQTItQXVmYmF1c2VtaW5hci1Lb3BpZS5qcGciLCJzbGlkZXNob3ciOiIwYTFmNzQ3In0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.01.23-Gensmann-Jörg-BG-Elektro-Textil-BGV-A2-Aufbauseminar-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.01.23-Gensmann-Jörg-BG-Elektro-Textil-BGV-A2-Aufbauseminar-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2014.08.01 Gensmann Jörg IG Metall Ehrenurkunde Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDgzLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTQuMDguMDEtR2Vuc21hbm4tSm9cdTAzMDhyZy1JRy1NZXRhbGwtRWhyZW51cmt1bmRlLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2014.08.01-Gensmann-Jörg-IG-Metall-Ehrenurkunde-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2014.08.01-Gensmann-Jörg-IG-Metall-Ehrenurkunde-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2013.11.29 Gensmann Jörg Seebacher GmbH ISYGLT Professional Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDgyLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTMuMTEuMjktR2Vuc21hbm4tSm9cdTAzMDhyZy1TZWViYWNoZXItR21iSC1JU1lHTFQtUHJvZmVzc2lvbmFsLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2013.11.29-Gensmann-Jörg-Seebacher-GmbH-ISYGLT-Professional-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2013.11.29-Gensmann-Jörg-Seebacher-GmbH-ISYGLT-Professional-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2019.10.21 Gensmann Jörg IPAF Ausbildungsbescheinigung Arbeitsbühnen" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODIxLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMFwvMDJcLzIwMTkuMTAuMjEtR2Vuc21hbm4tSm9cdTAzMDhyZy1JUEFGLUF1c2JpbGR1bmdzYmVzY2hlaW5pZ3VuZy1BcmJlaXRzYnVcdTAzMDhobmVuLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.10.21-Gensmann-Jörg-IPAF-Ausbildungsbescheinigung-Arbeitsbühnen.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.10.21-Gensmann-Jörg-IPAF-Ausbildungsbescheinigung-Arbeitsbühnen-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2008.08.25 Gensmann Jörg BG Elektro Textil BGV A2 - Grundseminar Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDgwLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMDguMDguMjUtR2Vuc21hbm4tSm9cdTAzMDhyZy1CRy1FbGVrdHJvLVRleHRpbC1CR1YtQTItR3J1bmRzZW1pbmFyLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2008.08.25-Gensmann-Jörg-BG-Elektro-Textil-BGV-A2-Grundseminar-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2008.08.25-Gensmann-Jörg-BG-Elektro-Textil-BGV-A2-Grundseminar-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2004.06.03 Gossen Metrawatt Messtechnik Seminar Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDc5LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMDQuMDYuMDMtR29zc2VuLU1ldHJhd2F0dC1NZXNzdGVjaG5pay1TZW1pbmFyLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2004.06.03-Gossen-Metrawatt-Messtechnik-Seminar-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2004.06.03-Gossen-Metrawatt-Messtechnik-Seminar-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2003.03.15 Gensmann Jörg Hilti Brandschutz Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDc4LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMDMuMDMuMTUtR2Vuc21hbm4tSm9cdTAzMDhyZy1IaWx0aS1CcmFuZHNjaHV0ei1Lb3BpZS5qcGciLCJzbGlkZXNob3ciOiIwYTFmNzQ3In0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2003.03.15-Gensmann-Jörg-Hilti-Brandschutz-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2003.03.15-Gensmann-Jörg-Hilti-Brandschutz-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="1993.01.28 Gensmann Jörg IHK Koblenz Gesellenbrief Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDY5LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzE5OTMuMDEuMjgtR2Vuc21hbm4tSm9cdTAzMDhyZy1JSEstS29ibGVuei1HZXNlbGxlbmJyaWVmLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/1993.01.28-Gensmann-Jörg-IHK-Koblenz-Gesellenbrief-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1993.01.28-Gensmann-Jörg-IHK-Koblenz-Gesellenbrief-Kopie-300x212.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="1995.10.31 Gensmann Jörg OTA SPS Techniker Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDcwLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzE5OTUuMTAuMzEtR2Vuc21hbm4tSm9cdTAzMDhyZy1PVEEtU1BTLVRlY2huaWtlci1Lb3BpZS5qcGciLCJzbGlkZXNob3ciOiIwYTFmNzQ3In0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/1995.10.31-Gensmann-Jörg-OTA-SPS-Techniker-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1995.10.31-Gensmann-Jörg-OTA-SPS-Techniker-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="1997.10.22 Gensmann Jörg Dehn Innerer Überspannungsschutz Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDcxLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzE5OTcuMTAuMjItR2Vuc21hbm4tSm9cdTAzMDhyZy1EZWhuLUlubmVyZXItVVx1MDMwOGJlcnNwYW5udW5nc3NjaHV0ei1Lb3BpZS5qcGciLCJzbGlkZXNob3ciOiIwYTFmNzQ3In0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/1997.10.22-Gensmann-Jörg-Dehn-Innerer-Überspannungsschutz-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1997.10.22-Gensmann-Jörg-Dehn-Innerer-Überspannungsschutz-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="1998.02.13 Gensmann Jörg HWK Koblenz Bescheinigung Meisterbrief Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDcyLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzE5OTguMDIuMTMtR2Vuc21hbm4tSm9cdTAzMDhyZy1IV0stS29ibGVuei1CZXNjaGVpbmlndW5nLU1laXN0ZXJicmllZi1Lb3BpZS5qcGciLCJzbGlkZXNob3ciOiIwYTFmNzQ3In0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.02.13-Gensmann-Jörg-HWK-Koblenz-Bescheinigung-Meisterbrief-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.02.13-Gensmann-Jörg-HWK-Koblenz-Bescheinigung-Meisterbrief-Kopie-209x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="1998.02.13 Gensmann Jörg HWK Koblenz Bescheinigung Meisterprüfung Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDczLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzE5OTguMDIuMTMtR2Vuc21hbm4tSm9cdTAzMDhyZy1IV0stS29ibGVuei1CZXNjaGVpbmlndW5nLU1laXN0ZXJwcnVcdTAzMDhmdW5nLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.02.13-Gensmann-Jörg-HWK-Koblenz-Bescheinigung-Meisterprüfung-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.02.13-Gensmann-Jörg-HWK-Koblenz-Bescheinigung-Meisterprüfung-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="1998.09.24 Gensmann Jörg Battenfeld Unilog 4000 Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDc0LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzE5OTguMDkuMjQtR2Vuc21hbm4tSm9cdTAzMDhyZy1CYXR0ZW5mZWxkLVVuaWxvZy00MDAwLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.09.24-Gensmann-Jörg-Battenfeld-Unilog-4000-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.09.24-Gensmann-Jörg-Battenfeld-Unilog-4000-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="16 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2002.04.10 Gensmann Jörg BZL Lauterbach Mess Seminar Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDc2LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMDIuMDQuMTAtR2Vuc21hbm4tSm9cdTAzMDhyZy1CWkwtTGF1dGVyYmFjaC1NZXNzLVNlbWluYXItS29waWUuanBnIiwic2xpZGVzaG93IjoiMGExZjc0NyJ9" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2002.04.10-Gensmann-Jörg-BZL-Lauterbach-Mess-Seminar-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2002.04.10-Gensmann-Jörg-BZL-Lauterbach-Mess-Seminar-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="17 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2002.07.13 Gensmann Jörg HWK Köln EIB Grundseminar Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDc3LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMDIuMDcuMTMtR2Vuc21hbm4tSm9cdTAzMDhyZy1IV0stS29cdTAzMDhsbi1FSUItR3J1bmRzZW1pbmFyLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjBhMWY3NDcifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2002.07.13-Gensmann-Jörg-HWK-Köln-EIB-Grundseminar-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2002.07.13-Gensmann-Jörg-HWK-Köln-EIB-Grundseminar-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="18 von 18"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0a1f747" data-elementor-lightbox-title="2000.04.10 Gensmann Jörg SyBra Objektschutz Brandschutz Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDc1LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMDAuMDQuMTAtR2Vuc21hbm4tSm9cdTAzMDhyZy1TeUJyYS1PYmpla3RzY2h1dHotQnJhbmRzY2h1dHotS29waWUuanBnIiwic2xpZGVzaG93IjoiMGExZjc0NyJ9" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2000.04.10-Gensmann-Jörg-SyBra-Objektschutz-Brandschutz-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2000.04.10-Gensmann-Jörg-SyBra-Objektschutz-Brandschutz-Kopie-212x300.jpg" alt="" /></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-49bc93c elementor-hidden-desktop elementor-hidden-tablet elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="49bc93c" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;speed&quot;:1000,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2017.02.08-Gensmann-Jörg-Würth-Zertifizierter-Befestigungstechniker-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.10.28-Gensmann-Jörg-ABB-KNX-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.01.23-Gensmann-Jörg-BG-Elektro-Textil-BGV-A2-Aufbauseminar-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2014.08.01-Gensmann-Jörg-IG-Metall-Ehrenurkunde-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2013.11.29-Gensmann-Jörg-Seebacher-GmbH-ISYGLT-Professional-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2008.08.25-Gensmann-Jörg-BG-Elektro-Textil-BGV-A2-Grundseminar-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2004.06.03-Gossen-Metrawatt-Messtechnik-Seminar-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2003.03.15-Gensmann-Jörg-Hilti-Brandschutz-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1993.01.28-Gensmann-Jörg-IHK-Koblenz-Gesellenbrief-Kopie-300x212.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1995.10.31-Gensmann-Jörg-OTA-SPS-Techniker-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1997.10.22-Gensmann-Jörg-Dehn-Innerer-Überspannungsschutz-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.02.13-Gensmann-Jörg-HWK-Koblenz-Bescheinigung-Meisterbrief-Kopie-209x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.02.13-Gensmann-Jörg-HWK-Koblenz-Bescheinigung-Meisterprüfung-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/1998.09.24-Gensmann-Jörg-Battenfeld-Unilog-4000-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2002.04.10-Gensmann-Jörg-BZL-Lauterbach-Mess-Seminar-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="16 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2002.07.13-Gensmann-Jörg-HWK-Köln-EIB-Grundseminar-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="17 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2000.04.10-Gensmann-Jörg-SyBra-Objektschutz-Brandschutz-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="18 von 18"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.10.21-Gensmann-Jörg-IPAF-Ausbildungsbescheinigung-Arbeitsbühnen-212x300.jpg" alt="" /></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b0633a3 elementor-section-content-middle elementor-reverse-mobile animated-slow elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b0633a3" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;d28f1af&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}],&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-733244b" data-id="733244b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-81d595f elementor-hidden-phone elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="81d595f" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;speed&quot;:1000,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2013.11.29 Feilbach Seebacher ISYGLT Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDkzLCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTMuMTEuMjktRmVpbGJhY2gtU2VlYmFjaGVyLUlTWUdMVC1Lb3BpZS5qcGciLCJzbGlkZXNob3ciOiI4MWQ1OTVmIn0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2013.11.29-Feilbach-Seebacher-ISYGLT-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2013.11.29-Feilbach-Seebacher-ISYGLT-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2015.10.28 Feilbach KNX Grundkurs Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDk0LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTUuMTAuMjgtRmVpbGJhY2gtS05YLUdydW5ka3Vycy1Lb3BpZS5qcGciLCJzbGlkZXNob3ciOiI4MWQ1OTVmIn0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.10.28-Feilbach-KNX-Grundkurs-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.10.28-Feilbach-KNX-Grundkurs-Kopie-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2018.11.23 Feilbach Meisterbrief Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDk3LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTguMTEuMjMtRmVpbGJhY2gtTWVpc3RlcmJyaWVmLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjgxZDU5NWYifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2018.11.23-Feilbach-Meisterbrief-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2018.11.23-Feilbach-Meisterbrief-Kopie-211x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2017.08.29 Feilbach Sachkundenachweis Befestigungstechnik HWK Koblenz Fischer Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDk1LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTcuMDguMjktRmVpbGJhY2gtU2FjaGt1bmRlbmFjaHdlaXMtQmVmZXN0aWd1bmdzdGVjaG5pay1IV0stS29ibGVuei1GaXNjaGVyLUtvcGllLmpwZyIsInNsaWRlc2hvdyI6IjgxZDU5NWYifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2017.08.29-Feilbach-Sachkundenachweis-Befestigungstechnik-HWK-Koblenz-Fischer-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2017.08.29-Feilbach-Sachkundenachweis-Befestigungstechnik-HWK-Koblenz-Fischer-Kopie-300x212.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2018.11.02 Feilbach DRK Ersthelfer Kopie" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDk2LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAxOVwvMTJcLzIwMTguMTEuMDItRmVpbGJhY2gtRFJLLUVyc3RoZWxmZXItS29waWUuanBnIiwic2xpZGVzaG93IjoiODFkNTk1ZiJ9" href="https://elektro-gensmann.de/wp-content/uploads/2019/12/2018.11.02-Feilbach-DRK-Ersthelfer-Kopie.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2018.11.02-Feilbach-DRK-Ersthelfer-Kopie-300x214.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2019.10.21 Feilbach IPAF" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODE4LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMFwvMDJcLzIwMTkuMTAuMjEtRmVpbGJhY2gtSVBBRi5qcGciLCJzbGlkZXNob3ciOiI4MWQ1OTVmIn0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.10.21-Feilbach-IPAF.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.10.21-Feilbach-IPAF-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2019.08.02 Feilbach LuxData" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODI0LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMFwvMDJcLzIwMTkuMDguMDItRmVpbGJhY2gtTHV4RGF0YS5qcGciLCJzbGlkZXNob3ciOiI4MWQ1OTVmIn0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.08.02-Feilbach-LuxData.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.08.02-Feilbach-LuxData-300x212.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2013.11.29 Feilbach Seebacher ISYGLT" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODI1LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMFwvMDJcLzIwMTMuMTEuMjktRmVpbGJhY2gtU2VlYmFjaGVyLUlTWUdMVC5qcGciLCJzbGlkZXNob3ciOiI4MWQ1OTVmIn0%3D" href="https://elektro-gensmann.de/wp-content/uploads/2020/02/2013.11.29-Feilbach-Seebacher-ISYGLT.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2013.11.29-Feilbach-Seebacher-ISYGLT-212x300.jpg" alt="" /></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 von 9"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="81d595f" data-elementor-lightbox-title="2017.02.08 Feilbach Zertifizierter Befestigungstechniker Würth" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODI2LCJ1cmwiOiJodHRwczpcL1wvZWxla3Ryby1nZW5zbWFubi5kZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMFwvMDJcLzIwMTcuMDIuMDgtRmVpbGJhY2gtWmVydGlmaXppZXJ0ZXItQmVmZXN0aWd1bmdzdGVjaG5pa2VyLVd1XHUwMzA4cnRoLmpwZyIsInNsaWRlc2hvdyI6IjgxZDU5NWYifQ%3D%3D" href="https://elektro-gensmann.de/wp-content/uploads/2020/02/2017.02.08-Feilbach-Zertifizierter-Befestigungstechniker-Würth.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2017.02.08-Feilbach-Zertifizierter-Befestigungstechniker-Würth-212x300.jpg" alt="" /></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3c02c57 elementor-hidden-desktop elementor-hidden-tablet elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="3c02c57" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;speed&quot;:1000,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2013.11.29-Feilbach-Seebacher-ISYGLT-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2015.10.28-Feilbach-KNX-Grundkurs-Kopie-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2018.11.23-Feilbach-Meisterbrief-Kopie-211x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2017.08.29-Feilbach-Sachkundenachweis-Befestigungstechnik-HWK-Koblenz-Fischer-Kopie-300x212.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2019/12/2018.11.02-Feilbach-DRK-Ersthelfer-Kopie-300x214.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.10.21-Feilbach-IPAF-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2019.08.02-Feilbach-LuxData-1-300x212.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2013.11.29-Feilbach-Seebacher-ISYGLT-1-212x300.jpg" alt="" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 von 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://elektro-gensmann.de/wp-content/uploads/2020/02/2017.02.08-Feilbach-Zertifizierter-Befestigungstechniker-Würth-1-212x300.jpg" alt="" /></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f988cfd animated-slow elementor-invisible" data-id="f988cfd" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f0d6868 elementor-widget elementor-widget-heading" data-id="f0d6868" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Florian Feilbach </h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-311b43e elementor-widget elementor-widget-heading" data-id="311b43e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Meister im Elektrotechnikerhandwerk </h4>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d480e72 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d480e72" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-05dc558" data-id="05dc558" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-12ebf78 elementor-widget elementor-widget-heading" data-id="12ebf78" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Verlässlich und professionell</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-670a742 elementor-widget elementor-widget-text-editor" data-id="670a742" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Insgesamt 15 Mitglieder zählt unser Betrieb heute, darunter
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-74bce6e elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="74bce6e" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-166e50e" data-id="166e50e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-48b1c05 elementor-widget elementor-widget-text-editor" data-id="48b1c05" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							2						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-95432f9" data-id="95432f9" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e75e347 elementor-widget elementor-widget-text-editor" data-id="e75e347" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Meister						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e10d887 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e10d887" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4ca50bf" data-id="4ca50bf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-829e32e elementor-widget elementor-widget-text-editor" data-id="829e32e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>8</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9936f4a" data-id="9936f4a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0568703 elementor-widget elementor-widget-text-editor" data-id="0568703" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Elektriker						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c32c0e6 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c32c0e6" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cfcc37f" data-id="cfcc37f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3976286 elementor-widget elementor-widget-text-editor" data-id="3976286" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>2</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8be71cf" data-id="8be71cf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-383d9f1 elementor-widget elementor-widget-text-editor" data-id="383d9f1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Auszubildende						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-33f2a96 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="33f2a96" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ee0c42c" data-id="ee0c42c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5a000f0 elementor-widget elementor-widget-text-editor" data-id="5a000f0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>1</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2b43273" data-id="2b43273" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-48de687 elementor-widget elementor-widget-text-editor" data-id="48de687" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Tiefbaufacharbeiter						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-81213e8 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="81213e8" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0a91620" data-id="0a91620" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-80550c1 elementor-widget elementor-widget-text-editor" data-id="80550c1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>6</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e2e5ccd" data-id="e2e5ccd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f61a532 elementor-widget elementor-widget-text-editor" data-id="f61a532" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Elektrohelfer						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-106d740 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="106d740" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;cf0e7e5&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1de5d78" data-id="1de5d78" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5c06cb1 elementor-widget elementor-widget-text-editor" data-id="5c06cb1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>sowie eine Bürokraft (Vollzeit), eine Bürokraft (Teilzeit), ein Helfer für Lager und Materialwirtschaft und Aushilfen. Jeder unserer Mitarbeiter ist garantiert bestens ausgebildet in seinem Gebiet. Gemeinsam arbeiten wir Hand in Hand, unterstützen einander und bilden uns stetig fort.</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7b45146 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b45146" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;07c4d7c&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f069611" data-id="f069611" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0af21ff elementor-widget elementor-widget-heading" data-id="0af21ff" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Unsere Philosophie</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7164a17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7164a17" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d3e2ae&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9b2a82c animated-slow elementor-invisible" data-id="9b2a82c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cca5278 elementor-widget elementor-widget-heading" data-id="cca5278" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Individuell und genau nach Bedarf </h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5bb2a3c elementor-widget elementor-widget-text-editor" data-id="5bb2a3c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Der Erfolg eines Unternehmens fußt nicht zuletzt auf den Ansichten, die es vertritt. Der erste Grundpfeiler unseres Leitbildes ist die Planung und Handlung nach Kundenwunsch. Wir sind überzeugt, dass jedes Projekt sich so umsetzen lässt, dass es den Ansprüchen seines Auftraggebers genügt. Dafür setzen wir uns mit jedem Auftrag aufs Neue ein, planen genau im Voraus und bleiben dank unserer umfangreichen Erfahrung auch bei Unvorhergesehenem flexibel.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ccc7f23 animated-slow elementor-invisible" data-id="ccc7f23" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInDown&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f8cbdc1 elementor-widget elementor-widget-heading" data-id="f8cbdc1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">
+Zuverlässig und in hochwertiger Qualität</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1514c24 elementor-widget elementor-widget-text-editor" data-id="1514c24" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Den zweiten Teil unseres Leitbildes macht die Qualität unserer Arbeit aus: Nur durch die zuverlässige und termingerechte Umsetzung unserer Aufträge, das einwandfreie Handwerk unseres Teams und die Hochwertigkeit der verwendeten Produkte verdienen wir uns nachhaltig die Zufriedenheit und das Vertrauen unserer Kunden.<br /><strong>Messen Sie den Erfolg unserer Philosophie selbst an unseren Referenzen.</strong></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-bd53e0d elementor-widget elementor-widget-jet-button" data-id="bd53e0d" data-element_type="widget" data-widget_type="jet-button.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-jet-button jet-elements"><div class="jet-button__container">
+	<a class="jet-button__instance jet-button__instance--icon- hover-effect-1" href="https://elektro-gensmann.de/referenzen/">
+		<div class="jet-button__plane jet-button__plane-normal"></div>
+		<div class="jet-button__plane jet-button__plane-hover"></div>
+		<div class="jet-button__state jet-button__state-normal">
+			<span class="jet-button__label">Zu den Referenzen </span>		</div>
+		<div class="jet-button__state jet-button__state-hover">
+			<span class="jet-button__label">Zu den Referenzen </span>		</div>
+	</a>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7a855fe elementor-section-height-min-height elementor-section-items-stretch elementor-section-boxed elementor-section-height-default" data-id="7a855fe" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;9d0690c&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}],&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/elektro-gensmann.de\/wp-content\/uploads\/2019\/12\/City_Lights_Night.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+								<div class="elementor-background-video-container">
+													<video class="elementor-background-video-hosted elementor-html5-video" autoplay muted playsinline loop></video>
+											</div>
+									<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a7835b" data-id="8a7835b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-98ba7ad elementor-widget elementor-widget-heading" data-id="98ba7ad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Liste der technischen Ausrüstung und Fachliteratur </h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2a692b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2a692b2" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;ed7cd8b&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f444e3f animated-slow elementor-invisible" data-id="f444e3f" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7b6d474 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="7b6d474" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Prüfplatz nach DIN VDE 0104</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Spannungsprüfer nach DIN VDE 0682-401</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Spannungsmessgerät nach DIN VDE 0411-1</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Strommessgeräte nach DIN VDE 0411-1</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Isolationsmessgerät nach DIN VDE 0413-2</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-668ea7d animated-slow elementor-invisible" data-id="668ea7d" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4776c2b elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4776c2b" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Schleifenwiderstandsmessgerät nach DIN VDE 0413-3</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Widerstandsmessgerät nach DIN VDE 0413-4</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Messgerät zum Prüfen der Fehlerstrom- und Schutzeinrichtungen nach DIN VDE 0413-6</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Drehfeld-Richtungsanzeiger nach DIN VDE 0413-7</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Messgerät zur sicherheitstechnischen Prüfung von elektrischen Betriebsmitteln nach DIN VDE 0404-1</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-ad0f271 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ad0f271" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;ed7cd8b&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-84c3a4d animated-slow elementor-invisible" data-id="84c3a4d" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e3f4859 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e3f4859" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Messgerät für Wiederholungsprüfungen nach DIN VDE 0404-2</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Diverse Messgeräte zur Bestimmung der Beleuchtungsstärke und Entfernung sowie ein entsprechendes Messgerät zur Überprüfung von EDV-Anlagen.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Kabelortungsgerät zum Feststellen der Eingrabtiefe und dem Verlauf von Leitungen im Erdreich</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Auswahlordner für das Elektrotechniker-Handwerk mit den VDE-Bestimmungen sowie der VOB</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Auswahlordner in ihren jeweils gültigen Fassungen, einschließlich Ergänzungsabonnement</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7d9e5e3 animated-slow elementor-invisible" data-id="7d9e5e3" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7d0c63c elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="7d0c63c" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Diverse Mess-, Bohr- sowie Schneidwerkzeuge</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Akku-Geräte (Akkuschrauber, Schlagschrauber, Winkelschleifer und Schlagbohrmaschinen auf jedem Montagefahrzeug)</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Hochwertige Verdichtungswerkzeuge (Rüttelplatten und Stampfer)</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Stromgeneratoren bis 3,2 kVA</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-minus"></i>						</span>
+										<span class="elementor-icon-list-text">Ein Arbeitsgerüst (Arbeitshöhe bis 10 m)</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-095868a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="095868a" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-11defed" data-id="11defed" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-457454b elementor-widget elementor-widget-heading" data-id="457454b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Unser Fuhrpark </h2>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f240399 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f240399" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-385ebc6" data-id="385ebc6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-61969b5 elementor-widget elementor-widget-text-editor" data-id="61969b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>4x</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-cb43a72" data-id="cb43a72" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a5cd801 elementor-widget elementor-widget-text-editor" data-id="a5cd801" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Servicefahrzeug Kastenwagen 3,5 t</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-04c730d elementor-hidden-phone" data-id="04c730d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8db31c5 elementor-widget elementor-widget-image" data-id="8db31c5" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:11,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:50,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="80" height="77" src="https://elektro-gensmann.de/wp-content/uploads/2020/01/kastenwagen_3-5t.png" class="attachment-large size-large wp-image-749" alt="" />													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7cd3249 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7cd3249" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f8f26e2" data-id="f8f26e2" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-47d1138 elementor-widget elementor-widget-text-editor" data-id="47d1138" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>2x</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f07d309" data-id="f07d309" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7c0d6b9 elementor-widget elementor-widget-text-editor" data-id="7c0d6b9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Pritschenfahrzeug 3,5 t 3,5 &#8211; 5,2 m Ladefläche</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9597fa3 elementor-hidden-phone" data-id="9597fa3" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-433dfd5 elementor-widget elementor-widget-image" data-id="433dfd5" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:11,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:50,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="80" height="77" src="https://elektro-gensmann.de/wp-content/uploads/2020/01/Pritschenfahrzeug_3-5t.png" class="attachment-large size-large wp-image-751" alt="" />													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f45ece9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f45ece9" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-df1067a" data-id="df1067a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bae29b2 elementor-widget elementor-widget-text-editor" data-id="bae29b2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>3x</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c3eba54" data-id="c3eba54" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6f9d4c2 elementor-widget elementor-widget-text-editor" data-id="6f9d4c2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Hubsteiger France Elevateur / CTE &amp; Multitel (Arbeitshöhe bis 25 m)</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-090e234 elementor-hidden-phone" data-id="090e234" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bc1401b elementor-widget elementor-widget-image" data-id="bc1401b" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:11,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:50,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="80" height="77" src="https://elektro-gensmann.de/wp-content/uploads/2020/01/Hubsteiger.png" class="attachment-large size-large wp-image-753" alt="" />													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-279bf4d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="279bf4d" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7c2feb5" data-id="7c2feb5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e9a4396 elementor-widget elementor-widget-text-editor" data-id="e9a4396" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>6x</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0f9a3d3" data-id="0f9a3d3" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-65508d0 elementor-widget elementor-widget-text-editor" data-id="65508d0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PKW Transporter</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-18fa58e elementor-hidden-phone" data-id="18fa58e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a5ba4bb elementor-widget elementor-widget-image" data-id="a5ba4bb" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:11,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:50,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="80" height="77" src="https://elektro-gensmann.de/wp-content/uploads/2020/01/transporter3.png" class="attachment-large size-large wp-image-758" alt="" />													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-16e012d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="16e012d" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;8d91c77&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;jet_parallax_layout_direction&quot;:null,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;}]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d91c462" data-id="d91c462" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-130723b elementor-widget elementor-widget-text-editor" data-id="130723b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>3x</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-b08e6ef" data-id="b08e6ef" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e5fc068 elementor-widget elementor-widget-text-editor" data-id="e5fc068" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Pritschenanhänger bis 2,8 t</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-57a7080 elementor-hidden-phone" data-id="57a7080" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a0804a2 elementor-widget elementor-widget-image" data-id="a0804a2" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:11,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:50,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="80" height="77" src="https://elektro-gensmann.de/wp-content/uploads/2020/01/anhänger.png" class="attachment-large size-large wp-image-755" alt="" />													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		        </div>
+    </article>
+    </main>
+</div>
+<footer class="site-footer">
+    <footer id="footer">
+    <div class="footerbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer-inner">
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <h3>
+                                    <a href="https://elektro-gensmann.de/" title="Licht bringt Leben Wir bringen Licht">
+                                    Elektrotechnik<br>
+                                    Jörg Gensmann GmbH
+                                    </a>
+                                </h3>
+                            </div>
+                                                            <div class="footer-infos">
+                                                                            <div class="footer-adresse">
+                                            <a href="https://www.google.de/maps/dir//Auf+d.+Birke+7,+56412+Heiligenroth/@50.4503532,7.8381123,13.75z/data=!4m17!1m7!3m6!1s0x47bc2b5eb73eee63:0x3db435267b5ab071!2sAuf+d.+Birke+7,+56412+Heiligenroth!3b1!8m2!3d50.4551468!4d7.8541849!4m8!1m0!1m5!1m1!1s0x47bc2b5eb73eee63:0x3db435267b5ab071!2m2!1d7.8541849!2d50.4551468!3e1" target="_blank">Auf der Birke 7a<br />
+56412 Heiligenroth</a>                                        </div>
+                                        <div class="footer-telefon">
+                                            <a href="tel:+4926029477812">02602 9477 812</a><br />
+                                        </div>
+                                        <div class="footer-zeiten">
+                                            Öffnungszeiten: 07:00 - 16:30                                        </div>
+									<div class="footer-facebook">
+                                            <a href="https://www.facebook.com/elektrotechnikgensmann/" target="_blank">Sie finden uns auch auf Facebook</a>                                        </div>
+                                                                    </div>
+                                                    </div>
+                        <div class="footer-middle">
+                            <h3>Sitemap</h3>
+                            <div class="footernav"><ul id="menu-footernavi" class="menu"><li id="menu-item-500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="https://elektro-gensmann.de/elektrotechnik/">Elektrotechnik</a></li>
+<li id="menu-item-263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-263"><a href="https://elektro-gensmann.de/#Strassenbeleuchtung">Straßenbeleuchtung</a></li>
+<li id="menu-item-938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-938"><a href="https://elektro-gensmann.de/#flutlichtanlagen">Flutlichtanlagen</a></li>
+<li id="menu-item-261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-261"><a href="https://elektro-gensmann.de/#Objektbeleuchtung">Objektbeleuchtung</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://elektro-gensmann.de/referenzen/">Referenzen</a></li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-49"><a href="https://elektro-gensmann.de/ueber-uns/" aria-current="page">Über uns</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="https://elektro-gensmann.de/kontakt/">Kontakt</a></li>
+<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-44"><a rel="privacy-policy" href="https://elektro-gensmann.de/datenschutzerklaerung/">Datenschutz</a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://elektro-gensmann.de/impressum/">Impressum</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://elektro-gensmann.de/agb/">AGB</a></li>
+</ul></div>                        </div>
+                                                    <div class="footer-right">
+                                                                    <h3>Stellenangebote</h3>
+                                    Sie sind auf der Suche nach einem Job, der Abwechslung bietet, und haben Spaß am Handwerk? Kundenzufriedenheit und Professionalität stehen für Sie an erster Stelle? Dann bewerben Sie sich bei uns. Wir suchen erfahrene Monteure und motivierte Auszubildende für unser Team.                                    <div class="footer-button">
+                                        <a href="https://elektro-gensmann.de/stellenangebote/">Unsere Stellenangebote</a>                                    </div>
+                                                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></footer>
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='e-motion-fx-css' href='https://elektro-gensmann.de/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.25.0' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href='//elektro-gensmann.de/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.20' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="//elektro-gensmann.de/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.20" async id="tp-tools-js"></script>
+<script type="text/javascript" src="//elektro-gensmann.de/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.20" async id="revmin-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/themes/libase-wp-theme-gensmann/assets/js/script.js?ver=1578475538" id="libase-script-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/themes/libase-wp-theme-gensmann/assets/vendor/bootstrap.min.js?ver=1574156164" id="libase-bootstrap-script-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.25.0" id="elementor-pro-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.1" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.1" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
+/* <![CDATA[ */
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/elektro-gensmann.de\/wp-admin\/admin-ajax.php","nonce":"e506da4522","urls":{"assets":"https:\/\/elektro-gensmann.de\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/elektro-gensmann.de\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"de_DE","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/elektro-gensmann.de\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.25.0" id="elementor-pro-frontend-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Auf Facebook teilen","shareOnTwitter":"Auf Twitter teilen","pinIt":"Anheften","download":"Download","downloadImage":"Bild downloaden","fullscreen":"Vollbild","zoom":"Zoom","share":"Teilen","playVideo":"Video abspielen","previous":"Zur\u00fcck","next":"Weiter","close":"Schlie\u00dfen","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1200,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Breitbild","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.1","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"theme_builder_v2":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/elektro-gensmann.de\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/elektro-gensmann.de\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/elektro-gensmann.de\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"014fd8a761"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":15,"title":"%C3%9Cber%20uns%20-%20Elektrotechnik%20J%C3%B6rg%20Gensmann%20GmbH","excerpt":"","featuredImage":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.1" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.0" id="pro-elements-handlers-js"></script>
+<script type="text/javascript" id="jet-blocks-js-extra">
+/* <![CDATA[ */
+var jetBlocksData = {"recaptchaConfig":""};
+var JetHamburgerPanelSettings = {"ajaxurl":"https:\/\/elektro-gensmann.de\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/elektro-gensmann.de\/wp-json\/jet-blocks-api\/v1\/elementor-template","devMode":"false","restNonce":"87543265dc"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/jet-blocks/assets/js/jet-blocks.min.js?ver=1.3.15" id="jet-blocks-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/jet-elements/assets/js/lib/waypoints/waypoints.js?ver=4.0.2" id="waypoints-js"></script>
+<script type="text/javascript" id="jet-elements-js-extra">
+/* <![CDATA[ */
+var jetElements = {"ajaxUrl":"https:\/\/elektro-gensmann.de\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/elektro-gensmann.de\/wp-json\/jet-elements-api\/v1\/elementor-template","devMode":"false","messages":{"invalidMail":"Please specify a valid e-mail"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/jet-elements/assets/js/jet-elements.min.js?ver=2.7.0" id="jet-elements-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/jet-tricks/assets/js/lib/tippy/popperjs.js?ver=2.5.2" id="jet-tricks-popperjs-js"></script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/jet-tricks/assets/js/lib/tippy/tippy-bundle.js?ver=6.3.1" id="jet-tricks-tippy-bundle-js"></script>
+<script type="text/javascript" id="jet-tricks-frontend-js-extra">
+/* <![CDATA[ */
+var JetTricksSettings = {"elements_data":{"sections":{"ed84f29":{"view_more":false,"particles":"false","particles_json":""},"079788c":{"view_more":false,"particles":"false","particles_json":""},"42fdfcb":{"view_more":false,"particles":"false","particles_json":""},"27f8ba4":{"view_more":false,"particles":"false","particles_json":""},"b0633a3":{"view_more":false,"particles":"false","particles_json":""},"d480e72":{"view_more":false,"particles":"false","particles_json":""},"74bce6e":{"view_more":false,"particles":"false","particles_json":""},"e10d887":{"view_more":false,"particles":"false","particles_json":""},"c32c0e6":{"view_more":false,"particles":"false","particles_json":""},"33f2a96":{"view_more":false,"particles":"false","particles_json":""},"81213e8":{"view_more":false,"particles":"false","particles_json":""},"106d740":{"view_more":false,"particles":"false","particles_json":""},"7b45146":{"view_more":false,"particles":"false","particles_json":""},"7164a17":{"view_more":false,"particles":"false","particles_json":""},"7a855fe":{"view_more":false,"particles":"false","particles_json":""},"2a692b2":{"view_more":false,"particles":"false","particles_json":""},"ad0f271":{"view_more":false,"particles":"false","particles_json":""},"095868a":{"view_more":false,"particles":"false","particles_json":""},"f240399":{"view_more":false,"particles":"false","particles_json":""},"7cd3249":{"view_more":false,"particles":"false","particles_json":""},"f45ece9":{"view_more":false,"particles":"false","particles_json":""},"279bf4d":{"view_more":false,"particles":"false","particles_json":""},"16e012d":{"view_more":false,"particles":"false","particles_json":""}},"columns":[],"widgets":{"9e6609c":[],"02128e4":[],"e1b85f1":[],"01214c0":[],"0bfcaa5":[],"0a1f747":[],"49bc93c":[],"81d595f":[],"3c02c57":[],"f0d6868":[],"311b43e":[],"12ebf78":[],"670a742":[],"48b1c05":[],"e75e347":[],"829e32e":[],"0568703":[],"3976286":[],"383d9f1":[],"5a000f0":[],"48de687":[],"80550c1":[],"f61a532":[],"5c06cb1":[],"0af21ff":[],"cca5278":[],"5bb2a3c":[],"f8cbdc1":[],"1514c24":[],"bd53e0d":[],"98ba7ad":[],"7b6d474":[],"4776c2b":[],"e3f4859":[],"7d0c63c":[],"457454b":[],"61969b5":[],"a5cd801":[],"8db31c5":[],"47d1138":[],"7c0d6b9":[],"433dfd5":[],"bae29b2":[],"6f9d4c2":[],"bc1401b":[],"e9a4396":[],"65508d0":[],"a5ba4bb":[],"130723b":[],"e5fc068":[],"a0804a2":[]}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://elektro-gensmann.de/wp-content/plugins/jet-tricks/assets/js/jet-tricks-frontend.js?ver=1.4.10" id="jet-tricks-frontend-js"></script>
+</body>
+</html>

@@ -1,0 +1,1175 @@
+<!doctype html>
+<html dir="ltr" lang="de" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Über uns - Das Team | Dach Jäger in Bielefeld</title>
+<link rel="preload" as="font" href="https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.woff" crossorigin>
+<link rel="preload" as="font" href="https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.woff" crossorigin><style id="rocket-critical-css">html{line-height:1.15;-webkit-text-size-adjust:100%}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#333;background-color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1,h2,h3,h4{margin-top:.5rem;margin-bottom:1rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}h4{font-size:1.5rem}p{margin-top:0;margin-bottom:.9rem}a{background-color:transparent;text-decoration:none;color:#c36}img{border-style:none;height:auto;max-width:100%}label{display:inline-block;line-height:1;vertical-align:middle}input{font-family:inherit;font-size:1rem;line-height:1.5;margin:0}input[type=text]{width:100%;border:1px solid #666;border-radius:3px;padding:.5rem 1rem}input{overflow:visible}[type=checkbox]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}table{background-color:transparent;width:100%;margin-bottom:15px;font-size:.9em;border-spacing:0;border-collapse:collapse}table td,table th{padding:15px;line-height:1.5;vertical-align:top;border:1px solid #ccc}table th{font-weight:700}table tbody>tr:nth-child(odd)>td,table tbody>tr:nth-child(odd)>th{background-color:#f7f7f7}li,ul{margin-top:0;margin-bottom:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}.site-navigation{grid-area:nav-menu;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.elementor-screen-only{position:absolute;top:-10000em;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.elementor{-webkit-hyphens:manual;-ms-hyphens:manual;hyphens:manual}.elementor *,.elementor :after,.elementor :before{-webkit-box-sizing:border-box;box-sizing:border-box}.elementor a{-webkit-box-shadow:none;box-shadow:none;text-decoration:none}.elementor img{height:auto;max-width:100%;border:none;-webkit-border-radius:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none}:root{--page-title-display:block}.elementor-section{position:relative}.elementor-section .elementor-container{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:auto;margin-left:auto;position:relative}@media (max-width:1024px){.elementor-section .elementor-container{-ms-flex-wrap:wrap;flex-wrap:wrap}}.elementor-section.elementor-section-boxed>.elementor-container{max-width:1140px}.elementor-widget-wrap{position:relative;width:100%;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-line-pack:start;align-content:flex-start}.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-wrap>.elementor-element{width:100%}.elementor-widget{position:relative}.elementor-widget:not(:last-child){margin-bottom:20px}.elementor-column{min-height:1px}.elementor-column{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-column-gap-default>.elementor-column>.elementor-element-populated{padding:10px}@media (min-width:768px){.elementor-column.elementor-col-33{width:33.333%}.elementor-column.elementor-col-66{width:66.666%}.elementor-column.elementor-col-100{width:100%}}@media (max-width:767px){.elementor-column{width:100%}}@media (min-width:1025px){#elementor-device-mode:after{content:"desktop"}}@media (min-width:-1px){#elementor-device-mode:after{content:"widescreen"}}@media (max-width:-1px){#elementor-device-mode:after{content:"laptop";content:"tablet_extra"}}@media (max-width:1024px){#elementor-device-mode:after{content:"tablet"}}@media (max-width:-1px){#elementor-device-mode:after{content:"mobile_extra"}}@media (max-width:767px){#elementor-device-mode:after{content:"mobile"}}[class^=eicon]{display:inline-block;font-family:eicons;font-size:inherit;font-weight:400;font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.eicon-menu-bar:before{content:"\e816"}.animated{-webkit-animation-duration:1.25s;animation-duration:1.25s}@media (prefers-reduced-motion:reduce){.animated{-webkit-animation:none;animation:none}}.elementor-kit-9{--e-global-color-primary:#000000;--e-global-color-secondary:#000000;--e-global-color-text:#000000;--e-global-color-accent:#C10418;--e-global-color-3e64158:#C10418;--e-global-color-38def46:#EB6909;--e-global-color-dd569a5:#1E1E2A;--e-global-typography-primary-font-family:"Source Sans Pro local";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Source Sans Pro local";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Source Sans Pro local";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Source Sans Pro local";--e-global-typography-accent-font-weight:500;font-family:"Source Sans Pro local",Sans-serif;font-weight:normal}.elementor-kit-9 a{color:var(--e-global-color-accent)}.elementor-widget:not(:last-child){margin-bottom:20px}@media (max-width:1024px){.elementor-section.elementor-section-boxed>.elementor-container{max-width:1024px}}@media (max-width:767px){.elementor-section.elementor-section-boxed>.elementor-container{max-width:767px}}@font-face{font-family:'Source Sans Pro local';font-style:normal;font-weight:normal;font-display:swap;src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.eot');src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.eot?#iefix') format('embedded-opentype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.woff2') format('woff2'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.woff') format('woff'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.ttf') format('truetype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.svg#SourceSansProlocal') format('svg')}@font-face{font-family:'Source Sans Pro local';font-style:normal;font-weight:bold;font-display:swap;src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.eot');src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.eot?#iefix') format('embedded-opentype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.woff2') format('woff2'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.woff') format('woff'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.ttf') format('truetype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.svg#SourceSansProlocal') format('svg')}.elementor-location-header:before{content:"";display:table;clear:both}.elementor-widget-heading .elementor-heading-title{color:var(--e-global-color-primary);font-family:var(--e-global-typography-primary-font-family),Sans-serif;font-weight:var(--e-global-typography-primary-font-weight)}.elementor-widget-divider{--divider-color:var( --e-global-color-secondary )}.elementor-widget-form .elementor-field-group>label{color:var(--e-global-color-text)}.elementor-widget-form .elementor-field-group>label{font-family:var(--e-global-typography-text-font-family),Sans-serif;font-weight:var(--e-global-typography-text-font-weight)}.elementor-widget-nav-menu .elementor-nav-menu .elementor-item{font-family:var(--e-global-typography-primary-font-family),Sans-serif;font-weight:var(--e-global-typography-primary-font-weight)}.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item{color:var(--e-global-color-text);fill:var(--e-global-color-text)}.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:before,.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after{background-color:var(--e-global-color-accent)}.elementor-widget-nav-menu .elementor-nav-menu--dropdown .elementor-item{font-family:var(--e-global-typography-accent-font-family),Sans-serif;font-weight:var(--e-global-typography-accent-font-weight)}.elementor-25 .elementor-element.elementor-element-124de66d .elementor-spacer-inner{height:50px}.elementor-25 .elementor-element.elementor-element-5d258421>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute){margin-bottom:10px}.elementor-25 .elementor-element.elementor-element-618bc6ed .elementor-heading-title{font-family:"Source Sans Pro local",Sans-serif;font-size:30px;font-weight:bold}.elementor-25 .elementor-element.elementor-element-3ed57e71{--divider-border-style:solid;--divider-color:var( --e-global-color-accent );--divider-border-width:2px}.elementor-25 .elementor-element.elementor-element-3ed57e71 .elementor-divider-separator{width:10%}.elementor-25 .elementor-element.elementor-element-3ed57e71 .elementor-divider{padding-top:0px;padding-bottom:0px}@media (max-width:1024px){.elementor-25 .elementor-element.elementor-element-124de66d .elementor-spacer-inner{height:20px}.elementor-25 .elementor-element.elementor-element-233ba4f{padding:0px 20px 0px 20px}}@media (max-width:767px){.elementor-25 .elementor-element.elementor-element-124de66d .elementor-spacer-inner{height:0px}.elementor-25 .elementor-element.elementor-element-233ba4f{padding:0px 20px 0px 20px}}.elementor-25 .elementor-element.elementor-element-708a9de4 h2{font-weight:bold;font-size:20px}.elementor-25 .elementor-element.elementor-element-708a9de4 h3{font-weight:bold;font-size:18px}.elementor-25 .elementor-element.elementor-element-708a9de4 h4{font-weight:bold;font-size:16px}@font-face{font-family:'Source Sans Pro local';font-style:normal;font-weight:normal;font-display:swap;src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.eot');src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.eot?#iefix') format('embedded-opentype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.woff2') format('woff2'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.woff') format('woff'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.ttf') format('truetype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-regular.svg#SourceSansProlocal') format('svg')}@font-face{font-family:'Source Sans Pro local';font-style:normal;font-weight:bold;font-display:swap;src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.eot');src:url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.eot?#iefix') format('embedded-opentype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.woff2') format('woff2'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.woff') format('woff'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.ttf') format('truetype'),url('https://dach-jaeger.de/wp-content/uploads/source-sans-pro-v14-latin-700.svg#SourceSansProlocal') format('svg')}.elementor-32 .elementor-element.elementor-element-1e851e8{box-shadow:0px 0px 10px 0px rgba(0,0,0,0.5);padding:0px 0px 0px 0px}.elementor-32 .elementor-element.elementor-element-6be2eb4>.elementor-element-populated{padding:0px 0px 0px 0px}.elementor-32 .elementor-element.elementor-element-0675444>.elementor-container>.elementor-column>.elementor-widget-wrap{align-content:center;align-items:center}.elementor-32 .elementor-element.elementor-element-0675444:not(.elementor-motion-effects-element-type-background){background-color:#FFFFFF}.elementor-32 .elementor-element.elementor-element-0675444{padding:10px 0px 10px 0px}.elementor-32 .elementor-element.elementor-element-37b113c>.elementor-element-populated{padding:0px 0px 0px 0px}.elementor-32 .elementor-element.elementor-element-22537ca{text-align:left}.elementor-32 .elementor-element.elementor-element-11ca35b>.elementor-element-populated{padding:0px 0px 0px 0px}.elementor-32 .elementor-element.elementor-element-90b322f .elementor-menu-toggle{margin-left:auto;background-color:#02010100}.elementor-32 .elementor-element.elementor-element-90b322f .elementor-nav-menu .elementor-item{font-weight:normal}.elementor-32 .elementor-element.elementor-element-90b322f .elementor-nav-menu--main .elementor-item{color:#000000;fill:#000000}.elementor-32 .elementor-element.elementor-element-90b322f .elementor-nav-menu--dropdown a,.elementor-32 .elementor-element.elementor-element-90b322f .elementor-menu-toggle{color:#FFFFFF}.elementor-32 .elementor-element.elementor-element-90b322f .elementor-nav-menu--dropdown{background-color:var(--e-global-color-38def46)}.elementor-32 .elementor-element.elementor-element-90b322f div.elementor-menu-toggle{color:#000000}.elementor-32 .elementor-element.elementor-element-17bf4ea>.elementor-container{min-height:10px}.elementor-32 .elementor-element.elementor-element-17bf4ea>.elementor-container>.elementor-column>.elementor-widget-wrap{align-content:center;align-items:center}.elementor-32 .elementor-element.elementor-element-17bf4ea:not(.elementor-motion-effects-element-type-background){background-color:transparent;background-image:linear-gradient(90deg,var(--e-global-color-3e64158) 0%,var(--e-global-color-38def46) 100%)}.elementor-32 .elementor-element.elementor-element-17bf4ea{padding:0px 0px 0px 0px}@media (max-width:1024px){.elementor-32 .elementor-element.elementor-element-90b322f .elementor-nav-menu .elementor-item{font-size:17px}.elementor-32 .elementor-element.elementor-element-90b322f .elementor-nav-menu--dropdown a{padding-top:15px;padding-bottom:15px}.elementor-32 .elementor-element.elementor-element-90b322f>.elementor-widget-container{padding:0px 20px 0px 0px}}@media (max-width:767px){.elementor-32 .elementor-element.elementor-element-37b113c{width:50%}.elementor-32 .elementor-element.elementor-element-11ca35b{width:50%}}.elementor-54 .elementor-element.elementor-element-7c0c2ce4 .elementor-field-group>label{color:#FFFFFF}.BorlabsCookie *{box-sizing:border-box}.BorlabsCookie *::before,.BorlabsCookie *::after{box-sizing:inherit}.BorlabsCookie * div,.BorlabsCookie * span,.BorlabsCookie * p,.BorlabsCookie * a,.BorlabsCookie * img,.BorlabsCookie * ul,.BorlabsCookie * li,.BorlabsCookie * label{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}.borlabs-hide{display:none}.borlabs-position-fix{position:initial!important;transform:unset!important}.BorlabsCookie .text-center{text-align:center!important}.BorlabsCookie .text-right{text-align:right!important}.BorlabsCookie .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.BorlabsCookie .container{max-width:540px}}@media (min-width:768px){.BorlabsCookie .container{max-width:720px}}@media (min-width:992px){.BorlabsCookie .container{max-width:960px}}@media (min-width:1200px){.BorlabsCookie .container{max-width:1140px}}.BorlabsCookie .row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.BorlabsCookie .no-gutters{margin-right:0;margin-left:0}.BorlabsCookie .no-gutters>[class*="col-"]{padding-right:0;padding-left:0}.BorlabsCookie .col-sm-7,.BorlabsCookie .col-sm-5,.BorlabsCookie .col-12,.BorlabsCookie .col-10,.BorlabsCookie .col-2{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.BorlabsCookie .col-2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.BorlabsCookie .col-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.BorlabsCookie .col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.BorlabsCookie .col-sm-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.BorlabsCookie .col-sm-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}}.BorlabsCookie .d-block{display:block!important}.BorlabsCookie .d-flex{display:flex!important}.BorlabsCookie .flex-row{flex-direction:row!important}.BorlabsCookie .flex-fill{flex:1 1 auto!important}.BorlabsCookie .justify-content-between{justify-content:space-between!important}.BorlabsCookie .align-items-center{align-items:center!important}.BorlabsCookie .w-25{width:25%!important}.BorlabsCookie .w-75{width:75%!important}.BorlabsCookie .animated{animation-duration:1s;animation-fill-mode:both}@media (print),(prefers-reduced-motion){.BorlabsCookie .animated{animation:unset!important}}.BorlabsCookie ._brlbs-checkbox{color:inherit;display:block;padding-left:2em;position:relative}.BorlabsCookie ._brlbs-checkbox input{position:absolute;opacity:0;width:auto;z-index:-1}.BorlabsCookie ._brlbs-checkbox input:checked~._brlbs-checkbox-indicator::after{opacity:1}.BorlabsCookie ._brlbs-checkbox input:disabled~._brlbs-checkbox-indicator::after{opacity:1}.BorlabsCookie ._brlbs-checkbox ._brlbs-checkbox-indicator{border-style:solid;border-width:2px;padding:0!important;position:absolute;left:0;top:0;height:20px;width:20px}.BorlabsCookie ._brlbs-checkbox ._brlbs-checkbox-indicator::after{content:"";border-style:solid;border-width:0 2px 2px 0;border-radius:1px;position:absolute;left:5px;top:1px;height:11px;width:6px;transform:rotate(45deg);opacity:0}#BorlabsCookieBox a:focus{outline:Highlight!important;outline-color:-webkit-focus-ring-color!important;outline-style:solid!important;outline-width:2px!important}#BorlabsCookieBox:not(._brlbs-keyboard) a:focus{outline:0!important}#BorlabsCookieBox .animated{visibility:visible}#BorlabsCookieBox .container{background:inherit;display:block;float:none;padding-left:15px;padding-right:15px;margin-left:auto;margin-right:auto;min-height:auto;position:inherit}#BorlabsCookieBox ._brlbs-box .container{max-height:100vh;overflow:auto!important;width:auto!important}#BorlabsCookieBox .container::before{display:initial}#BorlabsCookieBox .container::after{content:" ";display:block;height:2px}#BorlabsCookieBox .container .row{background:inherit;color:inherit;display:flex;min-width:1px;width:auto}#BorlabsCookieBox .container .row.no-gutters{margin-left:0;margin-right:0}#BorlabsCookieBox .container .row::before,#BorlabsCookieBox .container .row::after{display:initial}#BorlabsCookieBox .bcac-item{margin:0.5em 0;padding:0.5em}#BorlabsCookieBox .bcac-item ._brlbs-h4{font-size:1.25em;margin:0 0 0.25em 0}#BorlabsCookieBox .bcac-item p{font-size:0.875em}#BorlabsCookieBox .bcac-item p,#BorlabsCookieBox .bcac-item span{color:inherit}#BorlabsCookieBox>div{display:none}#BorlabsCookieBox>div.show-cookie-box{display:flex}#BorlabsCookieBox ._brlbs-h3{background:inherit;color:inherit;font-family:inherit;font-size:1.625em;line-height:1.125em;word-break:break-all}#BorlabsCookieBox ul{display:flex;flex-flow:wrap;justify-content:center;list-style:none;margin:0.9375em 0;padding:0}#BorlabsCookieBox ul li{color:inherit;font-family:inherit;font-size:1em;line-height:1.25em;list-style:none;margin:0 0.9375em 0.375em 0}#BorlabsCookieBox ul li:last-child{margin:0}#BorlabsCookieBox ul li::before{content:"\25cf";margin:0 4px 0 0}#BorlabsCookieBox p{color:inherit;font-family:inherit;font-size:1em;line-height:1.25em;margin:0.9375em 0}#BorlabsCookieBox p:last-child{margin:0}#BorlabsCookieBox ._brlbs-flex-center{display:flex;align-items:center;justify-content:center}#BorlabsCookieBox ._brlbs-accept{font-family:inherit;text-align:center}#BorlabsCookieBox ._brlbs-block-content{background:rgba(0,0,0,0);left:0;position:fixed;height:100%;top:0;width:100%;z-index:999999}#BorlabsCookieBox ._brlbs-block-content._brlbs-bg-dark{background:rgba(0,0,0,0.6)}#BorlabsCookieBox ._brlbs-branding{font-family:inherit;font-size:0.75em;margin:0}#BorlabsCookieBox ._brlbs-branding a{text-decoration:none}#BorlabsCookieBox ._brlbs-branding img{display:inline-block;max-height:16px;max-width:16px;vertical-align:middle}#BorlabsCookieBox ._brlbs-btn{display:inline-block;font-family:inherit;font-size:1.25em;padding:0.75em 2em;text-decoration:none}#BorlabsCookieBox .cookie-logo{max-width:48px;padding:0 8px 0 0;vertical-align:middle;width:100%}#BorlabsCookieBox ._brlbs-legal{font-family:inherit;font-size:0.75em;text-align:center}#BorlabsCookieBox ._brlbs-manage{font-family:inherit;font-size:0.75em;text-align:center}#BorlabsCookieBox ._brlbs-refuse{font-family:inherit;font-size:0.75em;text-align:center}#BorlabsCookieBox ._brlbs-refuse a{color:inherit}#BorlabsCookieBox .top-center{align-items:flex-start;justify-content:center}#BorlabsCookieBox ._brlbs-box{box-shadow:0 4px 8px rgba(0,0,0,0.2);padding:15px 0}#BorlabsCookieBox ._brlbs-box-wrap{display:block;max-width:375px;width:100%;z-index:1000000}#BorlabsCookieBox ._brlbs-box ._brlbs-separator::before{content:"|";display:inline-block;margin:0 2px}#BorlabsCookieBox .cookie-preference .container.not-visible{height:0}#BorlabsCookieBox .cookie-preference .cookie-logo{max-width:100%}#BorlabsCookieBox .cookie-preference table{margin:1em 0 0 0;width:100%}#BorlabsCookieBox .cookie-preference table tr td,#BorlabsCookieBox .cookie-preference table tr th{border-bottom:1px solid}#BorlabsCookieBox .cookie-preference table tr:last-child td,#BorlabsCookieBox .cookie-preference table tr:last-child th{border-bottom:0}#BorlabsCookieBox .cookie-preference table th{text-align:left;width:40%}#BorlabsCookieBox .cookie-preference table td{text-align:left}#BorlabsCookieBox .cookie-preference table td,#BorlabsCookieBox .cookie-preference table th{font-size:0.875em;padding:0.25em 0.5em}#BorlabsCookieBox .cookie-preference ._brlbs-accept{text-align:left}#BorlabsCookieBox .cookie-preference ._brlbs-btn{font-size:1em;margin:0 0 0.9375em 0;padding:0.75em 1.5em}#BorlabsCookieBox .cookie-preference ._brlbs-legal{text-align:right}#BorlabsCookieBox .cookie-preference ._brlbs-refuse{margin:0 0 0.9375em 0;text-align:right}#BorlabsCookieBox .cookie-preference ._brlbs-separator::before{content:"|";display:inline-block;margin:0 2px}#BorlabsCookieBox ._brlbs-box-advanced ul{justify-content:space-between}#BorlabsCookieBox ._brlbs-box-advanced ul li{line-height:1.375em;margin:0 0.9375em 0.875em 0}#BorlabsCookieBox ._brlbs-box-advanced ul li::before{content:"";margin:0}@media (max-width:767px){#BorlabsCookieBox .cookie-preference ._brlbs-accept,#BorlabsCookieBox .cookie-preference ._brlbs-refuse{text-align:center}}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:translate3d(0,0,0)}}.fadeInDown{animation-name:fadeInDown}#BorlabsCookieBox *{font-family:inherit}#BorlabsCookieBox ._brlbs-box-advanced ul{justify-content:space-around}#BorlabsCookieBox ._brlbs-box{background:#fff;border-radius:4px;color:#555;font-size:14px}#BorlabsCookieBox a{color:#c10418}#BorlabsCookieBox ._brlbs-btn{background:#f7f7f7;border-radius:4px;color:#555}#BorlabsCookieBox ._brlbs-btn-accept-all{background:#c10418;border-radius:4px;color:#fff}#BorlabsCookieBox ._brlbs-btn-accept-all{background:#c10418;border-radius:4px;color:#fff}#BorlabsCookieBox ._brlbs-legal{color:#aaa}#BorlabsCookieBox ._brlbs-legal a{color:inherit}#BorlabsCookieBox ._brlbs-branding{color:#000}#BorlabsCookieBox ._brlbs-branding a{color:inherit}#BorlabsCookieBox ._brlbs-manage a{color:#c10418}#BorlabsCookieBox ._brlbs-refuse{color:#888}#BorlabsCookieBox ul li::before{color:#c10418}#BorlabsCookieBox .cookie-box ._brlbs-btn{width:100%}.BorlabsCookie ._brlbs-checkbox ._brlbs-checkbox-indicator{background-color:#fff;border-color:#a72828;border-radius:4px}.BorlabsCookie ._brlbs-checkbox input:checked~._brlbs-checkbox-indicator{background-color:#c10418;border-color:#c10418}.BorlabsCookie ._brlbs-checkbox input:checked~._brlbs-checkbox-indicator::after{border-color:#fff}.BorlabsCookie ._brlbs-checkbox input:disabled~._brlbs-checkbox-indicator{background-color:#e6e6e6;border-color:#e6e6e6}.BorlabsCookie ._brlbs-checkbox input:disabled~._brlbs-checkbox-indicator::after{border-color:#999}#BorlabsCookieBox .bcac-item{background-color:#f7f7f7;border-radius:0px;color:#555}#BorlabsCookieBox .cookie-preference table{background-color:#fff;border-radius:0px;color:#555}#BorlabsCookieBox .cookie-preference table{background-color:#fff;border-radius:0px;color:#555}#BorlabsCookieBox .cookie-preference table tr td,#BorlabsCookieBox .cookie-preference table tr th{background-color:#fff;border-color:#eee}.elementor-item:after,.elementor-item:before{display:block;position:absolute}.elementor-item:not(:hover):not(:focus):not(.elementor-item-active):not(.highlighted):after,.elementor-item:not(:hover):not(:focus):not(.elementor-item-active):not(.highlighted):before{opacity:0}.elementor-nav-menu--main .elementor-nav-menu a{padding:13px 20px}.elementor-nav-menu--layout-horizontal{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-nav-menu--layout-horizontal .elementor-nav-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.elementor-nav-menu--layout-horizontal .elementor-nav-menu a{white-space:nowrap}.elementor-nav-menu__align-right .elementor-nav-menu{margin-left:auto}.elementor-nav-menu__align-right .elementor-nav-menu{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget-nav-menu .elementor-widget-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.elementor-nav-menu{position:relative;z-index:2}.elementor-nav-menu:after{content:"\00a0";display:block;height:0;font:0/0 serif;clear:both;visibility:hidden;overflow:hidden}.elementor-nav-menu,.elementor-nav-menu li{display:block;list-style:none;margin:0;padding:0;line-height:normal}.elementor-nav-menu a,.elementor-nav-menu li{position:relative}.elementor-nav-menu li{border-width:0}.elementor-nav-menu a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-nav-menu a{padding:10px 20px;line-height:20px}.elementor-menu-toggle{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:22px;padding:.25em;border:0 solid;border-radius:3px;background-color:rgba(0,0,0,.05);color:#494c4f}.elementor-nav-menu--dropdown{background-color:#fff;font-size:13px}.elementor-nav-menu--dropdown.elementor-nav-menu__container{margin-top:10px;-webkit-transform-origin:top;-ms-transform-origin:top;transform-origin:top;overflow:auto}.elementor-nav-menu--dropdown a{color:#494c4f;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.elementor-nav-menu__text-align-center .elementor-nav-menu--dropdown .elementor-nav-menu a{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-nav-menu--toggle .elementor-menu-toggle:not(.elementor-active)+.elementor-nav-menu__container{-webkit-transform:scaleY(0);-ms-transform:scaleY(0);transform:scaleY(0);max-height:0}.elementor-nav-menu--stretch .elementor-nav-menu__container.elementor-nav-menu--dropdown{position:absolute;z-index:9997}@media (min-width:1025px){.elementor-nav-menu--dropdown-tablet .elementor-menu-toggle,.elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown{display:none}}@media (max-width:1024px){.elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main{display:none}}</style><link rel="preload" data-rocket-preload as="image" href="https://dach-jaeger.de/wp-content/uploads/unser-team.webp" fetchpriority="high">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.7.5.1 - aioseo.com -->
+		<meta name="description" content="Über uns: Wir sind seit 2005 Ihr kompetenter Partner rund um Dach, Fassade, Balkonsanierung, Holzbau und Wärmedämmung in Bielefeld und Umgebung." />
+		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<meta name="keywords" content="team dachdecker jäger bielefeld,team dach jäger bielefeld,inhaber dach jäger,inhaber dach jäger bielefeld,mitarbeiter dachdecker jäger bielefeld,mitarbeiter dachdecker jäger,mitarbeiter dach jäger,dach jäger mitarbeiter,jobs dachdecker,jobs dachdecker bielefeld,ausbildung dachdecker,ausbildung als dachdecker,ausbildung dachdecker bielefeld,ausbildung dachdecker in bielefeld,ausbildung als dachdecker in bielefeld" />
+		<link rel="canonical" href="https://dach-jaeger.de/ueber-uns/" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.5.1" />
+		<meta property="og:locale" content="de_DE" />
+		<meta property="og:site_name" content="Jäger Dachdeckermeister - Bielefeld" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Über uns - Das Team | Dach Jäger in Bielefeld" />
+		<meta property="og:description" content="Über uns: Wir sind seit 2005 Ihr kompetenter Partner rund um Dach, Fassade, Balkonsanierung, Holzbau und Wärmedämmung in Bielefeld und Umgebung." />
+		<meta property="og:url" content="https://dach-jaeger.de/ueber-uns/" />
+		<meta property="og:image" content="https://dach-jaeger.de/wp-content/uploads/logo-dach-jaeger-redesign-200x67-1.webp" />
+		<meta property="og:image:secure_url" content="https://dach-jaeger.de/wp-content/uploads/logo-dach-jaeger-redesign-200x67-1.webp" />
+		<meta property="article:published_time" content="2021-08-25T08:30:30+00:00" />
+		<meta property="article:modified_time" content="2023-08-16T06:50:06+00:00" />
+		<meta property="article:publisher" content="https://www.facebook.com/DachJaegerBielefeld/" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Über uns - Das Team | Dach Jäger in Bielefeld" />
+		<meta name="twitter:description" content="Über uns: Wir sind seit 2005 Ihr kompetenter Partner rund um Dach, Fassade, Balkonsanierung, Holzbau und Wärmedämmung in Bielefeld und Umgebung." />
+		<meta name="twitter:image" content="https://dach-jaeger.de/wp-content/uploads/logo-dach-jaeger-redesign-200x67-1.webp" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/dach-jaeger.de\/ueber-uns\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/dach-jaeger.de\/#listItem","position":1,"name":"Zu Hause","item":"https:\/\/dach-jaeger.de\/","nextItem":"https:\/\/dach-jaeger.de\/ueber-uns\/#listItem"},{"@type":"ListItem","@id":"https:\/\/dach-jaeger.de\/ueber-uns\/#listItem","position":2,"name":"\u00dcber uns","previousItem":"https:\/\/dach-jaeger.de\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/dach-jaeger.de\/#organization","name":"J\u00e4ger Dachdeckermeister","description":"Bielefeld","url":"https:\/\/dach-jaeger.de\/","telephone":"+495219441357","logo":{"@type":"ImageObject","url":"https:\/\/dach-jaeger.de\/wp-content\/uploads\/logo.jpg","@id":"https:\/\/dach-jaeger.de\/ueber-uns\/#organizationLogo","width":207,"height":73,"caption":"Logo Dach J\u00e4ger in Bielefeld"},"image":{"@id":"https:\/\/dach-jaeger.de\/ueber-uns\/#organizationLogo"},"sameAs":["https:\/\/www.facebook.com\/DachJaegerBielefeld\/","https:\/\/www.instagram.com\/dachdeckermeister_jaeger\/"]},{"@type":"WebPage","@id":"https:\/\/dach-jaeger.de\/ueber-uns\/#webpage","url":"https:\/\/dach-jaeger.de\/ueber-uns\/","name":"\u00dcber uns - Das Team | Dach J\u00e4ger in Bielefeld","description":"\u00dcber uns: Wir sind seit 2005 Ihr kompetenter Partner rund um Dach, Fassade, Balkonsanierung, Holzbau und W\u00e4rmed\u00e4mmung in Bielefeld und Umgebung.","inLanguage":"de-DE","isPartOf":{"@id":"https:\/\/dach-jaeger.de\/#website"},"breadcrumb":{"@id":"https:\/\/dach-jaeger.de\/ueber-uns\/#breadcrumblist"},"datePublished":"2021-08-25T10:30:30+02:00","dateModified":"2023-08-16T08:50:06+02:00"},{"@type":"WebSite","@id":"https:\/\/dach-jaeger.de\/#website","url":"https:\/\/dach-jaeger.de\/","name":"J\u00e4ger Dachdeckermeister","description":"Bielefeld","inLanguage":"de-DE","publisher":{"@id":"https:\/\/dach-jaeger.de\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="Jäger Dachdeckermeister &raquo; Feed" href="https://dach-jaeger.de/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Jäger Dachdeckermeister &raquo; Kommentar-Feed" href="https://dach-jaeger.de/comments/feed/" />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/themes/hello-elementor/style.min.css?ver=3.1.1' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.1' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.1' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.25.4' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.25.4' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link data-minify="1" rel='preload'  href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1732002519' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link data-minify="1" rel='preload'  href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1732002519' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-9.css?ver=1731428232' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.25.4' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link data-minify="1" rel='preload'  href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1732002519' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.25.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-15.css?ver=1731429420' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-32.css?ver=1731428232' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-54.css?ver=1731428232' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link data-minify="1" rel='preload'  href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=1732002519' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.0.10' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://dach-jaeger.de/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link data-minify="1" rel='preload'  href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=1732002519' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<link data-minify="1" rel='preload'  href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1732002519' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.25.10" id="font-awesome-4-shim-js" data-rocket-defer defer></script>
+<script data-no-optimize="1" data-no-minify="1" data-cfasync="false" nowprocket src="https://dach-jaeger.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-config-de.json.js?ver=3.2.8-51" id="borlabs-cookie-config-js"></script>
+<link rel="https://api.w.org/" href="https://dach-jaeger.de/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://dach-jaeger.de/wp-json/wp/v2/pages/15" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dach-jaeger.de/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.1" />
+<link rel='shortlink' href='https://dach-jaeger.de/?p=15' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://dach-jaeger.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdach-jaeger.de%2Fueber-uns%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://dach-jaeger.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdach-jaeger.de%2Fueber-uns%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.25.10; features: e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-block">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://dach-jaeger.de/wp-content/uploads/cropped-favicon-neu-32x32.webp" sizes="32x32" />
+<link rel="icon" href="https://dach-jaeger.de/wp-content/uploads/cropped-favicon-neu-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://dach-jaeger.de/wp-content/uploads/cropped-favicon-neu-180x180.webp" />
+<meta name="msapplication-TileImage" content="https://dach-jaeger.de/wp-content/uploads/cropped-favicon-neu-270x270.webp" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script><meta name="generator" content="WP Rocket 3.17.2" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_preload_fonts wpr_async_css wpr_lazyload_images wpr_lazyload_iframes wpr_oci wpr_minify_css wpr_desktop wpr_preload_links" /></head>
+<body class="page-template-default page page-id-15 wp-custom-logo elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-15">
+
+
+<a class="skip-link screen-reader-text" href="#content">Zum Inhalt wechseln</a>
+
+		<div  data-elementor-type="header" data-elementor-id="32" class="elementor elementor-32 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section  class="elementor-section elementor-top-section elementor-element elementor-element-1e851e8 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1e851e8" data-element_type="section">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6be2eb4" data-id="6be2eb4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-0675444 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0675444" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-37b113c" data-id="37b113c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-22537ca elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="22537ca" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+									<a href="https://dach-jaeger.de">
+			<img width="200" height="67" src="https://dach-jaeger.de/wp-content/uploads/logo-dach-jaeger-redesign-200x67-1.webp" class="attachment-full size-full wp-image-1082" alt="Logo Dach Jäger" />				</a>
+									</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-11ca35b" data-id="11ca35b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-90b322f elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="90b322f" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav aria-label="Menü" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-90b322f" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-31"><a href="https://dach-jaeger.de/" class="elementor-item">Start</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-30"><a href="https://dach-jaeger.de/ueber-uns/" aria-current="page" class="elementor-item elementor-item-active">Über uns</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://dach-jaeger.de/leistungen/" class="elementor-item">Leistungen</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1126"><a href="https://dach-jaeger.de/kran/" class="elementor-item">Kran</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://dach-jaeger.de/referenzen/" class="elementor-item">Referenzen</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://dach-jaeger.de/kontakt/" class="elementor-item">Kontakt</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menü</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-90b322f" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-31"><a href="https://dach-jaeger.de/" class="elementor-item" tabindex="-1">Start</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-30"><a href="https://dach-jaeger.de/ueber-uns/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Über uns</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://dach-jaeger.de/leistungen/" class="elementor-item" tabindex="-1">Leistungen</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1126"><a href="https://dach-jaeger.de/kran/" class="elementor-item" tabindex="-1">Kran</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://dach-jaeger.de/referenzen/" class="elementor-item" tabindex="-1">Referenzen</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://dach-jaeger.de/kontakt/" class="elementor-item" tabindex="-1">Kontakt</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-17bf4ea elementor-section-full_width elementor-section-height-min-height elementor-section-content-middle elementor-section-height-default" data-id="17bf4ea" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-02cff3d" data-id="02cff3d" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div  data-elementor-type="wp-page" data-elementor-id="15" class="elementor elementor-15" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-d960097 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="d960097" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div  class="elementor-background-overlay"></div>
+							<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-643be652" data-id="643be652" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section  class="elementor-section elementor-top-section elementor-element elementor-element-29f5abbf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="29f5abbf" data-element_type="section">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8fb7be5" data-id="8fb7be5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7c7b9b31 elementor-widget elementor-widget-spacer" data-id="7c7b9b31" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section  class="elementor-section elementor-top-section elementor-element elementor-element-2a67e8bb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2a67e8bb" data-element_type="section">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-392db03b" data-id="392db03b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-16199748 elementor-widget elementor-widget-heading" data-id="16199748" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Über uns</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3e1f0e36 elementor-widget elementor-widget-heading" data-id="3e1f0e36" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Kompetenz und Qualität <br>seit über 15 Jahren.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-33a5e16 elementor-widget elementor-widget-heading" data-id="33a5e16" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Ästhetik und Effizienz vereint.</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cf54544 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="cf54544" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7218a200 elementor-widget elementor-widget-text-editor" data-id="7218a200" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Wir danken Ihnen für Ihr Vertrauen.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-346da6bb elementor-widget elementor-widget-text-editor" data-id="346da6bb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Seit 2005 sind wir Ihr kompetenter Partner rund ums Dach bei Neueindeckungen, Dachsanierungen, Dachausbau und Dachneubau. Dabei vertrauen unsere Kunden auf eine umfassende Beratung, wenn es um die passende Dachoptik für Ihre Immobilie geht. Machbarkeit und Zweckmäßigkeit werden dabei genau geprüft.						</div>
+				</div>
+				<div class="elementor-element elementor-element-e2ec031 elementor-widget elementor-widget-text-editor" data-id="e2ec031" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Im Fokus einer ausführlichen Planung der Dachdeckerarbeiten für einen Neubau oder im Rahmen einer Sanierung informieren wir Sie zusätzlich über Energiesparmöglichkeiten und Langlebigkeit durch den Einsatz hochwertiger Materialien.						</div>
+				</div>
+				<div class="elementor-element elementor-element-1776439 elementor-widget elementor-widget-text-editor" data-id="1776439" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Unser Dachdeckerbetrieb arbeitet regional im Raum Westfalen-Lippe. Zehn hochqualifizierte Mitarbeiter sind dabei für gewerbliche und private Kunden, sowie öffentliche Einrichtungen im Einsatz.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-ab8c997 elementor-widget elementor-widget-text-editor" data-id="ab8c997" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Im Rahmen der Fassadensanierung führen wir mit unserem Team Reparaturen, Restaurations- und Sanierungsarbeiten durch. Auch neue Fassaden werden von uns auftragsgemäß im Rahmen der Energiesparverordnung erstellt.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-fdae6a3 elementor-widget elementor-widget-text-editor" data-id="fdae6a3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Unser Ziel bei allen Arbeiten:
+Der Kunde spart Energie und die Immobilie wird durch optimale Wärmedämmung und eine ästhetische Außendarstellung im Wert gesteigert.						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3de6b795" data-id="3de6b795" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2e7b96c9 elementor-widget elementor-widget-image" data-id="2e7b96c9" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img fetchpriority="high" decoding="async" width="1000" height="750" src="https://dach-jaeger.de/wp-content/uploads/ueber-uns-fahrzeuge-1000x750-1.webp" class="attachment-full size-full wp-image-340" alt="Fahrzeuge Dach Jäger Bielefeld" srcset="https://dach-jaeger.de/wp-content/uploads/ueber-uns-fahrzeuge-1000x750-1.webp 1000w, https://dach-jaeger.de/wp-content/uploads/ueber-uns-fahrzeuge-1000x750-1-300x225.webp 300w, https://dach-jaeger.de/wp-content/uploads/ueber-uns-fahrzeuge-1000x750-1-768x576.webp 768w" sizes="(max-width: 1000px) 100vw, 1000px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-d9caeb2 elementor-widget elementor-widget-image" data-id="d9caeb2" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="1920" height="1280" src="https://dach-jaeger.de/wp-content/uploads/unser-team.webp" class="attachment-full size-full wp-image-1148" alt="" srcset="https://dach-jaeger.de/wp-content/uploads/unser-team.webp 1920w, https://dach-jaeger.de/wp-content/uploads/unser-team-300x200.webp 300w, https://dach-jaeger.de/wp-content/uploads/unser-team-1024x683.webp 1024w, https://dach-jaeger.de/wp-content/uploads/unser-team-768x512.webp 768w, https://dach-jaeger.de/wp-content/uploads/unser-team-1536x1024.webp 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section  class="elementor-section elementor-top-section elementor-element elementor-element-37adb79a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37adb79a" data-element_type="section">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-60cf84fe" data-id="60cf84fe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9246cbb elementor-widget elementor-widget-spacer" data-id="9246cbb" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fbbf977 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fbbf977" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4396fd85" data-id="4396fd85" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-52967936 elementor-widget elementor-widget-spacer" data-id="52967936" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-52726269 elementor-widget elementor-widget-heading" data-id="52726269" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Unsere Mitarbeiter.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-20782ae elementor-widget elementor-widget-heading" data-id="20782ae" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Der Grundstein unseres Erfolges.</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-22ab7453 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="22ab7453" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-22b55fe3 elementor-widget elementor-widget-spacer" data-id="22b55fe3" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6a9525da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6a9525da" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2b9aa3c" data-id="2b9aa3c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3cec489c elementor-widget elementor-widget-image" data-id="3cec489c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-291" alt="Inhaber Andreas Jäger von Dach Jäger in Bielefeld" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/andreas-jaeger-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/andreas-jaeger-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/andreas-jaeger-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/andreas-jaeger-500x350-1.webp" class="attachment-large size-large wp-image-291" alt="Inhaber Andreas Jäger von Dach Jäger in Bielefeld" srcset="https://dach-jaeger.de/wp-content/uploads/andreas-jaeger-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/andreas-jaeger-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c15e51e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c15e51e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4cecbf23" data-id="4cecbf23" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-82da7e9 elementor-widget elementor-widget-heading" data-id="82da7e9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Andreas Jäger</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-50ea973 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="50ea973" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-818f8b9" data-id="818f8b9" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-98ffd63 elementor-widget elementor-widget-heading" data-id="98ffd63" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Dachdeckermeister</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5c4cab6b" data-id="5c4cab6b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7a3c1a36 elementor-widget elementor-widget-image" data-id="7a3c1a36" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-299" alt="Vorarbeiter Falco Meyer bei Dach Jäger in Bielefeld" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/falco-meyer-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/falco-meyer-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/falco-meyer-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/falco-meyer-500x350-1.webp" class="attachment-large size-large wp-image-299" alt="Vorarbeiter Falco Meyer bei Dach Jäger in Bielefeld" srcset="https://dach-jaeger.de/wp-content/uploads/falco-meyer-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/falco-meyer-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1cafa98 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1cafa98" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-19f4b16" data-id="19f4b16" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a9f2ba5 elementor-widget elementor-widget-heading" data-id="a9f2ba5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Falco Meyer</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-d42a5d8 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d42a5d8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9f2c741" data-id="9f2c741" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0917c68 elementor-widget elementor-widget-heading" data-id="0917c68" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Vorarbeiter</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-530bbc41" data-id="530bbc41" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-19d09e9 elementor-widget elementor-widget-image" data-id="19d09e9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-306" alt="Facharbeiter Dirk Heyer bei Dach Jäger in Bielefeld" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/dirk-heyer-2-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/dirk-heyer-2-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/dirk-heyer-2-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/dirk-heyer-2-500x350-1.webp" class="attachment-large size-large wp-image-306" alt="Facharbeiter Dirk Heyer bei Dach Jäger in Bielefeld" srcset="https://dach-jaeger.de/wp-content/uploads/dirk-heyer-2-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/dirk-heyer-2-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-f30444e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f30444e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-938aa37" data-id="938aa37" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2c70320 elementor-widget elementor-widget-heading" data-id="2c70320" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Dirk Heyer</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-cc9b965 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="cc9b965" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e197a16" data-id="e197a16" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9e15a89 elementor-widget elementor-widget-heading" data-id="9e15a89" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Facharbeiter</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4977d4dc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4977d4dc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-586fe59a" data-id="586fe59a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1c2fc9e8 elementor-widget elementor-widget-spacer" data-id="1c2fc9e8" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-667c3b72 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="667c3b72" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6dd4a325" data-id="6dd4a325" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-400c07b2 elementor-widget elementor-widget-image" data-id="400c07b2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-310" alt="Facharbeiter Marvin Jäger bei Dach Jäger in Bielefeld" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/marvin-jaeger-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/marvin-jaeger-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/marvin-jaeger-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/marvin-jaeger-500x350-1.webp" class="attachment-large size-large wp-image-310" alt="Facharbeiter Marvin Jäger bei Dach Jäger in Bielefeld" srcset="https://dach-jaeger.de/wp-content/uploads/marvin-jaeger-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/marvin-jaeger-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-67eea7f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="67eea7f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2bea24b" data-id="2bea24b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ccdb231 elementor-widget elementor-widget-heading" data-id="ccdb231" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Marvin Jäger</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-24d9bcc elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="24d9bcc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-cce224e" data-id="cce224e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-06ec01a elementor-widget elementor-widget-heading" data-id="06ec01a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Facharbeiter</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5a7c88c3" data-id="5a7c88c3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9eaf124 elementor-widget elementor-widget-image" data-id="9eaf124" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-316" alt="Facharbeiter Stefan Eva bei Dach Jäger in Bielefeld" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/stefan-eva-2-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/stefan-eva-2-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/stefan-eva-2-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/stefan-eva-2-500x350-1.webp" class="attachment-large size-large wp-image-316" alt="Facharbeiter Stefan Eva bei Dach Jäger in Bielefeld" srcset="https://dach-jaeger.de/wp-content/uploads/stefan-eva-2-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/stefan-eva-2-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1b8de9e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1b8de9e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e2270a5" data-id="e2270a5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bf8ebdf elementor-widget elementor-widget-heading" data-id="bf8ebdf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Stefan Eva</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-d58941c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d58941c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b844cc1" data-id="b844cc1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8d199ce elementor-widget elementor-widget-heading" data-id="8d199ce" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Facharbeiter</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1e282118" data-id="1e282118" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b9de5c9 elementor-widget elementor-widget-image" data-id="b9de5c9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1074" alt="Dominik Schulze" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/dominik-schulze-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/dominik-schulze-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/dominik-schulze-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/dominik-schulze-500x350-1.webp" class="attachment-large size-large wp-image-1074" alt="Dominik Schulze" srcset="https://dach-jaeger.de/wp-content/uploads/dominik-schulze-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/dominik-schulze-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3285e2e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3285e2e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4c86739" data-id="4c86739" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ccb40e2 elementor-widget elementor-widget-heading" data-id="ccb40e2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Dominik Schulze</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3b2a9a5 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3b2a9a5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-64ee15a" data-id="64ee15a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f64164c elementor-widget elementor-widget-heading" data-id="f64164c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Facharbeiter</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3b7cca2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3b7cca2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c18888a" data-id="c18888a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6c4f3ec elementor-widget elementor-widget-spacer" data-id="6c4f3ec" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c92a138 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c92a138" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-80a9869" data-id="80a9869" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4389561 elementor-widget elementor-widget-image" data-id="4389561" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1097" alt="" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/martin-chartschenko.jpg 500w, https://dach-jaeger.de/wp-content/uploads/martin-chartschenko-300x210.jpg 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/martin-chartschenko.jpg" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/martin-chartschenko.jpg" class="attachment-large size-large wp-image-1097" alt="" srcset="https://dach-jaeger.de/wp-content/uploads/martin-chartschenko.jpg 500w, https://dach-jaeger.de/wp-content/uploads/martin-chartschenko-300x210.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-ec98605 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="ec98605" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1612a57" data-id="1612a57" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c28ba27 elementor-widget elementor-widget-heading" data-id="c28ba27" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Martin Chartschenko</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c500182 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c500182" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-03a83c0" data-id="03a83c0" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-371c2fe elementor-widget elementor-widget-heading" data-id="371c2fe" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Facharbeiter</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-98a4637" data-id="98a4637" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c2febae elementor-widget elementor-widget-image" data-id="c2febae" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1167" alt="" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/facharbeiter.jpg 500w, https://dach-jaeger.de/wp-content/uploads/facharbeiter-300x210.jpg 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/facharbeiter.jpg" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/facharbeiter.jpg" class="attachment-large size-large wp-image-1167" alt="" srcset="https://dach-jaeger.de/wp-content/uploads/facharbeiter.jpg 500w, https://dach-jaeger.de/wp-content/uploads/facharbeiter-300x210.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4089063 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4089063" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2626594" data-id="2626594" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8300b9c elementor-widget elementor-widget-heading" data-id="8300b9c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Oskar Pallarz</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8056d84 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="8056d84" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-189c463" data-id="189c463" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-103bd11 elementor-widget elementor-widget-heading" data-id="103bd11" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Facharbeiter</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-eab536a" data-id="eab536a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dd0307c elementor-widget elementor-widget-image" data-id="dd0307c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1073" alt="Ben Schmidt" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/ben-schmidt-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/ben-schmidt-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/ben-schmidt-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/ben-schmidt-500x350-1.webp" class="attachment-large size-large wp-image-1073" alt="Ben Schmidt" srcset="https://dach-jaeger.de/wp-content/uploads/ben-schmidt-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/ben-schmidt-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a245ba8 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a245ba8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9adcf90" data-id="9adcf90" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3e5b22c elementor-widget elementor-widget-heading" data-id="3e5b22c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Ben Schmidt</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-215f157 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="215f157" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3932735" data-id="3932735" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d8028e1 elementor-widget elementor-widget-heading" data-id="d8028e1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Auszubildender</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-21b26a0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="21b26a0" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-92c2aa8" data-id="92c2aa8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-75ac198 elementor-widget elementor-widget-spacer" data-id="75ac198" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7e8c74b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e8c74b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f1683d4" data-id="f1683d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ab897c6 elementor-widget elementor-widget-image" data-id="ab897c6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1075" alt="Felix Seidenfad" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/felix-seidenfad-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/felix-seidenfad-500x350-1-300x210.webp 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/felix-seidenfad-500x350-1.webp" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/felix-seidenfad-500x350-1.webp" class="attachment-large size-large wp-image-1075" alt="Felix Seidenfad" srcset="https://dach-jaeger.de/wp-content/uploads/felix-seidenfad-500x350-1.webp 500w, https://dach-jaeger.de/wp-content/uploads/felix-seidenfad-500x350-1-300x210.webp 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5abb420 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="5abb420" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-626af3e" data-id="626af3e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-08587e3 elementor-widget elementor-widget-heading" data-id="08587e3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Felix Seidenfad</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-9968b2f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="9968b2f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2875666" data-id="2875666" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1183f88 elementor-widget elementor-widget-heading" data-id="1183f88" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Auszubildender</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7fa5e5e" data-id="7fa5e5e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d4da2ec elementor-widget elementor-widget-image" data-id="d4da2ec" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="500" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1168" alt="" data-lazy-srcset="https://dach-jaeger.de/wp-content/uploads/azubi.jpg 500w, https://dach-jaeger.de/wp-content/uploads/azubi-300x210.jpg 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://dach-jaeger.de/wp-content/uploads/azubi.jpg" /><noscript><img loading="lazy" decoding="async" width="500" height="350" src="https://dach-jaeger.de/wp-content/uploads/azubi.jpg" class="attachment-large size-large wp-image-1168" alt="" srcset="https://dach-jaeger.de/wp-content/uploads/azubi.jpg 500w, https://dach-jaeger.de/wp-content/uploads/azubi-300x210.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>													</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-d7fd1a4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d7fd1a4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1049d24" data-id="1049d24" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c7b07a0 elementor-widget elementor-widget-heading" data-id="c7b07a0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Mitch Heyer</h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-364e13c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="364e13c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a3245ea" data-id="a3245ea" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0d78ad3 elementor-widget elementor-widget-heading" data-id="0d78ad3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Auszubildender</span>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7d33676" data-id="7d33676" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d5684b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d5684b7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8f72f6" data-id="f8f72f6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-05d5b25 elementor-widget elementor-widget-spacer" data-id="05d5b25" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-114d3f66 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="114d3f66" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d520f27" data-id="d520f27" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-12efda38 elementor-widget elementor-widget-spacer" data-id="12efda38" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6ec72e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ec72e1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1703db1" data-id="1703db1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-5f8f150 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5f8f150" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6a7af6c" data-id="6a7af6c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-afd42e1 elementor-widget elementor-widget-heading" data-id="afd42e1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Lust auf eine neue Herausforderung?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-394fa76 elementor-widget elementor-widget-heading" data-id="394fa76" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Werde Teil unseres Teams!</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5095f0c elementor-widget elementor-widget-text-editor" data-id="5095f0c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Schick&#8216; uns einfach Deine Bewerbung an <a href="mailto:info@dach-jaeger.de">info@dach-jaeger.de</a>. Wir freuen uns auf dich!</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6bd2371" data-id="6bd2371" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f59ca8d" data-id="f59ca8d" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1daeb9b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1daeb9b8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-59b9697f" data-id="59b9697f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-182efbfc elementor-widget elementor-widget-spacer" data-id="182efbfc" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="footer" data-elementor-id="54" class="elementor elementor-54 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-24cbf0db elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="24cbf0db" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1218a1d6" data-id="1218a1d6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6e904755 elementor-widget elementor-widget-heading" data-id="6e904755" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Haben wir Ihr Interesse geweckt?</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-113f8587 elementor-widget elementor-widget-heading" data-id="113f8587" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Wir freuen uns auf Ihre Herausforderungen.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7c0c2ce4 elementor-button-align-start elementor-widget elementor-widget-form" data-id="7c0c2ce4" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+					<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="54"/>
+			<input type="hidden" name="form_id" value="7c0c2ce4"/>
+			<input type="hidden" name="referer_title" value="Über uns - Das Team | Dach Jäger in Bielefeld" />
+
+							<input type="hidden" name="queried_id" value="15"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
+												<label for="form-field-name" class="elementor-field-label elementor-screen-only">
+								Name							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Name*" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-type-text">
+					<input size="1" type="text" name="form_fields[field_ee4517e]" id="form-field-field_ee4517e" class="elementor-field elementor-size-sm " style="display:none !important;">				</div>
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								E-Mail							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="E-Mail*" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-type-text">
+					<input size="1" type="text" name="form_fields[field_d933271]" id="form-field-field_d933271" class="elementor-field elementor-size-sm " style="display:none !important;">				</div>
+								<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+												<label for="form-field-message" class="elementor-field-label elementor-screen-only">
+								Nachricht							</label>
+						<textarea class="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Nachricht"></textarea>				</div>
+								<div class="elementor-field-type-text">
+					<input size="1" type="text" name="form_fields[field_cf8cbff]" id="form-field-field_cf8cbff" class="elementor-field elementor-size-sm " style="display:none !important;">				</div>
+								<div class="elementor-field-type-acceptance elementor-field-group elementor-column elementor-field-group-field_8643c0f elementor-col-100">
+												<label for="form-field-field_8643c0f" class="elementor-field-label elementor-screen-only">
+								Datenschutz							</label>
+								<div class="elementor-field-subgroup">
+			<span class="elementor-field-option">
+				<input type="checkbox" name="form_fields[field_8643c0f]" id="form-field-field_8643c0f" class="elementor-field elementor-size-sm  elementor-acceptance-field">
+				<label for="form-field-field_8643c0f">Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die Daten werden nach abgeschlossener Bearbeitung Ihrer Anfrage gelöscht. Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail info@dach-jaeger.de widerrufen.  Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a href="/datenschutz/">Datenschutzerklärung</a>.</label>			</span>
+		</div>
+						</div>
+								<div class="elementor-field-type-text">
+					<input size="1" type="text" name="form_fields[field_6d102af]" id="form-field-field_6d102af" class="elementor-field elementor-size-sm " style="display:none !important;">				</div>
+								<div class="elementor-field-type-frcaptcha elementor-field-group elementor-column elementor-field-group-field_a1596bf elementor-col-100">
+												<label for="form-field-field_a1596bf" class="elementor-field-label elementor-screen-only">
+								Captcha							</label>
+						<div class="frc-captcha " data-sitekey="FCMRGHIRO8517E48" data-lang="de" ></div>
+		<noscript>You need to enable Javascript for the anti-spam check.</noscript><style>.frc-captcha {max-width: 100%; width:100%}</style><input type="frcaptcha text" name="form_fields[field_a1596bf]" id="form-field-field_a1596bf" class="elementor-field elementor-size-sm " style="display: none">				</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button class="elementor-button elementor-size-md" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">SENDEN</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c87fad3 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="c87fad3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6eed9d4" data-id="6eed9d4" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-410aa12 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="410aa12" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3c6835c" data-id="3c6835c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dcea0fc elementor-widget elementor-widget-text-editor" data-id="dcea0fc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Dachdeckermeister Andreas Jäger<br />Karl-Deppe-Platz 8, 33604 Bielefeld</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d23c44f" data-id="d23c44f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-503c315 elementor-widget elementor-widget-text-editor" data-id="503c315" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Tel: 0521 / 944 13 57 | Fax: 0521 / 944 13 71<br /><a href="mailto:info@dach-jaeger.de">info@dach-jaeger.de</a></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7df5661" data-id="7df5661" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-09996bc elementor-widget elementor-widget-html" data-id="09996bc" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script type="rocketlazyloadscript" data-minify="1" async data-rocket-src="https://dach-jaeger.de/wp-content/cache/min/1/widget/widget_v2.js?ver=1732002519"></script>
+<div class="trustoo-widget" data-id="95523" data-language-code="de" data-country-code="DE" data-badge="default" data-quote="default" data-reviews="default" data-size="small" data-type="landscape" data-border="shadow" data-theme="light" data-background="default"></div>
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1a4f005" data-id="1a4f005" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-735b1d1 e-grid-align-right e-grid-align-mobile-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="735b1d1" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-6d2b136" href="https://www.facebook.com/DachJaegerBielefeld/" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-f78cff7" href="https://www.instagram.com/dachdeckermeister_jaeger/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d477a7a elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d477a7a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b2795a1" data-id="b2795a1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8df87bd elementor-widget elementor-widget-heading" data-id="8df87bd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">© 2024 Dachdecker Jäger | <a href="https://webseiten-angebot.com" target="blank">Webseiten-Angebot.com</a></span>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7587f73" data-id="7587f73" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d1843b0 elementor-icon-list--layout-inline elementor-align-right elementor-mobile-align-left elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d1843b0" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://dach-jaeger.de/impressum/">
+
+											<span class="elementor-icon-list-text">Impressum</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://dach-jaeger.de/datenschutz/">
+
+											<span class="elementor-icon-list-text">Datenschutz</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+<script type="module" src="https://dach-jaeger.de/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie.min.js?ver=3.2.8" id="borlabs-cookie-core-js-module" data-cfasync="false" data-no-minify="1" data-no-optimize="1"></script>
+<!--googleoff: all--><div data-nosnippet data-borlabs-cookie-consent-required='true' id='BorlabsCookieBox'></div><div id='BorlabsCookieWidget' class='brlbs-cmpnt-container'></div><!--googleon: all-->			<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='preload'  href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.25.4' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  media='all' />
+<script id="moppm_elementor_script-js-extra">
+var my_ajax_object = {"ajax_url":"https:\/\/dach-jaeger.de\/login\/"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/password-policy-manager/includes/js/moppm_elementor.min.js?ver=2.0.1" id="moppm_elementor_script-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/dach-jaeger.de","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js" data-rocket-defer defer></script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https:\/\/dach-jaeger.de\/wp-admin\/admin-ajax.php","nonce":"1efc9ce729","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/dach-jaeger.de\/ueber-uns\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Breitbild","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.0.10" id="eael-general-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" async defer data-rocket-type="module" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/friendly-captcha/public/vendor/v1/widget.module.min.js?ver=0.9.18" id="friendly-captcha-widget-module-js"></script>
+<script type="rocketlazyloadscript" async defer nomodule data-rocket-src="https://dach-jaeger.de/wp-content/plugins/friendly-captcha/public/vendor/v1/widget.polyfilled.min.js?ver=0.9.18" id="friendly-captcha-widget-fallback-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/friendly-captcha/modules/elementor/script.js?ver=1732002519" id="frcaptcha_elementor-friendly-captcha-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.25.4" id="elementor-pro-webpack-runtime-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.10" id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
+<script id="elementor-frontend-modules-js-before">
+(function() {
+    const allFbWidgets = document.querySelectorAll('div.elementor-widget[data-widget_type^="facebook"]');
+    for (let fb of allFbWidgets) {
+        fb.dataset.widget_type = 'brlabs_' + fb.dataset.widget_type;
+    }
+})();
+(function() {
+    const allYtWidgets = document.querySelectorAll('div.elementor-widget-video[data-widget_type^="video."][data-settings*="youtube_url"]');
+    for (let yt of allYtWidgets) {
+        if (yt.dataset.brlbsUnblocked === 'true') {
+            continue;
+        }
+        yt.dataset.widget_type = 'brlbs_' + yt.dataset.widget_type;
+        yt.dataset.settings = yt.dataset.settings.replace('show_image_overlay', 'brlbs_dont_show_image_overlay');
+    }
+})();
+(function() {
+    const allBackgroundContainerYt = Array.from(document.querySelectorAll('[data-brlbs-elementor-bg-video-yt="true"]'));
+    const allBackgroundContainerVimeo = Array.from(document.querySelectorAll('[data-brlbs-elementor-bg-video-vimeo="true"]'));
+    const allBackgroundContainerYtIds = allBackgroundContainerYt.map(e => e.dataset.id);
+    const allBackgroundContainerVimeoIds = allBackgroundContainerVimeo.map(e => e.dataset.id);
+    const allBackgroundContainerIds = [...allBackgroundContainerYtIds, ...allBackgroundContainerVimeoIds];
+
+    function insertBackgroundVideoCbs() {
+        for (let id of allBackgroundContainerIds) {
+            const videoContainer = document.querySelector('[data-id="'+id+'"]');
+            const template = document.getElementById('brlbs-cmpnt-cb-template-elementor-bg-video-' + id);
+            if (videoContainer && template) {
+                const videoEmbed = videoContainer.querySelector('.elementor-background-video-embed');
+                const cb = template.content.cloneNode(true).querySelector('.brlbs-cmpnt-container');
+                if (videoEmbed.nextSibling) {
+                    videoEmbed.parentNode.insertBefore(cb, videoEmbed.nextSibling);
+                } else {
+                    videoEmbed.parentNode.appendChild(cb);
+                }
+
+                const bgImageCss = window.getComputedStyle(videoContainer).backgroundImage;
+                const thumb = cb.querySelector('.brlbs-cmpnt-cb-thumbnail')
+                if (bgImageCss != null && thumb != null && bgImageCss.startsWith('url(')) {
+                    thumb.style.backgroundImage = bgImageCss;
+                }
+            }
+
+        }
+    }
+    window.addEventListener("load", () => insertBackgroundVideoCbs());
+
+    window.addEventListener( 'elementor/frontend/init', function() {
+        let first = true;
+        elementorFrontend.hooks.addAction('frontend/element_ready/global', () => {
+            if (first === true) {
+                first = false;
+                if (allBackgroundContainerYtIds.length > 0) {
+                    const ytApiReadyOriginal = elementorFrontend.utils.youtube.onApiReady;
+                    let waitingYtCounter = 0;
+                    elementorFrontend.utils.youtube.onApiReady = (callback) => {
+                        document.addEventListener('brlbs_elementor_bgVideo_yt_unblocked', () => {
+                            ytApiReadyOriginal.call(elementorFrontend.utils.youtube, callback);
+                        });
+                        if (++waitingYtCounter === allBackgroundContainerYtIds.length) {
+                            elementorFrontend.utils.youtube.onApiReady = ytApiReadyOriginal;
+                            window.brlbsElementorBgVideoYtUnblockReady = { state: true };
+                        }
+                    }
+                }
+
+                if (allBackgroundContainerVimeoIds.length > 0) {
+                    const vimeoApiReadyOriginal = elementorFrontend.utils.vimeo.onApiReady;
+                    let waitingVimeoCounter = 0;
+                    elementorFrontend.utils.vimeo.onApiReady = (callback) => {
+                        document.addEventListener('brlbs_elementor_bgVideo_vimeo_unblocked', () => {
+                            vimeoApiReadyOriginal.call(elementorFrontend.utils.vimeo, callback);
+                        });
+                        if (++waitingVimeoCounter === allBackgroundContainerVimeoIds.length) {
+                            elementorFrontend.utils.vimeo.onApiReady = vimeoApiReadyOriginal;
+                            window.brlbsElementorBgVideoVimeoUnblockReady = { state: true };
+                        }
+                    }
+                }
+            }
+        });
+    });
+})();
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.10" id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/dach-jaeger.de\/wp-admin\/admin-ajax.php","nonce":"785cc3948a","urls":{"assets":"https:\/\/dach-jaeger.de\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/dach-jaeger.de\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"de_DE","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/dach-jaeger.de\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.25.4" id="elementor-pro-frontend-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Auf Facebook teilen","shareOnTwitter":"Auf Twitter teilen","pinIt":"Anheften","download":"Download","downloadImage":"Bild downloaden","fullscreen":"Vollbild","zoom":"Zoom","share":"Teilen","playVideo":"Video abspielen","previous":"Zur\u00fcck","next":"Weiter","close":"Schlie\u00dfen","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Breitbild","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.10","is_static":false,"experimentalFeatures":{"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/dach-jaeger.de\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/dach-jaeger.de\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/dach-jaeger.de\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"74a28820ed"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes"},"post":{"id":15,"title":"%C3%9Cber%20uns%20-%20Das%20Team%20%7C%20Dach%20J%C3%A4ger%20in%20Bielefeld","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.10" id="elementor-frontend-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.4" id="pro-elements-handlers-js" data-rocket-defer defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://dach-jaeger.de/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi_webp/ID/hqdefault.webp'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+<script>"use strict";function wprRemoveCPCSS(){var preload_stylesheets=document.querySelectorAll('link[data-rocket-async="style"][rel="preload"]');if(preload_stylesheets&&0<preload_stylesheets.length)for(var stylesheet_index=0;stylesheet_index<preload_stylesheets.length;stylesheet_index++){var media=preload_stylesheets[stylesheet_index].getAttribute("media")||"all";if(window.matchMedia(media).matches)return void setTimeout(wprRemoveCPCSS,200)}var elem=document.getElementById("rocket-critical-css");elem&&"remove"in elem&&elem.remove()}window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script><noscript><link rel='stylesheet' id='hello-elementor-css' href='https://dach-jaeger.de/wp-content/themes/hello-elementor/style.min.css?ver=3.1.1' media='all' /><link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://dach-jaeger.de/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.1' media='all' /><link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://dach-jaeger.de/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.1' media='all' /><link rel='stylesheet' id='elementor-frontend-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='widget-image-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='widget-nav-menu-css' href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.25.4' media='all' /><link rel='stylesheet' id='widget-heading-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='widget-form-css' href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.25.4' media='all' /><link rel='stylesheet' id='widget-text-editor-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='widget-social-icons-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='e-apple-webkit-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='widget-icon-list-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.25.10' media='all' /><link data-minify="1" rel='stylesheet' id='elementor-icons-css' href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1732002519' media='all' /><link data-minify="1" rel='stylesheet' id='swiper-css' href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1732002519' media='all' /><link rel='stylesheet' id='e-swiper-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='elementor-post-9-css' href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-9.css?ver=1731428232' media='all' /><link rel='stylesheet' id='e-popup-style-css' href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.25.4' media='all' /><link data-minify="1" rel='stylesheet' id='font-awesome-5-all-css' href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1732002519' media='all' /><link rel='stylesheet' id='font-awesome-4-shim-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='widget-spacer-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='widget-divider-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.25.10' media='all' /><link rel='stylesheet' id='elementor-post-15-css' href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-15.css?ver=1731429420' media='all' /><link rel='stylesheet' id='elementor-post-32-css' href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-32.css?ver=1731428232' media='all' /><link rel='stylesheet' id='elementor-post-54-css' href='https://dach-jaeger.de/wp-content/uploads/elementor/css/post-54.css?ver=1731428232' media='all' /><link data-minify="1" rel='stylesheet' id='borlabs-cookie-custom-css' href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=1732002519' media='all' /><link rel='stylesheet' id='eael-general-css' href='https://dach-jaeger.de/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.0.10' media='all' /><link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://dach-jaeger.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' /><link data-minify="1" rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=1732002519' media='all' /><link data-minify="1" rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://dach-jaeger.de/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1732002519' media='all' /><link rel='stylesheet' id='e-motion-fx-css' href='https://dach-jaeger.de/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.25.4' media='all' /></noscript></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1732717112 -->

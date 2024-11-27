@@ -1,0 +1,1509 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.dachdecker-in-dortmund.de/',
+        AccountUUID: '0d7f08e0b9d441edae3b31704d01cfdc',
+        SystemID: 'EU_PRODUCTION',
+        SiteAlias: 'ef5140e8d3a8484b9fc7e79cfc2669f2',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Wed Mar 06 18:10:24 UTC 2024',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'home',
+        InitialPageUuid: 'a9113d4a973e47c786e3199370939346',
+        InitialPageId: '29291054',
+        InitialEncodedPageAlias: 'aG9tZQ==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: true,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '39310',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'dachdecker-in-dortmund',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.dachdecker-in-dortmund.de/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '3309',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<link rel="manifest" href="/manifest.json">
+<!-- Tell the browser it's a PWA -->
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Tell iOS it's a PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.dachdecker-in-dortmund.de/">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/New+Project+%281%29.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/site_favicon_16_1671062493694.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-de.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'EU_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+<style id="hideAnimFix">
+    .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+    }
+
+    .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";.display_None,.dmPopupMask{display:none}.pswp,html{-webkit-text-size-adjust:100%}@font-face{font-family:Roboto;font-style:normal;font-weight:300;font-display:swap;src:url(https://de.cdn-website.com/fonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:italic;font-weight:300;font-display:swap;src:url(https://de.cdn-website.com/fonts/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc6CsQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://de.cdn-website.com/fonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:italic;font-weight:400;font-display:swap;src:url(https://de.cdn-website.com/fonts/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://de.cdn-website.com/fonts/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.dmInner{min-height:100vh!important;position:relative;min-width:768px!important}.dmPopup,.dmPopupMask{position:fixed;left:0}.dmDisplay_None{display:none!important}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix:after,.clearfix:before{content:' ';display:table}.clearfix{display:inline-block}.dmDesktopBody .shadowEffectToChildren li{box-shadow:none!important}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{margin:0;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup,.dmPopup,.dmPopupClose:before,[data-display-type=block]{display:block}.dmPopup{padding:10px;text-align:left;margin:0 10px;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}#dm .dmBackToTop{position:fixed!important}#dm .dmRespRow .dmRespColsWrapper{display:flex}.pswp{z-index:9999999999!important}#dm .dmInner .dmWidget.align-center,.align-center{margin-left:auto;margin-right:auto}body.fix-mobile-scrolling{overflow:initial}#dmRoot{text-decoration-skip-ink:none}.dmform-title{padding-right:15px;padding-left:15px}body{-webkit-overflow-scrolling:touch}@media (min-width:1025px){:root{--btn-text-font-size:15px}}@media (min-width:768px) and (max-width:1024px){:root{--btn-text-font-size:15px}}nav{display:block}html{font-family:Source Sans Pro;-ms-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button,input{font-family:inherit;font-size:100%;margin:0;line-height:normal}button{text-transform:none;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow.dmRespRowNoPadding{padding:0}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}@media screen and (min-width:1200px){.rows-1200 .dmRespRow:not(.fullBleedMode) .dmRespColsWrapper{max-width:1200px}}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmDesktopBody .dmRespRow .large-4{position:relative;width:33.33333%}.dmDesktopBody .dmRespRow .large-6{position:relative;width:50%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}[class*=' dm-common-icons-']{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-star:before{content:'\f005'}.icon-phone:before{content:'\f095'}.icon-angle-right:before{content:'\f105'}.icon-angle-down:before{content:'\f107'}#dm .dmRespRow .dmRespCol>.dmWidget{overflow:initial}@media (min-width:768px){#dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget:not(.displayNone)[data-display-type=block]{display:block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}#dm .dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img,body:not(.responsiveTablet) #dm .dmInner .dmBody .hide-for-large,body:not(.responsiveTablet) .hide-for-large{display:none!important}p.rteBlock{margin:0}html:not(.ios-preview) #dm .hasStickyHeader .dmInner div.dmHeaderContainer{position:fixed!important;z-index:101;width:100%;min-width:768px}.imageWidget a{font-style:italic;text-align:center}.imageWidget img[width][height]{height:auto}.pswp,.pswp__bg,.pswp__scroll-wrap{width:100%;height:100%;position:absolute;top:0;left:0}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] .text-align-right{text-align:right!important}.dmNewParagraph[data-version] h1,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}.dmNewParagraph[data-version] a{vertical-align:initial}.pswp{display:none;overflow:hidden;-ms-touch-action:none;touch-action:none;-webkit-backface-visibility:hidden;outline:0}.pswp *{-webkit-box-sizing:border-box;box-sizing:border-box}.pswp__scroll-wrap{overflow:hidden}.pswp__bg{background:#000;opacity:0;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__container{-webkit-touch-callout:none;-ms-touch-action:none;touch-action:none;position:absolute;left:0;right:0;top:0;bottom:0;-webkit-backface-visibility:hidden;will-change:transform}.pswp__item{position:absolute;left:0;right:0;top:0;bottom:0;overflow:hidden}.pswp__button{position:relative;overflow:visible;-webkit-appearance:none;display:block;border:0;padding:0;margin:0;float:right;opacity:.75;-webkit-box-shadow:none;box-shadow:none}.pswp__button::-moz-focus-inner{padding:0;border:0}.pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{background:url(/_dm/s/rt/scripts/vendor/photoswipe4/icons/default-skin.png) no-repeat;background-size:264px 88px;width:44px;height:44px}.pswp__button--close{background-position:0 -44px}.pswp__button--share{background-position:-44px -44px}.pswp__button--fs{display:none}.pswp__button--zoom{display:none;background-position:-88px 0}.pswp__button--arrow--left,.pswp__button--arrow--right{background:0 0;top:50%;margin-top:-50px;width:70px;height:100px;position:absolute}.pswp__button--arrow--left{left:0}.pswp__button--arrow--right{right:0}.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{content:'';top:35px;background-color:rgba(0,0,0,.3);height:30px;width:32px;position:absolute}.pswp__button--arrow--left:before{left:6px;background-position:-138px -44px}.pswp__button--arrow--right:before{right:6px;background-position:-94px -44px}.pswp__share-modal{display:block;background:rgba(0,0,0,.5);width:100%;height:100%;top:0;left:0;padding:10px;position:absolute;z-index:1600;opacity:0;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__share-modal--hidden{display:none}.pswp__share-tooltip{z-index:1620;position:absolute;background:#FFF;top:56px;border-radius:2px;display:block;width:auto;right:44px;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.25);box-shadow:0 2px 5px rgba(0,0,0,.25);-webkit-transform:translateY(6px);-ms-transform:translateY(6px);transform:translateY(6px);-webkit-backface-visibility:hidden;will-change:transform}.pswp__counter,.pswp__preloader{height:44px;position:absolute;top:0}.pswp__counter{left:0;font-size:13px;line-height:44px;color:#FFF;opacity:.75;padding:0 10px}.pswp__caption{position:absolute;left:0;bottom:0;width:100%;min-height:44px}.pswp__caption__center{max-width:95%;margin:0 auto;font-size:16px;padding:10px;line-height:20px;color:#CCC;width:960px;font-weight:700;text-align:center}.pswp__preloader{width:44px;left:50%;margin-left:-22px;opacity:0;will-change:opacity}.pswp__preloader__icn{width:20px;height:20px;margin:12px}@media screen and (max-width:1024px){.pswp__preloader{position:relative;left:auto;top:auto;margin:0;float:right}}.pswp__ui{-webkit-font-smoothing:auto;visibility:visible;opacity:1;z-index:1550}.pswp__top-bar{position:absolute;left:0;top:0;height:44px;width:100%}.pswp__caption,.pswp__top-bar{-webkit-backface-visibility:hidden;will-change:opacity;background-color:rgba(0,0,0,.5)}.pswp__ui--hidden .pswp__button--arrow--left,.pswp__ui--hidden .pswp__button--arrow--right,.pswp__ui--hidden .pswp__caption,.pswp__ui--hidden .pswp__top-bar{opacity:.001}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs .image-container{height:100%}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{width:58px;height:58px;margin:2px;display:inline-block;vertical-align:middle;text-align:center;overflow:hidden}.dmPhotoGalleryResp.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{box-shadow:0 0 3px #888}.dmPhotoGalleryResp.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{margin:0;padding:10px}.dmPhotoGalleryHolder{text-align:center}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{display:inline!important;margin:0!important;vertical-align:middle;text-align:center;position:relative}.dmPhotoGallery .image-container{position:relative}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner h3{margin:0;line-height:normal;text-align:center;font-size:21px}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner div{text-align:center}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner .caption-text,.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner .caption-title{max-width:100%}#dm .dmPhotoGallery.newPhotoGallery li{list-style:none}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner{align-items:center;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;z-index:1;background-color:rgba(255,255,255,.9);color:#333;padding:15px;height:100%;box-sizing:border-box}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner div,#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner h3{text-align:center}#dm .dmPhotoGallery.newPhotoGallery .photoGalleryViewAll{box-shadow:0 0!important;font-size:inherit!important;margin:0!important}#dm .dmPhotoGallery.newPhotoGallery .dmPhotoGalleryHolder{width:100%;padding:0;display:none}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs{position:relative}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .image-container{overflow:hidden}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .image-container a{background-repeat:no-repeat;background-position:center}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner .caption-button{margin:10px auto;max-width:100%}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner .caption-button .text{padding:10px 20px!important}#dm .dmRespRow.dmRespRowNoPadding,.dmContent,.dmInner ul:not(.defaultList),DIV.dmBody{padding:0}#dm .dmPhotoGallery.newPhotoGallery[data-link-gallery=true] .image-container a.has-link{z-index:1px}img[width][height]{height:auto}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}A IMG{border:none}h1,h3,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}.clearfix,a,img,li,ul{vertical-align:top}#iscrollBody,#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmInner{font-size:16px;background:#fff;color:#666}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#463939}.dmHeader{background:#68ccd1;color:#666;text-align:center;position:relative;width:100%;max-width:100%}DIV.dmBody{clear:both}.dmContent{margin:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}#innerBar{position:relative;height:36px;width:100%;font-size:20px;margin:0;z-index:80}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmRespCol>[dmle_extension]:not(:first-child){margin-top:10px}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}.imageWidget:not(.displayNone) img{width:100%}h3{font-weight:400;font-size:23px}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#innerBar.lineInnerBar{display:table;width:100%;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;font-size:20px;margin-top:30px;margin-bottom:30px;background-color:transparent;color:#666}#innerBar .titleLine{display:table-cell;vertical-align:middle;width:50%}.dmPageTitleRow:not(#innerBar){display:none}.titleLine hr{min-height:1px;background-color:rgba(102,102,102,.2)}.standardHeaderLayout .dmHeader{float:none}.dmInner a{outline:0;vertical-align:inherit}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.dmStandardDesktop{display:block;margin:0 auto}#dm h3.dmwidget-title[hide=true]{display:none}#dm .dmwidget-title{margin:10px 0;font-size:23px;text-shadow:none;text-align:left;text-overflow:ellipsis;word-wrap:normal}.dmPhotoGalleryHolder{font-size:medium!important;margin:0;list-style:none}#dm .dmPhotoGallery .dmPhotoGalleryHolder,#dm .dmPhotoGallery .dmPhotoGalleryHolder>li{width:100%;padding:0}#dm .dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{background:url(https://dd-cdn.multiscreensite.com/runtime-img/galleryLoader.gif) 50% 50% no-repeat #eee;float:left;clear:none;padding:0;margin:0;width:100%}.dmDesktopBody .dmPhotoGallery .photoGalleryViewAll{background:0 0;border:none;padding:3px 0;font-size:16px;width:auto;height:auto;line-height:normal;box-shadow:0 -2px 0 0;display:block;margin:40px 0;text-align:left}#dm .dmBackToTop{width:30px;height:30px;opacity:0;z-index:200;bottom:10px;right:10px;-moz-box-shadow:0 0 1px rgba(247,247,247,.4);-webkit-box-shadow:0 0 1px rgba(247,247,247,.4);box-shadow:0 0 1px rgba(247,247,247,.4)}#dm .dmBackToTop:after,#dm .dmBackToTop:before{content:'';position:absolute;width:4px;height:15px;background:#fff;border-radius:2px;left:8px;top:6px;transform:rotate(45deg)}#dm .dmBackToTop:after{left:16px;transform:rotate(-45deg)}body{background-color:#eee}.dmPhotoGallery:not(.dmFacebookGallery) .dmPhotoGalleryHolder:not(.ready) li.photoGalleryThumbs{display:inline!important;visibility:hidden}.main-navigation.unifiednav{-js-display:flex;display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{-js-display:flex;display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{-js-display:flex;display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::before{content:'';align-self:center;font-weight:700}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{-js-display:flex;display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{opacity:1}.main-navigation.unifiednav.effect-none{padding:12px 15px}.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav .unifiednav__container[data-depth]{position:absolute;top:0;left:0;flex-direction:column;opacity:0;z-index:100;background-color:#faf9f9}.main-navigation.unifiednav .unifiednav__container[data-depth='0']{top:100%;transform:translateY(-10px)}.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container[data-depth='0']{left:15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap .unifiednav__container>.unifiednav__item-wrap{flex-direction:column}.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap .unifiednav__item{padding:15px 30px 15px 15px;margin:0}.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{content:''!important;width:100%;height:0;color:#ececec;align-self:center;border:0 solid currentColor}.main-navigation.unifiednav[layout-sub=submenu_horizontal_2] .unifiednav__container[data-depth]{color:#999}.main-navigation.unifiednav[layout-sub=submenu_horizontal_2] .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{border-top-width:1px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item.unifiednav__item_has-sub-nav .icon{display:initial;padding-left:10px;margin-left:0}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav .unifiednav__container[data-depth]{background-color:transparent}#dm .main-navigation.unifiednav[layout-sub=submenu_horizontal_2] .unifiednav__container[data-depth]{background-color:#faf9f9}#dm .main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{color:#d1d1d1}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container{flex-wrap:wrap;justify-content:inherit}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container .nav-item-text::before{text-align:left}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:''}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}.dm-bfs.dm-layout-home div.dmInner{background-color:#fff}.dmStandardDesktop .dmHeader{background-color:#68ccd1;max-width:100%}.standardHeaderLayout .dmHeader{display:block;height:auto}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed).empty-column{min-height:100px}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed).empty-column,.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed):empty{min-height:1px}#dm div.dmContent h1{color:#666}#dm div.dmRespCol>*{line-height:normal}#dm div.dmContent h3{color:#fff}#dm div.dmInner{line-height:initial}#dm div.dmInner h1,#dm div.dmInner h3{font-family:Montserrat,"Montserrat Fallback"}#dm DIV.dmInner{background-repeat:no-repeat;background-image:url(https://irt-cdn.multiscreensite.com/ce0bb35f932b47bb809d0e37905542ba/dms3rep/multi/site_background_education-2087x1173.jpg);background-size:cover;background-position:50% 0}#dm div.dmOuter div.dmInner{background-position:center center;background-repeat:repeat;background-size:auto}#dm div.dmInner,#dm div.dmInner .dmRespCol{font-weight:300}.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:transparent}#dm .dmRespCol div.dmNewParagraph,#dm div.dmInner,#dm div.dmInner .dmRespCol,.dmPhotoGallery .caption-text.caption-text{color:rgba(0,0,0,1);font-family:Roboto,"Roboto Fallback"}#dm div.dmContent h1,#dm div.dmContent h3,#dm div.dmNewParagraph p{color:rgba(255,255,255,1);direction:ltr;font-family:Roboto,"Roboto Fallback"}#dm div.dmContent h1,#dm div.dmContent h3{font-weight:700;font-style:normal;text-decoration:none;line-height:initial}#dm div.dmContent .dmNewParagraph[data-version] h1{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h1 *{text-decoration:none}#dm div.dmNewParagraph p{font-weight:300;font-style:normal;text-decoration:none}#dm .dmNewParagraph a,#dm div.dmNewParagraph a,.newPhotoGallery .photoGalleryViewAll.link{text-decoration:none;color:rgba(40,197,250,1)}#dm .dmwidget-title{text-transform:none;overflow:visible;white-space:normal}h1{margin-bottom:20px!important}h3{margin-bottom:8px!important}p{margin-bottom:10px!important}#dmRoot #dm .p_hfcontainer nav.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected{color:#f60004!important;border-bottom:2px #fff solid!important}#dmRoot #dm .p_hfcontainer nav.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{border-bottom:2px transparent solid!important;letter-spacing:0!important}#dmRoot #dm .dmBody div.gallery-icon .caption-container .caption-title:after{content:''!important;position:absolute!important;top:50%;left:50%;width:35px!important;height:35px;transform:translate(-50%,-50%);background:url(https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/right-1920w.png) no-repeat!important;background-size:contain!important}#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child) .unifiednav__container[data-depth="0"],#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav[data-nav-structure=HORIZONTAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child) .unifiednav__container[data-depth="0"]{left:15px!important}@media only screen and (min-width:768px) and (max-width:1024px){#dmRoot #dm .dmBody .dmRespRow.row_space{padding:160px 40px!important}#dmRoot #dm .dmBody .dmRespRow.row_space1{padding:40px 30px!important}#dmRoot #dm div.dmContent h3{font-size:28px}}#dm .dmBackToTop{border-radius:0;border:2px solid #fff;background:#f60004}#dm DIV.dmOuter DIV.dmInner{background-image:none;background-color:rgba(255,255,255,1)}#dm div.dmInner,#dm div.dmInner .dmRespCol{font-size:16px}#dm div.dmContent h1{font-size:40px}#dm div.dmContent h3{font-size:34px}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:2px;--btn-border-radius:50px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:rgb(255, 255, 255);--btn-border-color:rgb(58, 58, 58);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgb(255, 255, 255);--btn-text-decoration:none;--btn-text-font-weight:400;--btn-icon-color:rgb(247, 247, 247);--btn-icon-fill:rgb(247, 247, 247);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:rgb(246, 0, 4);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:rgb(255, 255, 255);--btn-hover-text-color:var(--btn-text-color);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}@media (min-width:0px) and (max-width:767px){:root{--btn-text-font-size:15px}}#dm .dmOuter .dmInner .dmWidget[data-buttonstyle=FLAT_ROUND_ICON]{background-clip:border-box;border-radius:6px;padding:0 0 0 40px}#dm .dmOuter .dmInner .dmWidget[data-buttonstyle=FLAT_ROUND_ICON] .text{padding:10px 7px}#dm .dmOuter .dmInner .dmWidget[data-buttonstyle=FLAT_ROUND_ICON] .iconBg{display:block}#dm .dmWidget:not([data-buttonstyle]){border-radius:50px}#dm .dmWidget:not([data-buttonstyle]) .text{padding:10px 0}#dm .dmWidget:not([data-buttonstyle]) .iconBg{display:none}#dm div.dmInner #site_content .dmWidget{background-color:var(--btn-bg-color);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-size:var(--btn-text-font-size);font-weight:var(--btn-text-font-weight);text-decoration:var(--btn-text-decoration)}#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before,#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:14px!important}#dm div.dmInner #site_content .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .p_hfcontainer div.u_1011018909 img{border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important}#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav .unifiednav__container[data-depth="0"]{top:calc(100% - 0px - 0px)!important}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(244,244,244,1)!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}#dm .p_hfcontainer .u_1011018909{width:100%!important}#dm .p_hfcontainer div.u_1861705244{background-color:rgba(58,58,58,1)!important}#dm .p_hfcontainer nav.u_1112353738{color:#fff!important}#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav:not([image]) .unifiednav__container[data-depth="0"]{top:calc(100% - 0px - 0px)!important}#dm .dmInner div.u_hcontainer,#dm .p_hfcontainer div.u_1011018909,#dm .p_hfcontainer nav.u_1112353738{float:none!important;left:0!important;max-width:100%!important}#dm .p_hfcontainer nav.u_1112353738.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{border-top-style:solid!important;border-top-width:0!important}#dm .p_hfcontainer nav.u_1112353738.main-navigation.unifiednav .unifiednav__container[data-depth]{background-color:rgba(4,2,4,1)!important}#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:17px!important}#dm .p_hfcontainer .u_1112353738.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:5px 0!important;margin:0 20px!important}#dm .dmInner div.u_hcontainer{top:0!important;width:100%!important;position:relative!important;height:auto!important;min-width:0!important;text-align:center!important;padding:25px 0 20px!important;margin:0 auto!important}#dm .dmInner div.dmHeader.u_hcontainer{padding-bottom:20px!important;padding-top:25px!important}#dm .dmInner div.fHeader .dmHeader[freeheader=true]{padding-top:12px!important;padding-bottom:12px!important}.fHeader #hcontainer.dmHeader[freeheader=true]{padding-top:initial!important;padding-bottom:initial!important}#dm .p_hfcontainer div.u_1677919435{padding:0!important}#dm .p_hfcontainer nav.u_1112353738.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer nav.u_1112353738.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important}#dm .p_hfcontainer div.u_1861705244{width:auto!important;padding:15px 30px!important;margin:0!important}#dm .p_hfcontainer div.u_1011018909{top:0!important;width:136px!important;position:relative!important;min-width:0!important;text-align:center!important;display:block!important;height:89px!important;padding:0!important;margin:-1px auto 0 0!important}#dm .dmInner div.fHeader.dmHeaderContainer #hcontainer.dmHeader[freeheader=true]{margin:0!important;padding:0!important}#dm .p_hfcontainer nav.u_1112353738.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{font-family:Roboto!important;color:rgba(255,255,255,1)!important;font-size:16px!important}#dm .p_hfcontainer nav.u_1112353738.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{color:rgba(255,255,255,1)!important;font-family:Roboto!important;font-size:17px!important}#dm .p_hfcontainer nav.u_1112353738{top:0!important;width:calc(100% - 0px)!important;position:relative!important;height:auto!important;justify-content:flex-end!important;align-items:stretch!important;min-width:25px!important;text-align:start!important;padding:6.8px 15px!important;margin:6px 0 0!important}#dm .dmBody a.u_1305883019 .iconBg,#dm .dmBody a.u_1926607703 .iconBg{display:inline!important;top:30px!important;left:75px!important}#dm .p_hfcontainer div.u_1246161842{padding:0!important;margin:0!important}.stickyHeaderSpacer{height:118px!important}#dm .dmBody div.dmform-error{font-style:normal!important}#dm .dmBody a.u_1259042057 span.text{font-family:Roboto!important;color:rgba(110,106,106,1)!important}#dm .dmBody a.u_1259042057{background-color:rgba(255,255,255,1)!important;border-color:rgba(255,255,255,1)!important;border-style:solid!important;border-width:2px!important}#dm .dmBody a.u_1305883019,#dm .dmBody a.u_1926607703{border-color:transparent!important;border-width:0!important;border-style:solid!important}#dm .dmBody div.u_1243667655{background-repeat:no-repeat!important;background-image:url(https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/shutterstock_1592949040-1920w.jpg),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important;background-size:cover!important;background-position:50% 100%!important}#dm .dmBody div.u_Partner{background-color:rgba(110,106,106,1)!important}#dm .dmBody div.u_1872057087{background-color:rgba(4,2,4,1)!important}#dm .dmBody a.u_1305883019 span.text{font-family:Roboto!important;color:rgba(255,255,255,1)!important}#dm .dmBody a.u_1305883019{background-color:rgba(110,106,106,1)!important;border-radius:50px!important;-moz-border-radius:50px!important;-webkit-border-radius:50px!important}#dm .dmBody a.u_1305883019 span.icon{color:#f7f7f7!important;font-size:16px!important}#dm .dmBody div.u_1405224528{background-color:rgba(4,2,4,1)!important}#dm .dmBody a.u_1926607703 span.text{font-family:Roboto!important;color:rgba(255,255,255,1)!important}#dm .dmBody a.u_1926607703{background-color:rgba(110,106,106,1)!important;border-radius:50px!important;-moz-border-radius:50px!important;-webkit-border-radius:50px!important}#dm .dmBody a.u_1259042057,#dm .dmBody div.u_1243667655{float:none!important;top:0!important;left:0!important;position:relative!important;min-width:0!important;text-align:center!important}#dm .dmBody a.u_1926607703 span.icon{color:#f7f7f7!important;font-size:16px!important}#dm .dmBody a.u_1259042057 span.text,#dm .dmBody a.u_1305883019 span.text,#dm .dmBody a.u_1926607703 span.text{font-size:18px!important}#dm .dmBody div.u_1620106714{background-color:rgba(4,2,4,.61)!important;border-color:rgba(255,255,255,1)!important;border-width:2px!important;border-style:solid!important}#dm .dmBody .u_1236352113{display:block!important}#dm .dmBody .u_1187914380,#dm .dmBody .u_1570599349{display:none!important}#dm .dmBody .u_1697891183{display:block!important}#dm .dmBody .u_1220697960,#dm .dmBody .u_1910925199{display:none!important}#dm .dmBody .u_1143228970{display:block!important}#dm .dmBody .u_1744739803,#dm .dmBody .u_1900769198{display:none!important}#dm .dmBody .u_1384917670{display:block!important}#dm .dmBody .u_1286219737,#dm .dmBody .u_1903965784{display:none!important}#dm .dmBody .u_1889087854{display:block!important}#dm .dmBody .u_1548767528,#dm .dmBody .u_1705159104{display:none!important}#dm .dmBody .u_1794795810{display:block!important}#dm .dmBody .u_1229078949,#dm .dmBody .u_1551949287{display:none!important}#dm .dmBody .u_1279733121{display:block!important}#dm .dmBody .u_1792983559,#dm .dmBody .u_1851262979{display:none!important}#dm .dmBody .u_1178432838{display:block!important}#dm .dmBody .u_1746405448,#dm .dmBody .u_1856792310{display:none!important}#dm .dmBody div.u_1043325675 .caption-inner,#dm .dmBody div.u_1162371065 .caption-inner,#dm .dmBody div.u_1229940165 .caption-inner,#dm .dmBody div.u_1534958040 .caption-inner,#dm .dmBody div.u_1557795803 .caption-inner,#dm .dmBody div.u_1641950895 .caption-inner,#dm .dmBody div.u_1710588912 .caption-inner,#dm .dmBody div.u_1979628316 .caption-inner{background-color:rgba(255,255,255,.5)!important}#dm .dmBody div.u_1266411185 input:not([type=submit]){background-color:rgba(255,255,255,1)!important;border-color:rgba(165,156,156,1)!important;border-style:solid!important;border-width:1px!important}#dm .dmBody div.u_1266411185 .dmforminput input{color:rgba(255,255,255,1)!important}#dm .dmBody .u_1043325675 .caption-inner,#dm .dmBody .u_1162371065 .caption-inner,#dm .dmBody .u_1229940165 .caption-inner,#dm .dmBody .u_1534958040 .caption-inner,#dm .dmBody .u_1557795803 .caption-inner,#dm .dmBody .u_1641950895 .caption-inner,#dm .dmBody .u_1710588912 .caption-inner,#dm .dmBody .u_1979628316 .caption-inner{-webkit-border-top-right-radius:0!important;-webkit-border-bottom-right-radius:0!important;-webkit-border-bottom-left-radius:0!important;-webkit-border-top-left-radius:0!important;border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important}#dm .d-page-1716942098 DIV.dmInner{background-repeat:no-repeat!important;background-size:cover!important;background-attachment:fixed!important;background-position:50% 50%!important}#dm .dmBody div.u_1243667655{width:auto!important;height:auto!important;max-width:none!important;margin:0!important;padding:220px 30px!important}#dm .dmBody a.u_1259042057{width:223px!important;height:59px!important;display:block!important;max-width:100%!important;padding:0!important;margin:10px auto 10px 0!important}#dm .dmBody div.u_Partner{width:auto!important;margin:0!important;padding:60px 30px!important}#dm .dmBody a.u_1305883019,#dm .dmBody a.u_1926607703{width:223px!important;height:59px!important;float:none!important;top:0!important;left:0!important;position:relative!important;min-width:0!important;text-align:center!important}#dm .dmBody a.u_1305883019,#dm .dmBody a.u_1926607703,#dm .dmBody div.u_1152891211{max-width:100%!important;display:block!important;padding:0!important}#dm .dmBody div.u_1152891211,#dm .dmBody div.u_1620106714{float:none!important;top:0!important;left:0!important;width:calc(100% - 0px)!important;position:relative!important;height:auto!important;min-width:25px!important}#dm .dmBody div.u_1152891211{margin:0 154px 20px 0!important}#dm .dmBody div.u_1620106714{max-width:483px!important;text-align:center!important;margin:0!important;padding:40px!important}#dm .dmBody .u_1043325675 .photoGalleryThumbs .image-container a,#dm .dmBody .u_1162371065 .photoGalleryThumbs .image-container a,#dm .dmBody .u_1229940165 .photoGalleryThumbs .image-container a,#dm .dmBody .u_1534958040 .photoGalleryThumbs .image-container a,#dm .dmBody .u_1557795803 .photoGalleryThumbs .image-container a,#dm .dmBody .u_1641950895 .photoGalleryThumbs .image-container a,#dm .dmBody .u_1710588912 .photoGalleryThumbs .image-container a,#dm .dmBody .u_1979628316 .photoGalleryThumbs .image-container a{padding-top:159px!important}#dm .dmBody .u_1557795803 .photoGalleryThumbs,#dm .dmBody .u_1557795803 .photoGalleryViewAll{padding:0!important}.font-size-20,.size-20{font-size:20px!important}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-phone:before{content:"\f095"}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+        visibility: hidden;
+    }
+
+    
+</style>
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "Gebr. Lagoda GmbH",
+        "url" : "https://www.dachdecker-in-dortmund.de/"
+    }
+</script>
+  <title>
+    Professioneller Dachdecker | Dortmund | Gebr. Lagoda GmbH
+  </title>
+  <meta name="keywords" content="Dachdecker, Fassaden, bester Dachdecker, Abdichtungen, Gebäude, Dachdecker Dortmund, Sanierung, sanieren, Dämmung, dämmen, Sanierung Dortmund"/>
+  <meta name="description" content="Gebr. Lagoda GmbH ist Ihr Dachdecker in Dortmund. Wir sind der Experte für alle Arbeiten in, auf und rund um Ihr Gebäude. Rufen Sie uns noch heute an!"/>
+
+  <!--THE CONTENT OF THIS FILE WILL BE APPENDED TO EVERY PAGE INSIDE THE </HEAD> ELEMENT-->  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Professioneller Dachdecker | Dortmund | Gebr. Lagoda GmbH"/>
+  <meta name="twitter:description" content="Gebr. Lagoda GmbH ist Ihr Dachdecker in Dortmund. Wir sind der Experte für alle Arbeiten in, auf und rund um Ihr Gebäude. Rufen Sie uns noch heute an!"/>
+  <meta property="og:description" content="Gebr. Lagoda GmbH ist Ihr Dachdecker in Dortmund. Wir sind der Experte für alle Arbeiten in, auf und rund um Ihr Gebäude. Rufen Sie uns noch heute an!"/>
+  <meta property="og:title" content="Professioneller Dachdecker | Dortmund | Gebr. Lagoda GmbH"/>
+
+
+
+
+<!-- SYS- RVVfUFJPRFVDVElPTg== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="home"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite mac dmLargeBody "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-home hasAnimations rows-1200 hasStickyHeader hamburger-reverse dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="78f5c343822e4eb3aac27f4ad5d13812===header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="dmRespRow dmDefaultListContentRow u_1861705244 middle" style="text-align:center" id="1861705244"> <div class="dmRespColsWrapper" id="1914255413"> <div class="u_1677919435 small-12 dmRespCol large-4 medium-4" id="1677919435"> <div class="u_1011018909 imageWidget align-center" data-widget-type="image" id="1011018909" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1783143646"><img src="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Logo-rot-silber-blau-fu-r-transparenz.gif" id="1456770677" class="" data-dm-image-path="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Logo-rot-silber-blau-fu-r-transparenz.gif" width="136.0" height="89.3125" alt="Gebr. Lagoda GmbH" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1246161842 dmRespCol small-12 large-4 medium-4 middle" id="1246161842"> <span id="1630001966"></span> 
+ <nav class="u_1112353738 effect-none main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" id="1112353738" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_00  unifiednav__item_has-sub-nav" target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Start
+        " data-auto="page-text-style">Start<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/#Partner" class="unifiednav__item  dmUDNavigationItem_010101301703  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Partner
+          " data-auto="page-text-style">Partner<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/#uberuns" class="unifiednav__item  dmUDNavigationItem_010101823454  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Über uns
+          " data-auto="page-text-style">&Uuml;ber uns<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/leistungen" class="unifiednav__item  dmUDNavigationItem_010101698413  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Leistungen
+        " data-auto="page-text-style">Leistungen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/-dachdeckungen" class="unifiednav__item  dmUDNavigationItem_010101484924  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Dachdeckungen
+          " data-auto="page-text-style">Dachdeckungen<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/abdichtungen" class="unifiednav__item  dmUDNavigationItem_010101397802  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Abdichtungen
+          " data-auto="page-text-style">Abdichtungen<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/fassaden" class="unifiednav__item  dmUDNavigationItem_010101581230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Fassaden
+          " data-auto="page-text-style">Fassaden<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/energie/wärmedämmung" class="unifiednav__item  dmUDNavigationItem_010101979564  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Energie/Wärmedämmung
+          " data-auto="page-text-style">Energie/W&auml;rmed&auml;mmung<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/belichtung/belüftung" class="unifiednav__item  dmUDNavigationItem_010101246140  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Belichtung/Belüftung
+          " data-auto="page-text-style">Belichtung/Bel&uuml;ftung<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/entwässerung-/-metallarbeiten-holz--/-trockenbau" class="unifiednav__item  dmUDNavigationItem_010101299596  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Entwässerung / Metallarbeiten
+          " data-auto="page-text-style">Entw&auml;sserung / Metallarbeiten<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/-holzbau" class="unifiednav__item  dmUDNavigationItem_010101666172  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           Holzbau
+          " data-auto="page-text-style">Holzbau<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item  dmUDNavigationItem_01010192433  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12 middle" id="1767708220"> <div class="dmNewParagraph hvr-3" data-element-type="paragraph" data-version="5" id="1198349518" new-inline-bind-applied="true" data-diy-text=""><p class="text-align-right size-20 m-size-16"> <a href="tel:0231 856526" runtime_url="tel:0231 856526" type="call" style="display: initial; text-decoration: none; font-weight: normal; color: rgb(246, 0, 4);" class="font-size-20 m-font-size-16"> <i class="fa fa-phone" aria-hidden="true"></i> 
+ <span class="inline-data-binding" data-encoded-value="MDIzMSA4NTY1MjY=" data-inline-binding="content_library.global.phone.telefon:">0231 856526</span></a></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"></div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_1872057087 dmRespRow hide-for-large hide-for-medium" id="1872057087"> <div class="dmRespColsWrapper" id="1938022683"> <div class="dmRespCol large-12 medium-12 small-12 u_1881415940" id="1881415940"> <a data-display-type="block" class="u_1305883019 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel:0231 856526" data-element-type="dButtonLinkId" id="1305883019" data-buttonstyle="FLAT_ROUND_ICON" icon-name="icon-phone"> <span class="iconBg" aria-hidden="true" id="1378382205"> <span class="icon hasFontIconstar hasFontIcon icon-phone" id="1389839972"></span> 
+</span> 
+ <span class="text" id="1481853145">Jetzt anrufen</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1243667655 dmRespRow row_space" style="text-align: center;" id="1243667655"> <div class="dmRespColsWrapper" id="1173148036"> <div class="u_1620106714 dmRespCol small-12 large-6 medium-7" id="1620106714"> <div class="u_1152891211 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1152891211"> <h1 style="line-height: 1.4em;"><span style="display: unset; font-weight: normal;">Wir k&uuml;mmern uns um Dortmunds D&auml;cher</span></h1> 
+</div> 
+ <a data-display-type="block" class="u_1259042057 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/kontakt" data-element-type="dButtonLinkId" id="1259042057"> <span class="iconBg" aria-hidden="true" id="1596715035"> <span class="icon hasFontIcon icon-star" id="1116065771"></span> 
+</span> 
+ <span class="text" id="1008077700">Zur Terminabsprache</span> 
+</a> 
+</div> 
+ <div class="u_1260325397 dmRespCol empty-column small-12 hide-for-small large-4 medium-4" id="1260325397"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_Partner row_space1" id="Partner" data-anchor="Partner"> <div class="dmRespColsWrapper" id="1984472095"> <div class="dmRespCol large-12 medium-12 small-12 u_1783237162" id="1783237162"> <div class="dmNewParagraph u_1272935352" data-element-type="paragraph" data-version="5" id="1272935352"><p class="m-size-16 text-align-center size-20"><span class="m-font-size-16 font-size-20" style="color:rgb(255, 255, 255);font-weight:normal;text-decoration:none;display:unset;font-family:Roboto, 'Roboto Fallback';">Umstieg auf emissionsfreie Nutzfahrzeuge</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1814521024"><p class="text-align-center size-16 m-size-16" style="line-height: 1.6;"><span class="font-size-16 m-font-size-16" style="color:rgb(255, 255, 255);font-weight:normal;display:initial;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Im Rahmen der Richtlinie zur F&ouml;rderung von emissionsfreien Nutzfahrzeugen (REACT-EU), unter Einsatz von Mitteln aus dem europ&auml;ischen Fond f&uuml;r regionale Entwicklung (EFRE) 2014-2022 &quot;Investistionen in Wachstum und Besch&auml;ftigung&quot; in der Aufbauhilfe f&uuml;r den Zusammenhalt und die Gebiete Europas,<br/>wurde in diesem Projekt die Anschaffung und Inbetriebnahme eines vollelektrischen und damit emissionsfreien Nutzfahrzeuges<br/>(MB E-Sprinter: DO LB 270E) gef&ouml;rdert.</span></p></div> 
+ <div class="u_1173324978 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1173324978"> <a href="https://www.dachdecker.handwerk-dortmund.de/" id="1149345701" class="" target="_blank" file="false"><img src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/REACT-EU_LOGO_JPG_RGB-490w.jpg" alt="Innungsverband Dachdecker Logo" id="1576258401" class="" data-dm-image-path="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/REACT-EU_LOGO_JPG_RGB.jpg" width="741" height="172" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1716336862 row_space1" id="1716336862"> <div class="dmRespColsWrapper" id="1190833433"> <div class="dmRespCol large-12 medium-12 small-12" id="1509381860"> <div class="dmNewParagraph u_1279716157" data-element-type="paragraph" data-version="5" id="1279716157"> <h2 class="text-align-center m-size-26" style="line-height: 1.4em;"><span style="text-decoration: none; font-weight: bold; display: unset;" m-font-size-set="true" class="m-font-size-26">Ihr erfahrener Dachdecker aus Dortmund</span></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1153145291"><p class="text-align-center size-20 m-size-17" style="line-height: 1.5em;"><span class="font-size-20 m-font-size-17" style="font-weight: normal; display: initial;" m-font-size-set="true">Willkommen auf der Website der Gebr. Lagoda GmbH, Ihrem Dachdecker in Dortmund. Wir sind Ihr verl&auml;sslicher Spezialist f&uuml;r Dachdeckerarbeiten, Abdichtungen, Fassaden, W&auml;rmed&auml;mmung, energetische Sanierung, Bel&uuml;ftung und Entw&auml;sserung. Wir geben unser Beste, damit Ihr Geb&auml;ude stark und sicher bleibt.</span></p><p class="text-align-center size-20 m-size-17" style="line-height: 1.5em;"><span class="font-size-20 m-font-size-17" style="font-weight: normal; color: rgb(255, 255, 255); display: initial;" m-font-size-set="true">Lernen Sie uns und unseren Service auf den folgenden Seiten etwas besser kennen. Gerne beraten wir Sie auch pers&ouml;nlich.</span></p></div> 
+ <a data-display-type="block" class="u_1674645696 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/kontakt" data-element-type="dButtonLinkId" id="1674645696"> <span class="iconBg" aria-hidden="true" id="1631114396"> <span class="icon hasFontIcon icon-star" id="1244971708"></span> 
+</span> 
+ <span class="text" id="1703163785">Kontaktieren Sie uns</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_uberuns row_space1" id="uberuns" data-anchor="uber uns"> <div class="dmRespColsWrapper" id="1107241013"> <div class="dmRespCol small-12 large-6 medium-6 u_1010302171" id="1010302171"> <div class="dmNewParagraph u_1746860127" data-element-type="paragraph" data-version="5" id="1746860127"> <h2 style="line-height: 1.4em;"><span style="display: unset;">Unsere Philosophie als Dachdeckerbetrieb</span></h2> 
+</div> 
+ <div class="dmNewParagraph ql-disabled" data-element-type="paragraph" data-version="5" id="1571464024"><p style="line-height: 1.6;"><span style="display: unset; font-weight: normal;">Das Unternehmen wurde 1988 durch Matthias und Hans Gerd Lagoda gegr&uuml;ndet und nahm am 16.01.1989 den Gesch&auml;ftsbetrieb auf. Zun&auml;chst unter der technischen Leitung von Dachdeckermeister Herr Walter Lagoda entwickelte sich die Dachdeckerei stetig weiter.<br/><br/>Nach seiner Meisterpr&uuml;fung im Jahr 1997 &uuml;bernahm Hans Gerd Lagoda allein die F&uuml;hrung des Unternehmens. Seitdem leitet er als alleiniger Gesellschaftergesch&auml;ftsf&uuml;hrer das Unternehmen.</span></p></div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12 u_1731359931" id="1731359931"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1053314236"><p style="line-height: 1.6;"><span style="display: unset; font-weight: normal;">Auch das Dachdeckerhandwerk unterliegt einem st&auml;ndigen Wandel. St&auml;ndig m&uuml;ssen neue Regeln und Gesetze beachtet werden. Die Anforderungen wachsen und erfordern die st&auml;ndige und umfassende Aufmerksamkeit aller unserer Mitarbeiter. Aus dem st&auml;ndig erweiterten Wissen leiten wir unser K&ouml;nnen ab und wollen diese F&auml;higkeiten nutzen, gemeinsam f&uuml;r Sie den gr&ouml;&szlig;tm&ouml;glichen Erfolg zu erzielen.<br/><br/>Wir besch&auml;ftigen ausschlie&szlig;lich sehr erfahrene und gut ausgebildete Fachhandwerker. Die kaufm&auml;nnische und technische Leitung &uuml;bernimmt Hans Gerd Lagoda, Dachdeckermeister und Bestmeister des Jahrgangs 1997 (HWK Dortmund). Das ist Dachdeckerhandwerk, auf das Verlass ist.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1367633160 row_space1" id="1367633160"> <div class="dmRespColsWrapper" id="1144725750"> <div class="dmRespCol small-12 large-6 medium-6" id="1388209115"> <div class="u_1521075637 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1521075637"> <a href="https://dachdecker.handwerk-dortmund.de/" id="1704886204" file="false" class="" target="_blank"><img src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH_0001-244w.png" alt="Innungsverband Dachdecker Logo" id="1232778996" class="" data-dm-image-path="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH_0001.png" width="370" height="297" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12" id="1695765450"> <div class="u_1258990622 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1258990622"> <a href="https://dachdecker.handwerk-dortmund.de/" id="1105135480" class="" target="_blank" file="false"><img src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.042-256w.png" alt="Meisterhaft Logo" id="1046618610" class="" data-dm-image-path="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.042.png" width="214" height="146" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1959868905 row_space2" id="1959868905"> <div class="dmRespColsWrapper" id="1143943026"> <div class="dmRespCol small-12 u_1317306928 medium-4 large-4" id="1317306928"> <div class="u_1332604376 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1332604376"><img src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.052-76w.png" alt="m1237" id="1437507071" class="" data-dm-image-path="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.052.png" width="64" height="64" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmRespRow u_1406086447" id="1406086447"> <div class="dmRespColsWrapper" id="1472357454"> <div class="dmRespCol small-12 medium-12 large-12" id="1628844469"> <div class="dmNewParagraph ql-disabled u_1989308835" data-element-type="paragraph" data-version="5" id="1989308835"><p class="size-28 m-size-22 text-align-center"><span style="display: unset; font-weight: normal; color: rgb(243, 243, 243);" class="font-size-28 m-font-size-22">Breites Angebot</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1237648850"><p style="line-height: 1.6;" class="text-align-center"><span style="display: unset; font-weight: normal;">Wir bieten Ihnen ein breit gef&auml;chertes und komplettes Angebot a Leistungen rund um Ihr Dach und Ihre Fassade. Sprechen Sie uns an.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 u_1871271470 medium-4 large-4" id="1871271470"> <div class="u_1219882635 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1219882635"><img src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.050-76w.png" alt="m2200" id="1299430460" class="" data-dm-image-path="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.050.png" width="64" height="64" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmRespRow u_1055063293" id="1055063293"> <div class="dmRespColsWrapper" id="1582303661"> <div class="dmRespCol small-12 medium-12 large-12" id="1803395679"> <div class="dmNewParagraph u_1830183748" data-element-type="paragraph" data-version="5" id="1830183748"><p class="text-align-center m-size-22 size-28"><span class="m-font-size-22 font-size-28" style="color: rgb(243, 243, 243); font-weight: normal; display: unset;">Projekte jeder Gr&ouml;&szlig;e</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1720603943"><p class="text-align-center" style="line-height: 1.6;"><span style="font-weight: normal; display: unset;">Unsere Dachdecken k&ouml;nnen Ihnen mit Sichehreit helfen. Wir &uuml;bernehmen sowohl kleine als auch gro&szlig;e Projekte von Privat- und Gesch&auml;ftskunden.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 u_1088236930 medium-4 large-4" id="1088236930"> <div class="u_1241328979 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1241328979"><img src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.052-76w.png" alt="m2279" id="1193429064" class="" data-dm-image-path="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.052.png" width="64" height="64" onerror="handleImageLoadError(this)"/></div> 
+ <div class="dmRespRow u_1472537948" id="1472537948"> <div class="dmRespColsWrapper" id="1712048880"> <div class="dmRespCol small-12 medium-12 large-12" id="1761877219"> <div class="dmNewParagraph u_1163621808" data-element-type="paragraph" data-version="5" id="1163621808"><p class="text-align-center m-size-22 size-28"><span class="m-font-size-22 font-size-28" style="color: rgb(243, 243, 243); font-weight: normal; display: unset;">Langj&auml;hrige Erfahrung</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1930128539"><p class="text-align-center" style="line-height: 1.6;"><span style="font-weight: normal; display: unset;">Es gibt wenig, was wir noch nicht gesehen haben. Profitieren Sie von unserer vielj&auml;hrigen Erfahrung und Expertise rund um D&auml;cher und Fassaden.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1803058044 row_space3" id="1803058044"> <div class="dmRespColsWrapper" id="1981334583"> <div class="dmRespCol large-12 medium-12 small-12" id="1884782174"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1574372603"> <h2 style="line-height: 1.4em;" class="text-align-center"><span style="display: unset; font-weight: bold;">Unser Leistungsangebot rund um Ihr Dach</span></h2> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1036370939 row_space1 gallery-icon" id="1036370939"> <div class="dmRespColsWrapper" id="1895636838"> <div class="dmRespCol small-12 u_1178674192 medium-4 large-4" id="1178674192"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1162371065" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1162371065" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1378802318"> <li class="photoGalleryThumbs" id="1726942256"> <div class="image-container" id="1287001791"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.004+%281%29.jpg" id="1465833602" class="has-link" href="/-dachdeckungen" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/-dachdeckungen?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="dunkles Dach" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.004+%281%29-1920w.jpg" id="1526825311" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1236352113" style="display:none" id="1236352113"> <span class="caption-inner" id="1209919985"> <a class="caption-button dmWidget clearfix u_1570599349" id="1570599349" href="/-dachdeckungen" file="false"> <span class="iconBg" id="1416134866"> <span class="icon hasFontIcon icon-star" id="1870798193"></span> 
+</span> 
+ <span class="text" id="1282514522">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1552311620">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1590210598" data-element-type="paragraph" data-version="5" id="1590210598"> <h2 style="line-height: 1.3em;" class="m-size-22 text-align-left size-28"><a href="/-dachdeckungen" runtime_url="/-dachdeckungen" type="page" style="font-weight: normal; display: unset; color: rgb(165, 156, 156);" class="font-size-28 m-font-size-22">Dachdeckungen</a></h2> 
+</div> 
+ <div class="dmNewParagraph ql-disabled" data-element-type="paragraph" data-version="5" id="1896194612"><p style="line-height: 1.6;"><span style="display: unset; font-weight: normal;">Wir k&uuml;mmern uns um Ihre Dachziegel und Dachsteine, um Schiefer- und Faserzement, Wellplatten und Schindeldeckung sowie Lichtstegplatten.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1794139809 medium-4 large-4" id="1794139809"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1534958040" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1534958040" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1416242187"> <li class="photoGalleryThumbs" id="1297826759"> <div class="image-container" id="1361318907"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.032_305_701.jpg" id="1174426510" class="u_1174426510 has-link" href="/abdichtungen" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/abdichtungen?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="Abdichtung eines Flachdachs" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.032_305_701-1920w.jpg" id="1627671297" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1279733121" style="display:none" id="1279733121"> <span class="caption-inner" id="1995566041"> <a class="caption-button dmWidget clearfix u_1792983559" id="1792983559" href="/abdichtungen" file="false"> <span class="iconBg" id="1654017179"> <span class="icon hasFontIcon icon-star" id="1222706634"></span> 
+</span> 
+ <span class="text" id="1069981838">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1031247110">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1941629959" data-element-type="paragraph" data-version="5" id="1941629959"> <h2 class="m-size-22 text-align-left size-28" style="line-height: 1.3em;"><a href="/abdichtungen" runtime_url="/abdichtungen" type="page" class="font-size-28 m-font-size-22" style="font-weight: normal; display: unset;">Abdichtungen</a></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1492159106"><p style="line-height: 1.6;"><span style="font-weight: normal; display: unset;">Wir sorgen f&uuml;r eine Abdichtung, damit weder Regenwasser noch Feuchtigkeit in Ihr Dach eindringen k&ouml;nnen und Ihr Haus w&auml;rmeisoliert ist.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1723490658 medium-4 large-4" id="1723490658"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1229940165" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1229940165" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1863158436"> <li class="photoGalleryThumbs" id="1899933569"> <div class="image-container" id="1204325452"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH_00011_563_376.jpeg" id="1093501603" class="u_1093501603 has-link" href="/fassaden" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/fassaden?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="Neue Fassade in grau" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH_00011_563_376-1920w.jpeg" id="1599176476" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1178432838" style="display:none" id="1178432838"> <span class="caption-inner" id="1306033080"> <a class="caption-button dmWidget clearfix u_1856792310" id="1856792310" href="/fassaden" file="false"> <span class="iconBg" id="1544206075"> <span class="icon hasFontIcon icon-star" id="1658962894"></span> 
+</span> 
+ <span class="text" id="1722305172">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1283104726">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1572975016" data-element-type="paragraph" data-version="5" id="1572975016"> <h2 class="m-size-22 text-align-left size-28" style="line-height: 1.3em;"><a href="/fassaden" runtime_url="/fassaden" type="page" class="font-size-28 m-font-size-22" style="font-weight: normal; display: unset;">Fassaden</a></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1467944704"><p style="line-height: 1.6;"><span style="font-weight: normal; display: unset;">Damit Ihre Immobilie &auml;sthetisch sowie funktionell ist, bieten wir Ihnen eine Auswahl an M&ouml;glichkeiten der Fassadengestaltung.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1659496236 row_space2 gallery-icon" id="1659496236"> <div class="dmRespColsWrapper" id="1845678112"> <div class="dmRespCol small-12 u_1610451300 medium-4 large-4" id="1610451300"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1557795803" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1557795803" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1897539659"> <li class="photoGalleryThumbs" id="1541984897"> <div class="image-container" id="1532789744"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.007.jpg" id="1892193826" class="u_1892193826 has-link" href="/energie/wärmedämmung" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/energie/wärmedämmung?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="m1144" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.007-1920w.jpg" id="1478095079" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1697891183" style="display:none" id="1697891183"> <span class="caption-inner" id="1783819340"> <a class="caption-button dmWidget clearfix u_1220697960" id="1220697960" href="/energie/wärmedämmung" file="false"> <span class="iconBg" id="1474205683"> <span class="icon hasFontIcon icon-star" id="1318001862"></span> 
+</span> 
+ <span class="text" id="1824532553">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1306468198">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1131507581" data-element-type="paragraph" data-version="5" id="1131507581"> <h2 class="m-size-22 text-align-left size-28" style="line-height: 1.3em;"><a href="/energie/wärmedämmung" runtime_url="/energie/wärmedämmung" type="page" class="font-size-28 m-font-size-22" style="font-weight: normal; display: unset;">Energetische Sanierung und W&auml;rmed&auml;mmung</a></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1506681243"><p style="line-height: 1.6;"><span style="font-weight: normal; display: unset;">&nbsp;Reduzieren Sie Ihre j&auml;hrlichen Heizkosten, indem Sie Ihr Geb&auml;ude mithilfe unserer Fachdienstleistungen und Markenprodukte d&auml;mmen.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1799212469 medium-4 large-4" id="1799212469"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1710588912" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1710588912" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1167472062"> <li class="photoGalleryThumbs" id="1673801256"> <div class="image-container" id="1351266874"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/shutterstock_109754402-1.jpg" id="1419343231" class="u_1419343231 has-link" href="/-holzbau" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/-holz--/-trockenbau?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="Holzbau und Zimmererarbeiten" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/shutterstock_109754402-1-1920w.jpg" id="1335827439" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1143228970" style="display:none" id="1143228970"> <span class="caption-inner" id="1005883928"> <a class="caption-button dmWidget clearfix u_1900769198" id="1900769198" href="/-holzbau" file="false"> <span class="iconBg" id="1273930157"> <span class="icon hasFontIcon icon-star" id="1092330339"></span> 
+</span> 
+ <span class="text" id="1703760770">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1767926388">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1597956596" data-element-type="paragraph" data-version="5" id="1597956596"> <h2 class="m-size-22 text-align-left size-28" style="line-height: 1.3em;"><a href="/-holzbau" runtime_url="/-holz--/-trockenbau" class="m-font-size-22 font-size-28" style="color: rgb(165, 156, 156); display: unset; font-weight: normal;" type="page">Holzbau und Zimmererarbeiten</a></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1815100766"><p style="line-height: 1.6;"><span style="display: unset; font-weight: normal;">Wir gestalten Dachst&uuml;hle, Terrassen&uuml;berdachungen, Carports und mehr aus dem gesunden und nachwachsenden Rohstoff Holz.</span></p></div> 
+</div> 
+ <div class="dmRespCol empty-column small-12 u_1642413502 medium-4 large-4" id="1642413502"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1065428184 row_space2 gallery-icon" id="1065428184"> <div class="dmRespColsWrapper" id="1788584944"> <div class="dmRespCol small-12 u_1483081742 medium-4 large-4" id="1483081742"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1979628316" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1979628316" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1295169684"> <li class="photoGalleryThumbs" id="1417138339"> <div class="image-container" id="1765277218"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.009.jpg" id="1864232327" class="u_1864232327 has-link" href="/belichtung/belüftung" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/belichtung/belüftung?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="Helles Flachdachfenster mit blauem Himmel" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.009-1920w.jpg" id="1981708638" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1384917670" style="display:none" id="1384917670"> <span class="caption-inner" id="1367936317"> <a class="caption-button dmWidget clearfix u_1903965784" id="1903965784" href="/belichtung/belüftung" file="false"> <span class="iconBg" id="1453165887"> <span class="icon hasFontIcon icon-star" id="1793489914"></span> 
+</span> 
+ <span class="text" id="1692105670">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1181809231">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1006687180" data-element-type="paragraph" data-version="5" id="1006687180"> <h2 class="m-size-22 text-align-left size-28" style="line-height: 1.3em;"><a href="/belichtung/belüftung" runtime_url="/belichtung/belüftung" class="m-font-size-22 font-size-28" style="color: rgb(165, 156, 156); display: unset; font-weight: normal;" type="page">Belichtung und Bel&uuml;ftung</a></h2> 
+</div> 
+ <div class="dmNewParagraph ql-disabled" data-element-type="paragraph" data-version="5" id="1584543271"><p style="line-height: 1.6;"><span style="display: unset; font-weight: normal;">&nbsp;Unsere Belichtungs- und Bel&uuml;ftungsplanung</span></p><p style="line-height: 1.6;"><span style="display: unset; font-weight: normal;">sorgt f&uuml;r ein ideales Arbeits- oder Wohnklima in Ihrer Immobilie.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1938583797 medium-4 large-4" id="1938583797"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1641950895" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1641950895" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1711196342"> <li class="photoGalleryThumbs" id="1361145382"> <div class="image-container" id="1665293820"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.012.jpg" id="1505068844" class="u_1505068844 has-link" href="/entwässerung-/-metallarbeiten-holz--/-trockenbau" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/entwässerung-/-metallarbeiten-holz--/-trockenbau?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="Metallbeschlag zum Bestandsschutz" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.012-1920w.jpg" id="1133759865" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1889087854" style="display:none" id="1889087854"> <span class="caption-inner" id="1946313077"> <a class="caption-button dmWidget clearfix u_1548767528" id="1548767528" href="/entwässerung-/-metallarbeiten-holz--/-trockenbau" file="false"> <span class="iconBg" id="1377509671"> <span class="icon hasFontIcon icon-star" id="1379737823"></span> 
+</span> 
+ <span class="text" id="1555743525">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1324880346">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1954775043" data-element-type="paragraph" data-version="5" id="1954775043"> <h2 class="m-size-22 size-28" style="line-height: 1.3em;"><a href="/entwässerung-/-metallarbeiten-holz--/-trockenbau" runtime_url="/entwässerung-/-metallarbeiten-holz--/-trockenbau" type="page" class="font-size-28 m-font-size-22" style="display: unset; font-weight: normal;">Entw&auml;sserung und Metallarbeiten</a></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1608186531"><p style="line-height: 1.6;"><span style="font-weight: normal; display: unset;">Rinnen, Rohre, Abdeckungen und Co. sorgen daf&uuml;r, dass Wasser richtig abflie&szlig;t und dort landet, wo es hin soll.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1543474563 medium-4 large-4" id="1543474563"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1043325675" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="1" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1043325675" data-placeholder="false" data-mobile-text-layout="fixed" data-mobile-caption-alignment="bottom_center" data-link-gallery="true" data-tablet-text-layout="fixed" data-tablet-caption-alignment="bottom_center"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1335447640"> <li class="photoGalleryThumbs" id="1214132561"> <div class="image-container" id="1727416603"> <a data-dm-multisize-attr="href" data-image-url="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/Gebr.LagodaGmbH.014.jpg" id="1289230012" class="u_1289230012 has-link" href="/energie/wärmedämmung" file="false" data-link-url="/site/ef5140e8d3a8484b9fc7e79cfc2669f2/energie/wärmedämmung?preview=true&nee=true&showOriginal=true&dm_checkSync=1&dm_try_mode=true"><img irh="" irw="" alt="Photovoltaikanlage" data-src="https://le-de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/dms3rep/multi/opt/Gebr.LagodaGmbH.014-1920w.jpg" id="1921975147" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1794795810" style="display:none" id="1794795810"> <span class="caption-inner" id="1570643134"> <a class="caption-button dmWidget clearfix u_1229078949" id="1229078949" href="/energie/wärmedämmung" file="false"> <span class="iconBg" id="1051057728"> <span class="icon hasFontIcon icon-star" id="1968208282"></span> 
+</span> 
+ <span class="text" id="1538302519">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Mehr anzeigen" data-viewless="Weniger anzeigen" style="display:none;" id="1828077637">Mehr anzeigen</div> 
+</div> 
+ <div class="dmNewParagraph u_1635268159" data-element-type="paragraph" data-version="5" id="1635268159"> <h2 class="m-size-22 text-align-left size-28" style="line-height: 1.3em;"><a href="/energie/wärmedämmung" runtime_url="/energie/wärmedämmung" type="page" class="font-size-28 m-font-size-22" style="font-weight: normal; display: unset;">Regenerative Energie</a></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1076542575"><p style="line-height: 1.6;"><span style="font-weight: normal; display: unset;">Sparen Sie nicht nur Geld, sondern auch CO2 und sch&ouml;pfen Sie Kraft und Energie aus der Sonne.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1258475686 row_space1" id="1258475686"> <div class="dmRespColsWrapper" id="1916162561"> <div class="u_1166994155 dmRespCol small-12 large-5 medium-5" id="1166994155"> <div class="dmNewParagraph ql-disabled u_1356940376" data-element-type="paragraph" data-version="5" id="1356940376"><p class="size-34 m-size-27"><span style="display: unset; font-weight: 700; color: rgb(243, 243, 243);" class="font-size-34 m-font-size-27">Kontaktinformationen</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1653995919"> <h3 class="text-align-left size-16 m-size-16" style="line-height: 1.6;"><span class="font-size-16 m-font-size-16" style="color:rgb(243, 243, 243);font-weight:normal;display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Die Gebr. Lagoda GmbH ist der Dachdecker in Dortmund, auf den Sie sich verlassen k&ouml;nnen.</span></h3> 
+ <h3 class="text-align-left size-16 m-size-16" style="line-height: 1.6;"><span class="font-size-16 m-font-size-16" style="color:rgb(243, 243, 243);font-weight:normal;display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Wir sind Ihr Ansprechpartner f&uuml;r die Arbeit in und an Ihrem Geb&auml;ude.&nbsp;</span></h3> 
+</div> 
+ <a data-display-type="block" class="u_1833271818 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient hide-for-small" file="false" href="tel:0231 856526" data-element-type="dButtonLinkId" id="1833271818" data-buttonstyle="FLAT_ROUND_ICON" icon-name="icon-phone"> <span class="iconBg" aria-hidden="true" id="1231328070"> <span class="icon hasFontIconstar hasFontIcon icon-phone" id="1581418777"></span> 
+</span> 
+ <span class="text" id="1131183582">Jetzt anrufen und mehr erfahren</span> 
+</a> 
+ <div class="u_1447304944 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1447304944" new-inline-bind-applied="true" data-diy-text=""><p class="m-size-19 size-24"><span class="m-font-size-19 font-size-24" style="color: rgb(4, 2, 4); display: initial; font-weight: normal;"><span class="inline-data-binding" data-encoded-value="R2Vici4gTGFnb2RhIEdtYkg=" data-inline-binding="content_library.global.company_name">Gebr. Lagoda GmbH</span></span></p></div> 
+ <div class="dmNewParagraph u_1722449367" data-element-type="paragraph" data-version="5" id="1722449367" style="transition: none 0s ease 0s; text-align: left; display: block;" new-inline-bind-applied="true" data-diy-text=""><p style="line-height: 1.6;"><span style="font-weight: normal; display: initial;"><span class="inline-data-binding" data-encoded-value="V2FsdGVyLVdlbHAtU3RyYcOfZSAxOSwgNDQxNDkgRG9ydG11bmQsIERldXRzY2hsYW5k" data-inline-binding="content_library.global">Walter-Welp-Stra&szlig;e 19, 44149 Dortmund, Deutschland</span></span></p></div> 
+ <div class="u_1401514390 dmNewParagraph hvr-2" data-element-type="paragraph" data-version="5" id="1401514390" new-inline-bind-applied="true" data-diy-text=""><p><a href="tel:0231 856526" runtime_url="tel:0231 856526" type="call" style="display: initial; font-weight: normal; text-decoration: none; color: rgb(40, 197, 250);"><span class="inline-data-binding" data-encoded-value="MDIzMSA4NTY1MjY=" data-inline-binding="content_library.global.phone.telefon:">0231 856526</span></a></p></div> 
+ <div class="u_1521928874 dmNewParagraph hvr-2" data-element-type="paragraph" data-version="5" id="1521928874" new-inline-bind-applied="true" data-diy-text=""><p><a href="mailto:mail@dachdecker-in-dortmund.de" runtime_url="mailto:mail@dachdecker-in-dortmund.de" type="email" style="display: initial; text-decoration: none; font-weight: normal; color: rgb(40, 197, 250);"><span class="inline-data-binding" data-encoded-value="bWFpbEBkYWNoZGVja2VyLWluLWRvcnRtdW5kLmRl" data-inline-binding="content_library.global.email.e-mail: ">mail@dachdecker-in-dortmund.de</span></a></p></div> 
+ <div class="u_1246372255 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1246372255"><p class="size-34 m-size-27"><span style="display: unset; font-weight: 700; color: rgb(243, 243, 243);" class="font-size-34 m-font-size-27">&Ouml;ffnungszeiten</span></p></div> 
+ <div class="default u_1795809407 dmHoursOfOperation" id="1795809407" dmle_extension="open_hours" data-element-type="open_hours" data-binding="W3siYmluZGluZ05hbWUiOiJidXNpbmVzc19ob3VycyIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5idXNpbmVzc19ob3VycyJ9XQ==" time_format="24" wr="true" lang="" displaytitle="false" forcedisplay="false" icon="true" surround="true" adwords=""> <dl class="open-hours-data"> <div class="open-hours-item"> <dt day="0">Mo - Fr</dt> 
+ <dd> <time>08:00</time> 
+- <time>16:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="5">Sa - So</dt> 
+ <dd>Geschlossen</dd> 
+</div> 
+</dl> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1587863006"><p><span style="display: unset; font-weight: normal; color: rgb(243, 243, 243);">Termine nach Vereinbarung</span></p></div> 
+</div> 
+ <div class="u_1899224828 dmRespCol small-12 large-7 medium-7" id="1899224828"> <div class="u_1903833401 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1903833401"><p class="size-34 m-size-27"><span style="display: unset; font-weight: 700; color: rgb(243, 243, 243);" class="font-size-34 m-font-size-27">Kontaktieren Sie uns</span></p></div> 
+ <div class="dmform default native-inputs u_1266411185" data-element-type="dContactUsRespId" id="1266411185"> <h3 class="dmform-title dmwidget-title" id="1259236319" hide="true">Kontakt uns</h3> 
+ <div class="dmform-wrapper" id="1432338997" captcha-lang="de"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1875745128"> <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12" id="1328320933"> <label for="1925449154" id="1272219678" data-dm-for="dmform-0">Name*</label> 
+<input type="text" class="" name="dmform-0" id="1925449154"/><input type="hidden" name="label-dmform-0" value="Name*" id="1750437301" class=""/></div> 
+ <div class="dmforminput  small-12 dmRespDesignCol medium-6 large-6" id="1281744868"> <label for="1369038718" id="1457328110" data-dm-for="dmform-1">Telefon</label> 
+<input type="tel" name="dmform-1" placeholder="" id="1369038718"/><input type="hidden" name="label-dmform-1" value="Telefon" id="1447887329" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1530049164"> <label for="1246680823" id="1542607113" data-dm-for="dmform-2">E-Mail*</label> 
+<input type="email" name="dmform-2" placeholder="" id="1246680823"/><input type="hidden" name="label-dmform-2" value="E-Mail*" id="1729942614" class=""/></div> 
+ <div class="dmforminput large-12 medium-12 dmRespDesignCol required" id="1754247601"> <label for="1781641254" id="1900064776" data-dm-for="dmform-3">Nachricht*</label> 
+ <textarea name="dmform-3" id="1781641254"></textarea> 
+<input type="hidden" name="label-dmform-3" value="Nachricht*" id="1749698276" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol required medium-6 large-6" id="1333865417"> <label for="1871648553" id="1149386533" data-dm-for="dmform-4">*Pflichtfeld</label> 
+ <div class="filewrapper" id="1001942532"> <a data-file="true" class="fileUploadLink" id="1701585126" value="choose File" file-upload-lang="de">choose File</a> 
+&nbsp; <span class="fileLabel" id="1014571324"></span> 
+<input type="hidden" name="dmform-4" class="fileName" value="" id="1871648553"/></div> 
+<input type="hidden" name="label-dmform-4" value="*Pflichtfeld" id="1381227270" class=""/></div> 
+ <span id="1504342744" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" id="1992497802"><input class="" name="submit" type="submit" value="Versenden" id="1210383916"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLsARCEZ6kc9kiIHN/263Qhs6RDmBKxt75iaolOWobnXrny7hIG567s2YG6BrFTNcwJvsjMBZ8odQQ==" id="1725069895" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1639623472"/><input name="dmformsubject" type="hidden" value="Form Message" id="1257608287"/><input name="dmformfrom" type="hidden" value="" id="1146750008"/><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrS0Hahh0tGT3jFcsZUFnzi8lxezxz2AGwjP9Q1MfQIwupW0U0BCqGLLYdS8QYzueM/mVCYLLqbwqFozE162FiN9k1VAcAeomvFioZuhlP53XscQjXCxH1shjGFQMp9Z648P/aJn5xeMIuNiEyY95lUCQy3HcTf+BbPfpZRP3w0HpffMlgqd/HKqTrn0VoEZmO3CYOy+0VMvYVFvsbdT2UtHSkN4KcjcTAU7i3L1G6bAFA" data-dec="true"/><input type="hidden" name="page_uuid" value="a9113d4a973e47c786e3199370939346"/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1971820115"><p class="rteBlock">Danke, dass Sie uns kontaktiert haben.</p><p class="rteBlock">Wir werden uns so schnell wie m&ouml;glich bei Ihnen melden.</p></div> 
+ <div class="dmform-error" style="display:none" id="1918355663"><p class="rteBlock">Hoppla, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten.</p><p class="rteBlock">Bitte versuchen Sie es sp&auml;ter erneut.</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1405224528 dmRespRow hide-for-large hide-for-medium" id="1405224528"> <div class="dmRespColsWrapper" id="1183878774"> <div class="dmRespCol large-12 medium-12 small-12 u_1854685436" id="1854685436"> <a data-display-type="block" class="u_1926607703 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel:0231 856526" data-element-type="dButtonLinkId" id="1926607703" data-buttonstyle="FLAT_ROUND_ICON" icon-name="icon-phone"> <span class="iconBg" aria-hidden="true" id="1202836973"> <span class="icon hasFontIconstar hasFontIcon icon-phone" id="1104473602"></span> 
+</span> 
+ <span class="text" id="1537115640">Jetzt anrufen</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1632155419 col-tab1" style="text-align: center;" id="1632155419"> <div class="dmRespColsWrapper" id="1253858808"> <div class="u_1063824722 dmRespCol small-12 large-3 medium-3 tab-col-width1" id="1063824722"> <div class="u_1054165762 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1054165762" new-inline-bind-applied="true" data-diy-text=""><p class="m-text-align-center m-size-19 size-24"><a href="/" runtime_url="/" type="page" class="font-size-24 m-font-size-19" style="text-decoration: none; color: rgb(255, 255, 255); font-weight: normal; display: initial;"><span class="inline-data-binding" data-encoded-value="R2Vici4gTGFnb2RhIEdtYkg=" data-inline-binding="content_library.global.company_name">Gebr. Lagoda GmbH</span></a></p></div> 
+</div> 
+ <div class="dmRespCol small-12 large-3 medium-3 tab-col-width1" id="1394598543"> <div class="u_1541218745 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1541218745" style="transition: none 0s ease 0s; text-align: left; display: block;" new-inline-bind-applied="true" data-diy-text=""> <p style="line-height: 1.6;" class="m-text-align-center"> <i class="fa fa-map-marker" aria-hidden="true"></i> 
+ <span style="font-weight: normal; display: initial;"><span class="inline-data-binding" data-encoded-value="V2FsdGVyLVdlbHAtU3RyYcOfZSAxOSwgNDQxNDkgRG9ydG11bmQsIERldXRzY2hsYW5k" data-inline-binding="content_library.global">Walter-Welp-Stra&szlig;e 19, 44149 Dortmund, Deutschland</span></span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 large-3 medium-3 tab-col-width1 hvr-1" id="1558012016"> <div class="u_1850083345 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1850083345" new-inline-bind-applied="true" data-diy-text=""> <p class="m-text-align-center"> <i class="fa fa-phone" aria-hidden="true"></i> 
+ <a href="tel:0231 856526" target="_blank" type="call" style="color: rgb(40, 197, 250); text-decoration: none; font-weight: normal; display: initial;"><span class="inline-data-binding" data-encoded-value="MDIzMSA4NTY1MjY=" data-inline-binding="content_library.global.phone.telefon:">0231 856526</span></a></p></div> 
+ <div class="u_1612133253 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1612133253" new-inline-bind-applied="true" data-diy-text=""> <p class="m-text-align-center"> <i class="fa fa-envelope" aria-hidden="true"></i> 
+ <a href="mailto:mail@dachdecker-in-dortmund.de" target="_blank" type="email" style="color: rgb(40, 197, 250); font-weight: normal; text-decoration: none; display: initial;"><span class="inline-data-binding" data-encoded-value="bWFpbEBkYWNoZGVja2VyLWluLWRvcnRtdW5kLmRl" data-inline-binding="content_library.global.email.e-mail: ">mail@dachdecker-in-dortmund.de</span></a></p></div> 
+ <div class="u_1291715701 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1291715701" new-inline-bind-applied="true" data-diy-text=""> <p class="m-text-align-center"> <i class="fa fa-fax" aria-hidden="true"></i> 
+ <span class="inline-data-binding" data-encoded-value="MDIzMTk5OSA1NjYxMw==" data-inline-binding="content_library.global.phone.fax:"><a class="inlineBindingLink" target="_blank" href="tel:0231999 56613">0231999 56613</a></span><span style="display: initial;"><span class="ql-cursor"></span></span></p></div> 
+</div> 
+ <div class="dmRespCol large-3 medium-3 small-12 tab-col-width1 hvr-1" id="1909248855"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1408865634"><p style="line-height: 1.6;" class="m-text-align-center"><a href="/impressum" runtime_url="/impressum" type="page" style="color: rgb(40, 197, 250); text-decoration: none; font-weight: normal; display: unset;">Impressum</a></p><p style="line-height: 1.6;" class="m-text-align-center"><a href="/datenschutz" runtime_url="/datenschutz" type="page" style="color: rgb(40, 197, 250); text-decoration: none; font-weight: normal; display: unset;">Datenschutz</a></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1814607426" id="1814607426"> <div class="dmRespColsWrapper" id="1068366664"> <div class="dmRespCol large-12 medium-12 small-12" id="1775654677"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1689834025"><p class="text-align-center"><span style="display: unset; font-weight: normal; text-decoration: none; color: rgb(243, 243, 243);">Powered by&nbsp;</span><a href="https://www.websmart.de/" rel="nofollow noopener" target="_blank" style="display: unset; font-weight: normal; text-decoration: none; color: rgb(243, 243, 243);">Websmart.de</a></p></div> 
+</div> 
+</div> 
+</div> 
+ <a class="dmBackToTop" id="dmBackToTop" style="opacity: 1; visibility: visible;"></a> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link rel="preload" href="https://de.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;subset=latin-ext&amp;display=swap"  as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="preload" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/4953/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link rel="preload" href="https://de.cdn-website.com/WIDGET_CSS/efc83eed78b76f04ccf2bfeac72c626a.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+    height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="home"] #dm [data-show-on-page-only="home"] {
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link rel="preload" href="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/files/ef5140e8d3a8484b9fc7e79cfc2669f2_withFlex_1.min.css?v=22" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<!-- Page CSS -->
+<link rel="preload" href="https://de.cdn-website.com/ef5140e8d3a8484b9fc7e79cfc2669f2/files/ef5140e8d3a8484b9fc7e79cfc2669f2_home_withFlex_1.min.css?v=22" id="homeCssLink" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+<style id="pagestyle" type="text/css">
+    
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-28, .size-28, .size-28 > font { font-size: 28px !important; }.font-size-34, .size-34, .size-34 > font { font-size: 34px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4953";
+    var build = "2024-11-21T13_48_18";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-11-21T13_48_18";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<script id="d-js-ecwid-cb-glue" data-swh-uuid="84815c5e4a7d4422971d00decd97bc7e">
+
+window.ec=window.ec||{},window.ec.config=ec.config||{},window.ec.config.tracking=ec.config.tracking||{},window.ec.config.tracking.ask_consent=!0;let _ecwidLoadedForCb=!1;function _acceptConsentForEcwid(e){e.preferences&&e.statistics&&!e.marketing?Ecwid.setTrackingConsent("ANALYTICS_ONLY"):!e.preferences||e.statistics||e.marketing?Ecwid.setTrackingConsent("ACCEPT"):Ecwid.setTrackingConsent("PERSONALIZATION_ONLY")}function _onEcwidLoadedCb(){Cookiebot&&Cookiebot.consented?"function"==typeof Ecwid.setTrackingConsent?_acceptConsentForEcwid(Cookiebot.consent):window.Ecwid.OnAPILoaded.add(function(){_acceptConsentForEcwid(Cookiebot.consent)}):Cookiebot&&Cookiebot.declined?Ecwid.setTrackingConsent("DECLINE"):_ecwidLoadedForCb=!0}window.addEventListener("message",e=>{"ecwid-script-loaded"===e.data.type&&_onEcwidLoadedCb()}),window.addEventListener("CookiebotOnAccept",async()=>{_ecwidLoadedForCb&&_acceptConsentForEcwid(Cookiebot.consent)},!1),window.addEventListener("CookiebotOnDecline",async()=>{_ecwidLoadedForCb&&Ecwid.setTrackingConsent("DECLINE")},!1);
+
+</script>
+<script id="CookiebotConfiguration" type="application/json" data-cookieconsent="ignore" data-swh-uuid="84815c5e4a7d4422971d00decd97bc7e">
+
+{"TagConfiguration":[{"id":"d-js-core","ignore":true},{"id":"d-js-params","ignore":true},{"id":"d-js-jquery","ignore":true},{"id":"d-js-load-css","ignore":true},{"id":"d-js-dmapi","ignore":true}]}
+
+</script>
+<script data-cookieconsent="ignore" data-swh-uuid="84815c5e4a7d4422971d00decd97bc7e">
+
+function _cbSetGtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],_cbSetGtag("consent","default",{"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","personalization_storage":"denied","security_storage":"granted","wait_for_update":500}),_cbSetGtag("set","ads_data_redaction",!0),_cbSetGtag("set","url_passthrough",!0)
+
+</script>
+<script id="Cookiebot" src="https://consent.cookiebot.eu/uc.js" data-cbid="a8114d8e-570a-4121-a83f-2eda5cb27570" data-blockingmode="auto" type="text/javascript" data-swh-uuid="84815c5e4a7d4422971d00decd97bc7e">
+</script>
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.eu-multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4953';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/4953';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-de.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =false;
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwid.delegateNavigationToEcwid.enabled"] = false;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.detect.enable"] =true;
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/4953/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/4953/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+	const queryParams = new URLSearchParams(window.location.search);
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((value, key) => {
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d3uzsv7k2lpopp.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd3uzsv7k2lpopp.cloudfront.net', { // Initialise a tracker
+  appId: 'ef5140e8d3a8484b9fc7e79cfc2669f2'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: ef5140e8d3a8484b9fc7e79cfc2669f2 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Begin Body End Markup -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--  End Body End Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script>
+ let __fixedCssLoad = false;
+
+function __loadCSSLinks() {
+    setTimeout(() => {
+        if(!__fixedCssLoad && window.loadCSS) {
+            // fix css links
+            __fixCssLinks()
+            
+        } else {
+          console.log("re-running self waiting for fix css to exist")
+            __loadCSSLinks()
+        }
+    },1)
+}
+function __fixCssLinks(cb) {
+    var links = document.getElementsByTagName("link");
+    for (var i = 0; i < links.length; i++) {
+      if(links[i].onload) {
+        
+        
+        
+        loadCSS(links[i]);
+        
+      }
+    }
+    __fixedCssLoad = true;
+}
+
+window.addEventListener('CookiebotOnDialogDisplay', function (e) {
+    __fixCssLinks()
+}, false);
+if(dmAPI.getCurrentEnvironment() === 'live') { __loadCSSLinks(); }
+ </script><!--  End Product Custom HTML Markup -->
+</body>
+</html>

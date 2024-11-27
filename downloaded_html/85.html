@@ -1,0 +1,1831 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.bedachungen-reimann.de/',
+        AccountUUID: '0d7f08e0b9d441edae3b31704d01cfdc',
+        SystemID: 'EU_PRODUCTION',
+        SiteAlias: '828e993870cc4efcb9f44bb3710ce58b',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Thu Nov 14 13:06:06 UTC 2024',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'wir-ueber-uns',
+        InitialPageUuid: '8c6f8300667246b2862a18c837ffb1ad',
+        InitialPageId: '27882388',
+        InitialEncodedPageAlias: 'd2lyLXVlYmVyLXVucw==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '49280',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'bedachungen-reimann',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'Fehler beim Herstellen der Verbindung zur Webseite.<br/> Stellen Sie sicher, dass Sie online sind.',
+            password: 'Benutzername oder Passwort falsch',
+            tryAgain: 'Erneut versuchen'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.bedachungen-reimann.de/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '3305',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<link rel="manifest" href="/manifest.json">
+<!-- Tell the browser it's a PWA -->
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Tell iOS it's a PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.bedachungen-reimann.de/wir-ueber-uns">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/favicon+%283%29+%282%29.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/site_favicon_16_1679700482777.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-de.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'EU_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marck+Script:ital,wght@0,400&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/4967/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/WIDGET_CSS/c079c2f8b2f98505d6bfe1a4ea05f4e0.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+    height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="wir-ueber-uns"] #dm [data-show-on-page-only="wir-ueber-uns"] {
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/files/828e993870cc4efcb9f44bb3710ce58b_1.min.css?v=59" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1815602898
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://le-de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/opt/shutterstock_1328942450+%282%29-2880w.jpg) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1063607049
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1515726831
+{
+	background-color:rgba(244,244,244,1) !important;
+}
+*#dm *.dmBody div.u_1456938578
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1663815447
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1226681868
+{
+	width:100% !important;
+}
+*#dm *.dmBody a.u_1501631243 .iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1501631243
+{
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-repeat:no-repeat !important;
+	background-image:url(https://le-de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/opt/telephone-handle-silhouette-2880w.png) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1886244258
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1017597382
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1483858236
+{
+	border-color:rgba(0,0,0,0) !important;
+	border-width:1px !important;
+	border-style:solid !important;
+	background-color:rgba(0,0,0,0) !important;
+	border-radius:0px !important;
+	-moz-border-radius:0px !important;
+	-webkit-border-radius:0px !important;
+}
+*#dm *.dmBody div.u_1799184499
+{
+	border-style:solid !important;
+	border-width:1px !important;
+	border-radius:5px !important;
+	-moz-border-radius:5px !important;
+	-webkit-border-radius:5px !important;
+	border-color:rgba(152,1,10,1) !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-family:Roboto !important;
+}
+*#dm *.dmBody div.dmform-error .rteBlock
+{
+	font-family:Roboto !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput label:not(.for-checkable):not(.custom-contact-checkable)
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+	font-weight:400 !important;
+}
+*#dm *.dmBody div.u_1786682233 .m-recaptcha
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput input
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput textarea
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput .fileUploadLink
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .checkboxwrapper span
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .radiowrapper span
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .optinwrapper div
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .freetextwrapper
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput select
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput option
+{
+	font-family:Roboto !important;
+	color:rgba(51,51,51,1) !important;
+}
+*#dm *.dmBody div.u_1786682233 input[type="submit"]
+{
+	font-family:Roboto !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmformsubmit:hover
+{
+	background-color:rgba(148,148,148,1) !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmformsubmit.hover
+{
+	background-color:rgba(148,148,148,1) !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmformsubmit
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(152,1,10,1) !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+}
+*#dm *.dmBody div.u_1786682233 .contact-checkable-container img
+{
+	margin:5px !important;
+	height:100px !important;
+	border-radius:0 !important;
+	box-shadow:none !important;
+}
+*#dm *.dmBody div.u_1786682233
+{
+	border-color:rgba(152,1,10,1) !important;
+	border-width:0 !important;
+	border-style:solid !important;
+}
+*#dm *.dmBody *.u_1786682233 .dmformsubmit
+{
+	float:none !important;
+	display:block !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+*#dm *.dmBody *.u_1786682233 .dmwidget-title
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmwidget-title
+{
+	font-family:Roboto !important;
+	direction:ltr !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmform-success
+{
+	font-family:Roboto !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmform-success .rteBlock
+{
+	font-family:Roboto !important;
+}
+*#dm *.dmBody div.u_1786682233 input:not([type="submit"])
+{
+	background-color:rgba(248,248,248,1) !important;
+	border-color:rgba(148,148,148,1) !important;
+	border-style:solid !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1786682233 textarea
+{
+	background-color:rgba(248,248,248,1) !important;
+	border-color:rgba(148,148,148,1) !important;
+	border-style:solid !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1786682233 select
+{
+	background-color:rgba(248,248,248,1) !important;
+	border-color:rgba(148,148,148,1) !important;
+	border-style:solid !important;
+	border-width:1px !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.u_1815602898
+{
+	background-position:50% 50% !important;
+	margin-left:0 !important;
+	padding-top:150px !important;
+	padding-left:40px !important;
+	padding-bottom:150px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1037465011
+{
+	margin-left:0 !important;
+	padding-top:15px !important;
+	padding-left:0 !important;
+	padding-bottom:15px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1264984786
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1813798764
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:776px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1296036088
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:360px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1477007562
+{
+	margin-left:0px !important;
+	padding-top:60px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput input
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput textarea
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput .fileUploadLink
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .checkboxwrapper span
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .radiowrapper span
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .optinwrapper div
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .freetextwrapper
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput select
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput option
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 input[type="submit"]
+{
+	font-size:17px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmwidget-title
+{
+	font-size:17px !important;
+}
+*#dm *.dmBody div.u_1786682233
+{
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:1196px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:25px !important;
+	padding-bottom:34px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:start !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmformsubmit
+{
+	width:161px !important;
+	height:58px !important;
+}
+*#dm *.dmBody div.u_1786682233 .dmforminput label:not(.for-checkable):not(.custom-contact-checkable)
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1786682233 .m-recaptcha
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1495198518
+{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1063607049
+{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1300162432
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 277px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:282.5px !important;
+	margin-left:277.5px !important;
+	max-width:1200px !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1226681868
+{
+	width:360px !important;
+	height:430px !important;
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1663815447
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1886244258
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:360px !important;
+	position:relative !important;
+	height:431px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	justify-content:normal !important;
+	align-items:normal !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1926565202
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1017597382
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:360px !important;
+	position:relative !important;
+	height:430px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:-8px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1456938578
+{
+	background-position:50% 50% !important;
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:15px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1515726831
+{
+	margin-left:0px !important;
+	padding-top:80px !important;
+	padding-left:30px !important;
+	padding-bottom:80px !important;
+	margin-top:40px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:30px !important;
+	width:auto !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-45, .size-45, .size-45 > font { font-size: 45px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-17, .size-17, .size-17 > font { font-size: 17px !important; }.font-size-50, .size-50, .size-50 > font { font-size: 50px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-15, .size-15, .size-15 > font { font-size: 15px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']),
+  .dmDesktopBody:not(.editGrid) [data-anim-extended],
+  .flex-element:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']),
+  .flex-element:not(.editGrid) [data-anim-extended]
+  {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']),
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended],
+  .flex-element:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']),
+  .flex-element:not(.editGrid) .dmNewParagraph[data-anim-extended]
+  {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Marck Script Fallback";
+  src: local('Arial');
+  ascent-override: 92.1196%;
+  descent-override: 41.0486%;
+  size-adjust: 93.7912%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <title>
+    Über uns | Dachdecker | Bedachungen Reimann | Nordkirchen
+  </title>
+  <meta name="keywords" content="Dachdecker, Dachdecker Nordkirchen, Innungsbetrieb, Ausbau Dachgeschoss, Modernisierung, Familienbetrieb, Meisterbetrieb"/>
+  <meta name="description" content="Bedachungen Reimann ist Ihr Dachdecker Meister- und Familienbetrieb in Nordkirchenund seit 2004, gegründet durch Sebastian Reimann."/>
+
+  <meta name="google-site-verification" content="pPa1iMsbvaoCUjYWGS6O2o-YRLtvMfWMKx9LCFrPnPs"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Über uns | Dachdecker | Bedachungen Reimann | Nordkirchen"/>
+  <meta name="twitter:description" content="Bedachungen Reimann ist Ihr Dachdecker Meister- und Familienbetrieb in Nordkirchenund seit 2004, gegründet durch Sebastian Reimann."/>
+  <meta property="og:description" content="Bedachungen Reimann ist Ihr Dachdecker Meister- und Familienbetrieb in Nordkirchenund seit 2004, gegründet durch Sebastian Reimann."/>
+  <meta property="og:title" content="Über uns | Dachdecker | Bedachungen Reimann | Nordkirchen"/>
+
+
+
+
+<!-- SYS- RVVfUFJPRFVDVElPTg== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="wir-ueber-uns"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1932293020"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations rows-1200 hamburger-reverse dmPageBody d-page-1585076173 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1585076173" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="78f5c343822e4eb3aac27f4ad5d13812===header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="dmRespRow dmDefaultListContentRow u_1861705244 footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr footer1-hvr hvr1 fullBleedChanged fullBleedMode footer1-hvr" style="text-align:center" id="1861705244 footer1-hvr"> <div class="dmRespColsWrapper" id="1914255413"> <div class="u_1677919435 small-12 dmRespCol large-3 medium-3 tab-col" id="1677919435"> <div class="u_1063649363 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1063649363" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1421136037" file="false"><img src="https://le-de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/opt/Bedachungen-Reimann_logo_neu-1920w.jpg" id="1484638996" class="" data-dm-image-path="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/Bedachungen-Reimann_logo_neu.jpg" width="476" height="182" alt="Bedachungen Reimann Nordkirchen" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1078330897 dmRespCol small-12 large-6 medium-6 hide-for-medium" id="1078330897"> <div class="u_1841727814 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1841727814" style="transition: none 0s ease 0s; text-align: left;"><p class="m-size-36 text-align-center size-45"><span class="font-size-45 m-font-size-36" style="color:rgb(152, 1, 10);display:unset;font-family:'Marck Script', 'Marck Script Fallback';">Wir decken Sie passend ein!</span></p></div> 
+</div> 
+ <div class="u_1246161842 dmRespCol small-12 large-3 medium-3 tab-col" id="1246161842"> <span id="1630001966"></span> 
+ <div class="u_1988004967 dmNewParagraph ql-disabled" data-element-type="paragraph" data-version="5" id="1988004967" style="transition: opacity 1s ease-in-out 0s;"><p><span style="color:rgb(51, 51, 51);font-weight:800;display:unset;font-family:Roboto, 'Roboto Fallback';">Noch Fragen? Rufen Sie uns an</span></p></div> 
+ <div class="u_1081860464 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1081860464" style="transition: none 0s ease 0s; text-align: left; display: block;" new-inline-bind-applied="true" data-diy-text=""><p class="m-size-24 size-30" style="line-height: 1.4em;"><a href="tel: 02596 1454" runtime_url="tel: 02596 1454" type="call" class="m-font-size-24 font-size-30" style="text-decoration: none; display: initial; color: rgb(23, 23, 23);"><span class="inline-data-binding" data-encoded-value="IDAyNTk2IDE0NTQ=" data-inline-binding="content_library.global.phone. telefon">02596 1454</span></a></p></div> 
+ <div class="u_1418332692 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1418332692" style="transition: none 0s ease 0s; text-align: left; display: block;" new-inline-bind-applied="true" data-diy-text=""><p class="m-size-14 size-17"><a href="mailto:info@bedachungen-reimann.de" runtime_url="mailto:info@bedachungen-reimann.de" type="email" class="m-font-size-14 font-size-17" style="color:rgb(23, 23, 23);display:initial;text-decoration:none;font-family:Roboto, 'Roboto Fallback';"><span class="inline-data-binding" data-encoded-value="aW5mb0BiZWRhY2h1bmdlbi1yZWltYW5uLmRl" data-inline-binding="content_library.global.email.email">info@bedachungen-reimann.de</span></a></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1960838404" id="1960838404"> <div class="dmRespColsWrapper" id="1961799733"> <div class="dmRespCol large-12 medium-12 small-12" id="1785740470"> <nav class="u_1487076246 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1487076246" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Start
+        " data-auto="page-text-style">Start<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/Leistungen" class="unifiednav__item  dmUDNavigationItem_010101436714  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Leistungen
+        " data-auto="page-text-style">Leistungen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/services" class="unifiednav__item  dmUDNavigationItem_010101357537  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Service
+        " data-auto="page-text-style">Service<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/wir-ueber-uns" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101200826  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Wir über uns
+        " data-auto="page-text-style">Wir &uuml;ber uns<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item  dmUDNavigationItem_010101943230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">Wir &uuml;ber uns</div> 
+</div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_wir-ueber-uns"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1585076173"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1845912541"> <div class="u_1235763818 dmRespRow hide-for-large hide-for-medium" id="1235763818"> <div class="dmRespColsWrapper" id="1710579274"> <div class="dmRespCol large-12 medium-12 small-12 u_1347557046" id="1347557046"> <a data-display-type="block" class="u_1501631243 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel: 02596 1454" data-element-type="dButtonLinkId" id="1501631243" data-buttonstyle="ROUND_SIDES"> <span class="iconBg" aria-hidden="true" id="1795006785"> <span class="icon hasFontIcon icon-star" id="1758502036"></span> 
+</span> 
+ <span class="text" id="1042765862">02596 1454</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmDefaultListContentRow u_1815602898" style="text-align:center" id="1815602898"> <div class="dmRespColsWrapper" id="1480100602"> <div class="u_1603524825 large-12 medium-12 small-12 dmRespCol hide-for-small empty-column" id="1603524825"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1063607049 fullBleedChanged fullBleedMode" id="1063607049"> <div class="dmRespColsWrapper" id="1121540278"> <div class="dmRespCol large-12 medium-12 small-12 u_1477007562" id="1477007562"> <div class="u_1300162432 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1300162432" style="transition: none 0s ease 0s; text-align: left;"> <h1 class="text-align-left size-50 m-size-40" style="line-height: 1.2em;"><a href="/" runtime_url="/" type="page" class="font-size-50 m-font-size-40" m-font-size-set="true" style="font-weight:900;display:unset;font-family:Roboto, 'Roboto Fallback';">Wir &uuml;ber uns</a></h1> 
+</div> 
+ <div class="dmRespRow u_1495198518" id="1495198518"> <div class="dmRespColsWrapper" id="1141923170"> <div class="u_1216793469 dmRespCol small-12 large-8 medium-8" id="1216793469"> <div class="u_1813798764 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1813798764" style="transition: opacity 1s ease-in-out 0s;"><p class="size-17 m-size-15"><span class="font-size-17 m-font-size-15" style="color:rgb(51, 51, 51);font-weight:400;display:initial;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Neben der Erstellung von kompletten D&auml;chern bei Neubauten, sind wir kompetenter Ansprechpartner f&uuml;r den Ausbau und die Modernisierung<br/>Ihres Dachgeschosses sowie f&uuml;r die Herstellung von Gauben, Dachterrassen, Balkonen und Vord&auml;chern. Des Weiteren sind wir Ihr fachkundiger Ansprechpartner f&uuml;r Fassadengestaltung und Bauklempnerei.</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1608250689" style="transition: opacity 1s ease-in-out 0s;"><p class="size-17 m-size-15"><span class="font-size-17 m-font-size-15" style="color:rgb(51, 51, 51);font-weight:400;display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Daneben bieten wir eine fachm&auml;nnische Wartung Ihres Daches an. Wir begutachten vorbeugend Ihre Dachfl&auml;chen, Dachrinnen und Entw&auml;sserungsteile und bessern diese bei Bedarf aus. Sollte es zu einem Schaden gekommen sein, ist auf uns besonderer Verlass.</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1912993203" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-16 size-20" style="line-height: 1.6em;"><span class="m-font-size-16 font-size-20" style="color:rgb(152, 1, 10);font-weight:400;display:unset;font-family:Roboto, 'Roboto Fallback';">Wir stehen Ihnen als Dachdecker-Innungsbetrieb mit unserem Fachwissen gerne f&uuml;r individuelle Fragen zur Verf&uuml;gung.</span></p></div> 
+</div> 
+ <div class="u_1351443683 dmRespCol small-12 large-4 medium-4" id="1351443683"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1862060692" style="transition: opacity 1s ease-in-out 0s;"><p class="size-20 m-size-16"><span style="color:rgb(152, 1, 10);font-weight:400;display:unset;font-family:Roboto, 'Roboto Fallback';" class="font-size-20 m-font-size-16">Firmengeschichte</span></p></div> 
+ <div class="u_1296036088 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1296036088" style="transition: opacity 1s ease-in-out 0s;"><p class="size-17 m-size-15"><span class="font-size-17 m-font-size-15" style="color:rgb(51, 51, 51);font-weight:400;display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Gegr&uuml;ndet wurde unser Unternehmen als Familienbetrieb am 01.04.2004 von Inhaber und Dachdeckermeister Sebastian Reimann. Seither stehen wir als Familien- und Meisterbetrieb unseren Kunden treu und unterst&uuml;tzend zur Seite</span><span class="font-size-17 m-font-size-15" style="color:rgb(51, 51, 51);display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1515726831" id="1515726831"> <div class="dmRespColsWrapper" id="1266107378"> <div class="dmRespCol small-12 u_1663815447 medium-4 large-4" id="1663815447"> <div class="imageWidget align-center u_1226681868" data-element-type="image" data-widget-type="image" id="1226681868"><img src="https://le-de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/opt/meisterbrief0_srcset-large-1920w.jpg" id="1640637338" class="" data-dm-image-path="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/meisterbrief0_srcset-large.jpg" width="360" height="431" alt="Meisterbrief" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div class="dmRespCol small-12 medium-4 large-4 u_1926565202" id="1926565202"> <div class="u_1886244258 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1886244258"><img src="https://le-de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/opt/Urkunde10_srcset-large-1920w.jpg" alt="Urkunde" id="1010143247" class="" data-dm-image-path="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/Urkunde10_srcset-large.jpg" width="360" height="431" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div class="dmRespCol small-12 u_1456938578 medium-4 large-4" id="1456938578"> <div class="u_1017597382 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1017597382"><img src="https://le-de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/opt/high_file4_urkunde_experte_119_0_1609946537512_HIGHRES-1920w.png" alt="Urkunde - VELUX Qualitätspartner" id="1363565559" class="" data-dm-image-path="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/high_file4_urkunde_experte_119_0_1609946537512_HIGHRES.png" width="360" height="431" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1835520312"> <div class="dmRespColsWrapper" id="1740304491"> <div class="dmRespCol large-12 medium-12 small-12 u_1483858236" id="1483858236"> <div class="dmNewParagraph ql-disabled" data-element-type="paragraph" data-version="5" id="1790576008" style="transition: opacity 1s ease-in-out 0s;"> <h2 class="m-size-40 size-50"><span class="m-font-size-40 font-size-50" style="color:rgb(148, 148, 148);display:unset;font-family:Roboto, 'Roboto Fallback';">Stellenangebote</span></h2> 
+</div> 
+ <div class="dmNewParagraph u_1037465011" data-element-type="paragraph" data-version="5" id="1037465011" style="transition: opacity 1s ease-in-out 0s;"> <h2 class="text-align-center size-30 m-size-24" style="line-height: 1.2em;"><span class="font-size-30 m-font-size-24" m-font-size-set="true" style="color:rgb(152, 1, 10);font-weight:400;display:unset;font-family:Roboto, 'Roboto Fallback';">WERDE EIN TEIL UNSERES TEAMS UND BEWIRB DICH ALS NEUER MITARBEITER</span></h2> 
+</div> 
+ <div class="dmRespRow u_1264984786" id="1264984786"> <div class="dmRespColsWrapper" id="1955961804"> <div class="dmRespCol small-12 medium-12 large-12 u_1799184499" id="1799184499"> <div class="u_1786682233 dmform default native-inputs" data-element-type="dContactUsRespId" captcha="true" data-captcha-position="bottomleft" id="1786682233" data-layout="layout-1"> <h3 class="dmform-title dmwidget-title" id="1833505710">ZUR PERSON</h3> 
+ <div class="dmform-wrapper" id="1403954321" captcha-lang="de"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1087675935"> <div class="dmforminput small-12 dmRespDesignCol medium-4 large-4" id="1634283284"> <label for="1179939722" id="1494505651" data-dm-for="dmform-7">Bewerbung f&uuml;r *</label> 
+ <div class="radiowrapper horizontal" id="1877503486"> <div id="1893245657" class="contact-checkable-container"> <label for="1179939722" class="for-checkable" id="1143631371"><input type="radio" value="ein Stellenangebot" name="dmform-7" id="1179939722" class="checkable-input"/> <span id="1497144757">ein Stellenangebot</span> 
+ <span class="img-wrapper"><img alt="" id="1668550211" class="contact-checkable-img" onerror="handleImageLoadError(this)"/></span> 
+</label> 
+</div> 
+ <div id="1173112645" class="contact-checkable-container"> <label for="1466059199" class="for-checkable" id="1600227702"><input type="radio" value="Initiativbewerbung" name="dmform-7" id="1466059199" class="checkable-input"/> <span id="1681535634">Initiativbewerbung</span> 
+ <span class="img-wrapper"><img alt="" id="1224085414" class="contact-checkable-img" onerror="handleImageLoadError(this)"/></span> 
+</label> 
+</div> 
+</div> 
+<input type="hidden" name="label-dmform-7" value="Bewerbung für *" id="1199922178" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol newLine medium-12 large-12" id="1678756708"> <label for="1116385250" id="1235881112" class="" data-dm-for="dmform-1687502548">ZUR PERSON</label> 
+ <div class="freetextwrapper" name="dmform-1687502548" id="1116385250"><br id="1948877482"/></div> 
+<input type="hidden" name="label-dmform-1687502548" value="ZUR PERSON" id="1623915351" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-11 large-11" id="1151019675"> <label for="1121896351" id="1438533958" data-dm-for="dmform-0">Vorname, Nachname*</label> 
+<input type="text" class="" name="dmform-0" id="1121896351"/><input type="hidden" name="label-dmform-0" value="Vorname, Nachname*" id="1475851538" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-8 large-8" id="1336937793"> <label for="1014539042" id="1676191544" data-dm-for="dmform-4">Geburtsdatum*</label> 
+<input type="text" name="dmform-4" id="1014539042"/><input type="hidden" name="label-dmform-4" value="Geburtsdatum*" id="1812354186" class=""/></div> 
+ <div class="dmforminput small-12 medium-4 large-4 dmRespDesignCol" id="1786891879"> <label for="1687502547" id="1937983508" data-dm-for="dmform-88652">F&uuml;hrerschein</label> 
+ <div class="radiowrapper horizontal" id="1433133811"> <div id="1574031271" class="contact-checkable-container"> <label for="1687502547" class="for-checkable" id="1046403527"><input type="radio" value="Ja" name="dmform-88652" id="1687502547" class="checkable-input"/> <span id="1180264761">Ja</span> 
+ <span class="img-wrapper"><img alt="" id="1432185336" class="contact-checkable-img" onerror="handleImageLoadError(this)"/></span> 
+</label> 
+</div> 
+ <div id="1490562505" class="contact-checkable-container"> <label for="1479364097" class="for-checkable" id="1065302604"><input type="radio" value="Nein" name="dmform-88652" id="1479364097" class="checkable-input"/> <span id="1515857983">Nein</span> 
+ <span class="img-wrapper"><img alt="" id="1888869494" class="contact-checkable-img" onerror="handleImageLoadError(this)"/></span> 
+</label> 
+</div> 
+</div> 
+<input type="hidden" name="label-dmform-88652" value="Führerschein" id="1713305632" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol newLine medium-12 large-12" id="1622564758"> <label for="1098596653" id="1848826275" class="" data-dm-for="dmform-1687502549">KONTAKTDATEN</label> 
+ <div class="freetextwrapper" name="dmform-1687502549" id="1098596653"><br id="1761098276"/></div> 
+<input type="hidden" name="label-dmform-1687502549" value="KONTAKTDATEN" id="1384775814" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-11 large-11" id="1207413219"> <label for="1296082037" id="1894425967" data-dm-for="dmform-2">Telefon*</label> 
+<input type="tel" class="" name="dmform-2" id="1296082037"/><input type="hidden" name="label-dmform-2" value="Telefon*" id="1081870994" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-11 large-11" id="1581705994"> <label for="1247402049" id="1954094262" data-dm-for="dmform-1">E-Mail*</label> 
+<input type="email" class="" name="dmform-1" id="1247402049"/><input type="hidden" name="label-dmform-1" value="E-Mail*" id="1885762707" class=""/></div> 
+ <div class="dmforminput dmRespDesignCol small-12 medium-11 large-11" id="1224217531"> <label for="1468246005" id="1804047371" data-dm-for="dmform-3">Wohnort*</label> 
+<input type="text" name="dmform-3" placeholder="Straße, Hausnummer, PLZ, Ort" id="1468246005" data-placeholder-original="Straße, Hausnummer, PLZ, Ort"/><input type="hidden" name="label-dmform-3" value="Wohnort*" id="1045456376" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-11 large-11" id="1580278592"> <label for="1124406969" id="1480645240" data-dm-for="dmform-5">Stell dich kurz vor:*</label> 
+ <textarea name="dmform-5" id="1124406969"></textarea> 
+<input type="hidden" name="label-dmform-5" value="Stell dich kurz vor:*" id="1959276917" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-10 large-10" id="1116050159"> <label for="1671334358" id="1150722419" data-dm-for="dmform-6">weitere Bewerbungsunterlagen</label> 
+ <div class="filewrapper" id="1390746322"> <a data-file="true" class="fileUploadLink" id="1204097709" value="Upload File" file-upload-lang="de">Upload File</a> 
+&nbsp; <span class="fileLabel" id="1255660364"></span> 
+<input type="hidden" name="dmform-6" class="fileName" value="" id="1671334358"/></div> 
+<input type="hidden" name="label-dmform-6" value="weitere Bewerbungsunterlagen" id="1336623447" class=""/></div> 
+ <span id="1586262077" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" id="1098815643"><input class="" name="submit" type="submit" value="Abschicken" id="1553081213"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLsSlLR4GAldF/IKXSEendaRcxKKysLUh2Yc264meYQoLP2rMwRyZxskFIP4IK7E0myVgsyPiccSeQ==" id="1136677141" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1275091038"/><input name="dmformsubject" type="hidden" value="Form Message" id="1415242294"/><input name="dmformfrom" type="hidden" value="" id="1923558328"/><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrSzRkXjNcoSR47hZbnfCUgYviWG2Dngl/jz0RFtjvx1c0Ji97Vr5q3vLvJwfjYSm34PUN6pKzV14ZNGd1IOc6Z/awESjIUrHZJjwws2/XOnWo8UoCMjJ9dTcJH0QP0/k3ThQa8NB2jlvn5az5NHcF7x9NxuuQvvxrnvbFLAj+vvzVrIQIHcLaZF2dDm8UzT+7GS011gELkb1We9XyfMTi1LToO03FpoTIig==" data-dec="true"/><input type="hidden" name="page_uuid" value="8c6f8300667246b2862a18c837ffb1ad"/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1908136853">Thank you for contacting us.<br id="1380868884"/>We will get back to you as soon as possible.</div> 
+ <div class="dmform-error" style="display:none" id="1705009660">Oops, there was an error sending your message.<br id="1486692558"/>Please try again later.</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1632155419" style="text-align: center;" id="1632155419"> <div class="dmRespColsWrapper" id="1253858808"> <div class="u_1063824722 dmRespCol small-12 large-3 medium-3 hvr2" id="1063824722"> <div class="dmNewParagraph ql-disabled" data-element-type="paragraph" data-version="5" id="1964552276" style="transition: opacity 1s ease-in-out 0s;" new-inline-bind-applied="true" data-diy-text=""><p><span style="font-weight: bold; display: initial; color: rgb(255, 255, 255);"><span class="inline-data-binding" data-encoded-value="QmVkYWNodW5nZW4gUmVpbWFubg==" data-inline-binding="content_library.global.company_name">Bedachungen Reimann</span></span></p></div> 
+ <div class="u_1312182253 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1312182253" style="transition: opacity 1s ease-in-out 0s;" new-inline-bind-applied="true" data-diy-text=""><p><span style="color:rgb(255, 255, 255);font-weight:400;display:initial;font-family:Roboto, 'Roboto Fallback';"><span class="inline-data-binding" data-encoded-value="TMOkbW1lcnN0cmHDn2UgN2EsIDU5Mzk0IE5vcmRraXJjaGVuLCBHZXJtYW55" data-inline-binding="content_library.global">L&auml;mmerstra&szlig;e 7a, 59394 Nordkirchen, Deutschland</span></span></p></div> 
+</div> 
+ <div class="u_1300804437 dmRespCol small-12 large-4 medium-4 hvr2" id="1300804437"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1982910593" style="transition: opacity 1s ease-in-out 0s;"><p class="size-15 m-size-14"><span class="font-size-15 m-font-size-14" style="color:rgb(255, 255, 255);font-weight:700;display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Kontakt</span></p></div> 
+ <div class="dmNewParagraph u_1973679395" data-element-type="paragraph" data-version="5" id="1973679395" style="transition: opacity 1s ease-in-out 0s;" new-inline-bind-applied="true" data-diy-text=""><p><span class="m-font-size-14 font-size-15" m-font-size-set="true" style="color:rgb(255, 255, 255);font-weight:400;display:unset;text-decoration:none;font-family:Roboto, 'Roboto Fallback';">&nbsp;</span><a href="tel: 02596 1454" runtime_url="tel: 02596 1454" type="call" style="color:rgb(255, 255, 255);font-weight:400;display:initial;text-decoration:none;font-family:Roboto, 'Roboto Fallback';"><span class="inline-data-binding" data-encoded-value="IDAyNTk2IDE0NTQ=" data-inline-binding="content_library.global.phone. telefon">02596 1454</span></a></p></div> 
+ <div class="dmNewParagraph u_1340502268" data-element-type="paragraph" data-version="5" id="1340502268" style="transition: opacity 1s ease-in-out 0s;" new-inline-bind-applied="true" data-diy-text=""><p><a href="mailto:info@bedachungen-reimann.de" runtime_url="mailto:info@bedachungen-reimann.de" type="email" style="color:rgb(255, 255, 255);font-weight:400;display:initial;text-decoration:none;font-family:Roboto, 'Roboto Fallback';"><span class="inline-data-binding" data-encoded-value="aW5mb0BiZWRhY2h1bmdlbi1yZWltYW5uLmRl" data-inline-binding="content_library.global.email.email">info@bedachungen-reimann.de</span><span class="ql-cursor"></span></a></p></div> 
+</div> 
+ <div class="u_1529479400 dmRespCol small-12 large-3 medium-3 hvr2" id="1529479400"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1431029134" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-12 size-15"><span class="font-size-15 m-font-size-12" style="color:rgb(255, 255, 255);font-weight:700;display:unset;font-family:Roboto, 'Roboto Fallback';">Rechtliches</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1157319142" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-14 size-15"><a href="/impressum" runtime_url="/-impressum" type="page" class="m-font-size-14 font-size-15" m-font-size-set="true" style="color:rgb(255, 255, 255);font-weight:400;text-decoration:none;display:unset;font-family:Roboto, 'Roboto Fallback';">Impressum</a><span style="display: initial;"><br/></span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1170869490" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-14 size-15"><a href="/datenschutz" runtime_url="/datenschutz" type="page" class="m-font-size-14 font-size-15" m-font-size-set="true" style="color:rgb(255, 255, 255);font-weight:400;text-decoration:none;display:unset;font-family:Roboto, 'Roboto Fallback';">Datenschutz</a></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1857048300" style="transition: opacity 1s ease-in-out 0s;"><p class="size-15 m-size-14"><span class="font-size-15 m-font-size-14" style="color:rgb(255, 255, 255);font-weight:400;display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">powered by&nbsp;</span><a href="https://www.websmart.de/" rel="noopener" target="_blank" runtime_url="https://www.websmart.de/" class="font-size-15 m-font-size-14" style="color:rgb(255, 255, 255);font-weight:400;display:unset;text-decoration:none;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">Websmart</a></p></div> 
+</div> 
+ <div class="u_1365810333 dmRespCol small-12 large-2 medium-2" id="1365810333"> <div class="align-center text-align-center u_1147218211 dmSocialHub gapSpacing" id="1147218211" dmle_extension="social_hub" data-element-type="social_hub" data-binding="W3siYmluZGluZ05hbWUiOiJzb2NpYWwiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwuc29jaWFsIn1d" extractelementdata="true" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/Bedachungen.Reimann/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://instagram.com/bedachungen_reimann/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://youtube.com/channel/UCZqa8raxqPAsxEeSeA8I3AQ" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <a data-display-type="block" class="u_1441291065 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient hide-for-large hide-for-medium" file="false" href="/" data-element-type="dButtonLinkId" id="1441291065" data-buttonstyle="THICK_BORDER"> <span class="iconBg" aria-hidden="true" id="1631805635"> <span class="icon hasFontIcon icon-star" id="1971959411"></span> 
+</span> 
+ <span class="text" id="1531302009">Whatsapp</span> 
+</a> 
+ <div class="u_1241867932 imageWidget align-center hide-for-small" data-element-type="image" data-widget-type="image" id="1241867932"><img src="https://le-de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/opt/qr-code-1920w.png" alt="QR-Code" id="1998436083" class="" data-dm-image-path="https://de.cdn-website.com/828e993870cc4efcb9f44bb3710ce58b/dms3rep/multi/qr-code.png" width="99" height="99" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1001489826" id="1001489826"> <div class="dmRespColsWrapper" id="1514218679"> <div class="dmRespCol large-12 medium-12 small-12" id="1125011520"> <div class="dmDividerWrapper clearfix u_1180731626" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1180731626"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1094184492"/></div> 
+ <div class="dmNewParagraph u_1524016884" data-element-type="paragraph" data-version="5" id="1524016884" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center size-30 m-size-19"><span class="font-size-30 m-font-size-19" style="text-transform:uppercase;color:rgb(255, 255, 255);font-weight:400;display:unset;font-family:Roboto, 'Roboto Fallback';" m-font-size-set="true">&quot;WIR DECKEN SIE PASSEND EIN!&quot;</span></p></div> 
+</div> 
+</div> 
+ <a class="dmBackToTop" id="dmBackToTop" style="opacity: 1; visibility: visible;"></a> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4967";
+    var build = "2024-11-26T13_50_13";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-11-26T13_50_13";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<script id="d-js-ecwid-cb-glue" data-swh-uuid="1229f42540594b0daf44b76f5b9784c1">
+
+window.ec=window.ec||{},window.ec.config=ec.config||{},window.ec.config.tracking=ec.config.tracking||{},window.ec.config.tracking.ask_consent=!0,window.ec.config.tracking.user_response="DECLINE";let _ecwidLoadedForCb=!1;function _acceptConsentForEcwid(e){e.preferences&&e.statistics&&!e.marketing?Ecwid.setTrackingConsent("ANALYTICS_ONLY"):!e.preferences||e.statistics||e.marketing?Ecwid.setTrackingConsent("ACCEPT"):Ecwid.setTrackingConsent("PERSONALIZATION_ONLY")}function _onEcwidLoadedCb(){Cookiebot&&Cookiebot.consented?"function"==typeof Ecwid.setTrackingConsent?_acceptConsentForEcwid(Cookiebot.consent):window.Ecwid.OnAPILoaded.add(function(){_acceptConsentForEcwid(Cookiebot.consent)}):Cookiebot&&Cookiebot.declined?Ecwid.setTrackingConsent("DECLINE"):_ecwidLoadedForCb=!0}window.addEventListener("message",e=>{"ecwid-script-loaded"===e.data.type&&_onEcwidLoadedCb()}),window.addEventListener("CookiebotOnAccept",async()=>{_ecwidLoadedForCb&&_acceptConsentForEcwid(Cookiebot.consent)},!1),window.addEventListener("CookiebotOnDecline",async()=>{_ecwidLoadedForCb&&Ecwid.setTrackingConsent("DECLINE")},!1);
+
+</script>
+<script id="CookiebotConfiguration" type="application/json" data-cookieconsent="ignore" data-swh-uuid="1229f42540594b0daf44b76f5b9784c1">
+
+{"TagConfiguration":[{"id":"d-js-core","ignore":true},{"id":"d-js-params","ignore":true},{"id":"d-js-jquery","ignore":true},{"id":"d-js-load-css","ignore":true}]}
+
+</script>
+<script data-cookieconsent="ignore" data-swh-uuid="1229f42540594b0daf44b76f5b9784c1">
+
+function _cbSetGtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],_cbSetGtag("consent","default",{"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","personalization_storage":"denied","security_storage":"granted","wait_for_update":500}),_cbSetGtag("set","ads_data_redaction",!0),_cbSetGtag("set","url_passthrough",!0)
+
+</script>
+<script id="Cookiebot" src="https://consent.cookiebot.eu/uc.js" data-cbid="a8114d8e-570a-4121-a83f-2eda5cb27570" data-blockingmode="auto" type="text/javascript" data-swh-uuid="1229f42540594b0daf44b76f5b9784c1">
+</script>
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.eu-multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4967';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/4967';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-de.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =false;
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwid.delegateNavigationToEcwid.enabled"] = false;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.detect.enable"] =true;
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/4967/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/4967/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+	const queryParams = new URLSearchParams(window.location.search);
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((value, key) => {
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d3uzsv7k2lpopp.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd3uzsv7k2lpopp.cloudfront.net', { // Initialise a tracker
+  appId: '828e993870cc4efcb9f44bb3710ce58b'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: 828e993870cc4efcb9f44bb3710ce58b -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script>
+ let __fixedCssLoad = false;
+
+function __loadCSSLinks() {
+    setTimeout(() => {
+        if(!__fixedCssLoad && window.loadCSS) {
+            // fix css links
+            __fixCssLinks()
+            
+        } else {
+          console.log("re-running self waiting for fix css to exist")
+            __loadCSSLinks()
+        }
+    },1)
+}
+function __fixCssLinks(cb) {
+    var links = document.getElementsByTagName("link");
+    for (var i = 0; i < links.length; i++) {
+      if(links[i].onload) {
+        
+        
+        
+        loadCSS(links[i]);
+        
+      }
+    }
+    __fixedCssLoad = true;
+}
+
+window.addEventListener('CookiebotOnDialogDisplay', function (e) {
+    __fixCssLinks()
+}, false);
+if(dmAPI.getCurrentEnvironment() === 'live') { __loadCSSLinks(); }
+ </script><!--  End Product Custom HTML Markup -->
+</body>
+</html>
